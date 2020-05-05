@@ -1,0 +1,454 @@
+[API Trapper      (  44:ebf8)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[API Trapper      (d698: 56c)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[API Trapper      (e1c4:eac8)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[API Trapper      (c738:b340)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[Network Analyzer (c738:e7b4)] ------------------------------------------------------------------------------------------
+[Network Analyzer (c738:e7b4)] Load Network Traffic Analyzers:
+[Network Analyzer (c738:e7b4)]     Analyzer Module: WPLUS (value=)
+[Network Analyzer (c738:e7b4)]     Analyzer Module: WebBase (value=GetHttpProtocolAnalyzer:api_http_filter_x64.dll)
+[Network Analyzer (c738:e7b4)]     + Network Analyzer: api_http_filter_x64.dll @ GetHttpProtocolAnalyzer Loaded!
+[Network Analyzer (c738:e7b4)]     + Interception Auditors: WinInetWplusInterceptionAudit:api_http_filter_x64.dll
+[Network Analyzer (c738:e7b4)]     Analyzer Module: QTWeb (value=GetWebSocketProtocolAnalyzer:WebSocketAnalyzer_x64.dll)
+[Network Analyzer (c738:e7b4)]     + Network Analyzer: WebSocketAnalyzer_x64.dll @ GetWebSocketProtocolAnalyzer Loaded!
+[Network Analyzer (c738:e7b4)] ------------------------------------------------------------------------------------------
+[Network Analyzer (c738:f298)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 209.85.233.84:443   (Service=)  (Sid=  1)  PROXIED!
+[Network Analyzer (c738:5d3c)]   (Sid:  1) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  2)  PROXIED!
+[Network Analyzer (c738:5d3c)]   (Sid:  1) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.3, ciphers:TLS_CHACHA20_POLY1305_SHA256)
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Web Request      (c738:f298)] "GET /WebTours/"   
+[Network Analyzer (c738:f298)]   (Sid:  2) Client -> Server @ : 550 bytes (Service=HTTP)
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 173.194.73.94:443   (Service=)  (Sid=  3)  PROXIED!
+[Network Analyzer (c738:f298)]   (Sid:  2) Server -> Client : 664 bytes  (Service=HTTP)
+[Network Analyzer (c738:e02c)]   (Sid:  3) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Web Request      (c738:f298)] "GET /WebTours/header.html"   
+[Network Analyzer (c738:f298)]   (Sid:  2) Client -> Server @ : 587 bytes (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  2) Server -> Client : 1007 bytes  (Service=HTTP)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (c738:f298)]   (Sid:  2) Connection Terminated (by Server)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  4)  PROXIED!
+[Network Analyzer (c738:e02c)]   (Sid:  3) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.3, ciphers:TLS_CHACHA20_POLY1305_SHA256)
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Web Request      (c738:f298)] "GET /chrome-variations/seed?osname=win&channel=stable&milestone=81"   
+[Network Analyzer (c738:f298)]   (Sid:  3) Client -> Server @ : 449 bytes (SSL)(Service=HTTP)
+[Web Request      (c738:f298)] "GET /cgi-bin/welcome.pl?signOff=true"   
+[Network Analyzer (c738:f298)]   (Sid:  4) Client -> Server @ : 598 bytes (Service=HTTP)
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 108.177.14.94:443   (Service=)  (Sid=  5)  PROXIED!
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Network Analyzer (c738:f298)]   (Sid:  3) Server -> Client : 329 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 108.177.14.94:443   (Service=)  (Sid=  6)  PROXIED!
+[Network Analyzer (c738:ec10)]   (Sid:  5) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer (c738:f298)]   (Sid:  4) Server -> Client : 1021 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  4) Server -> Client : 5 bytes  (Service=HTTP)
+[Network Analyzer (c738:f3fc)]   (Sid:  6) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (c738:f298)]   (Sid:  4) Connection Terminated (by Server)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  7)  PROXIED!
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (c738:ec10)]   (Sid:  5) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.3, ciphers:TLS_CHACHA20_POLY1305_SHA256)
+[Network Analyzer (c738:f3fc)]   (Sid:  6) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.3, ciphers:TLS_CHACHA20_POLY1305_SHA256)
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  8)  PROXIED!
+[Web Request      (c738:f298)] "GET /WebTours/images/hp_logo.png"   
+[Network Analyzer (c738:f298)]   (Sid:  7) Client -> Server @ : 489 bytes (Service=HTTP)
+[Web Request      (c738:f298)] "GET /safebrowsing/csd/client_model_v5_variation_0.pb"   
+[Network Analyzer (c738:f298)]   (Sid:  5) Client -> Server @ : 347 bytes (SSL)(Service=HTTP)
+[Web Request      (c738:f298)] "GET /safebrowsing/csd/client_model_v5_ext_variation_0.pb"   
+[Network Analyzer (c738:f298)]   (Sid:  6) Client -> Server @ : 351 bytes (SSL)(Service=HTTP)
+[Web Request      (c738:f298)] "GET /WebTours/images/webtours.png"   
+[Network Analyzer (c738:f298)]   (Sid:  8) Client -> Server @ : 490 bytes (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  7) Server -> Client : 899 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  8) Server -> Client : 4487 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Web Request      (c738:f298)] "GET /cgi-bin/nav.pl?in=home"   
+[Network Analyzer (c738:f298)]   (Sid:  8) Client -> Server @ : 639 bytes (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Web Request      (c738:f298)] "GET /WebTours/home.html"   
+[Network Analyzer (c738:f298)]   (Sid:  7) Client -> Server @ : 635 bytes (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  7) Server -> Client : 1659 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  8) Server -> Client : 1751 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1348 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1348 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  9)  PROXIED!
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 798 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Web Request      (c738:f298)] "GET /WebTours/images/mer_login.gif"   
+[Network Analyzer (c738:f298)]   (Sid:  8) Client -> Server @ : 521 bytes (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  8) Server -> Client : 976 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 798 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  5) Server -> Client : 1292 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  6) Server -> Client : 1292 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 64.233.162.95:443   (Service=)  (Sid= 10)  PROXIED!
+[Web Request      (c738:f298)] "GET /favicon.ico"   
+[Network Analyzer (c738:f298)]   (Sid:  8) Client -> Server @ : 490 bytes (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  8) Server -> Client : 424 bytes  (Service=HTTP)
+[Network Analyzer (c738:8af4)]   (Sid: 10) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer (c738:8af4)]   (Sid: 10) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.3, ciphers:TLS_CHACHA20_POLY1305_SHA256)
+[Web Request      (c738:f298)] "GET /v1/pages/Chc2LjEuMTcxNS4xNDQyL2VuIChHR0xMKRIlCU35IjnBRbgwEgsN541ADhIAGgAiABILDc5BTHoSABoAIgAaAA==?alt=proto"   
+[Network Analyzer (c738:f298)]   (Sid: 10) Client -> Server @ : 580 bytes (SSL)(Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 10) Server -> Client : 615 bytes (SSL) (Service=HTTP)
+[API Trapper      (2844:3758)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[Network Analyzer (c738:f298)]   (Sid:  7) Connection Terminated (by Server)
+[Network Analyzer (c738:f298)]   (Sid:  8) Connection Terminated (by Server)
+[API Trapper      (f6ec:fa50)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 173.194.73.94:443   (Service=)  (Sid= 11)  PROXIED!
+[Network Analyzer (c738:dc74)]   (Sid: 11) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer (c738:dc74)]   (Sid: 11) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.3, ciphers:TLS_CHACHA20_POLY1305_SHA256)
+[User action                 ] StartTransactionEvent transaction_login [Network Analyzer (c738:f298)]   (Sid: 11) Client -> Server @ : 1104 bytes (SSL)(Service=HTTP)
+[Web Request      (c738:f298)] "POST /service/update2/json?cup2key=9:3983167148&cup2hreq=d1805d09f8a69dbe82c4e60221aead7df8fef383716bd471b13cc3a33e4bab09"   
+[Network Analyzer (c738:f298)]   (Sid: 11) Client -> Server @ : 5536 bytes (SSL)(Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 11) Server -> Client : 1272 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 11) Server -> Client : 910 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 11) Server -> Client : 5 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid:  9) Connection Terminated (by Client)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 12)  PROXIED!
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Web Request      (c738:f298)] "POST /cgi-bin/login.pl"   
+[Network Analyzer (c738:f298)]   (Sid: 12) Client -> Server @ : 888 bytes (Service=HTTP)
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 13)  PROXIED!
+[Network Analyzer (c738:f298)]   (Sid: 12) Server -> Client : 847 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 12) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (c738:f298)] "GET /cgi-bin/nav.pl?page=menu&in=home"   
+[Network Analyzer (c738:f298)]   (Sid: 12) Client -> Server @ : 744 bytes (Service=HTTP)
+[Web Request      (c738:f298)] "GET /cgi-bin/login.pl?intro=true"   
+[Network Analyzer (c738:f298)]   (Sid: 13) Client -> Server @ : 739 bytes (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 13) Server -> Client : 1154 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 13) Server -> Client : 5 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 12) Server -> Client : 1744 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 12) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (c738:f298)] "GET /WebTours/images/flights.gif"   
+[Network Analyzer (c738:f298)]   (Sid: 12) Client -> Server @ : 639 bytes (Service=HTTP)
+[Web Request      (c738:f298)] "GET /WebTours/images/itinerary.gif"   
+[Network Analyzer (c738:f298)]   (Sid: 13) Client -> Server @ : 641 bytes (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 13) Server -> Client : 1030 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 12) Server -> Client : 1023 bytes  (Service=HTTP)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (c738:f298)]   (Sid: 13) Connection Terminated (by Server)
+[Network Analyzer (c738:f298)]   (Sid: 12) Connection Terminated (by Server)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 14)  PROXIED!
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Web Request      (c738:f298)] "GET /WebTours/images/in_home.gif"   
+[Network Analyzer (c738:f298)]   (Sid: 14) Client -> Server @ : 639 bytes (Service=HTTP)
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 15)  PROXIED!
+[Network Analyzer (c738:f298)]   (Sid: 14) Server -> Client : 986 bytes  (Service=HTTP)
+[Web Request      (c738:f298)] "GET /WebTours/images/signoff.gif"   
+[Network Analyzer (c738:f298)]   (Sid: 15) Client -> Server @ : 639 bytes (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 15) Server -> Client : 1049 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 14) Connection Terminated (by Server)
+[Network Analyzer (c738:f298)]   (Sid: 15) Connection Terminated (by Server)
+[User action                 ] EndTransactionEvent transaction_login [Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 209.85.233.95:443   (Service=)  (Sid= 16)  PROXIED!
+[Network Analyzer (c738:f3e4)]   (Sid: 16) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer (c738:f3e4)]   (Sid: 16) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.3, ciphers:TLS_CHACHA20_POLY1305_SHA256)
+[Web Request      (c738:f298)] "GET /v4/threatListUpdates:fetch?$req=Ch0KDGdvb2dsZWNocm9tZRINODEuMC40MDQ0LjEyORopCAUQARobCg0IBRAGGAEiAzAwMTABEInCCBoCGAYGdhnPIgQgASACKAEaKQgBEAEaGwoNCAEQBhgBIgMwMDEwARCTrAcaAhgGbRUUYCIEIAEgAigBGikIAxABGhsKDQgDEAYYASIDMDAxMAEQ87AHGgIYBrF5DvkiBCABIAIoARopCAcQARobCg0IBxAGGAEiAzAwMTABEOmsBxoCGAYNBP_PIgQgASACKAEaJwgBEAEaGQoNCAEQBhgBIgMwMDEwAxAUGgIYBrOQpxMiBCABIAIoAxooCAEQCBoaCg0IARAIGAEiAzAwMTAEEI8aGgIYBsZJvDQiBCABIAIoBBonCAkQARoZCg0ICRAGGAEiAzAwMTAGEAMaAhgG4XpyRyIEIAEgAigGGigIDxABGhoKDQgPEAYYASIDMDAxMAEQ6CkaAhgGn_4kZSIEIAEgAigBGicIChAIGhkKDQgKEAgYASIDMDAxMAEQBRoCGAaMVp5ZIgQgASACKAEaJwgJEAEaGQoNCAkQBhgBIgMwMDEwARAaGgIYBnYzhhgiBCABIAIoARooCAgQARoaCg0ICBAGGAEiAzAwMTABENgIGgIYBgRF5LEiBCABIAIoARooCA0QARoaCg0IDRAGGAEiAzAwMTABEK5zGgIYBg9SgcwiBCABIAIoARopCA4QARobCg0IDhAGGAEiAzAwMTABEIzHAxoCGAZDwDkvIgQgASACKAEaKAgQEAEaGgoNCBAQBhgBIgMwMDEwARDxAhoCGAYCdSpXIgQgASACKAEiAggB&$ct=application/x-protobuf&key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw"   
+[Network Analyzer (c738:f298)]   (Sid: 16) Client -> Server @ : 1277 bytes (SSL)(Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 16) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 16) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 16) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 16) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 16) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 16) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 16) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 16) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 16) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 16) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 16) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 16) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 16) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 16) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 16) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 16) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 16) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 16) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 16) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 16) Server -> Client : 1390 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 16) Server -> Client : 64 bytes (SSL) (Service=HTTP)
+[API Trapper      (d9e8:f7dc)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[User action                 ] StartTransactionEvent transaction_click_flights [Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 17)  PROXIED!
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Web Request      (c738:f298)] "GET /cgi-bin/welcome.pl?page=search"   
+[Network Analyzer (c738:f298)]   (Sid: 17) Client -> Server @ : 778 bytes (Service=HTTP)
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 18)  PROXIED!
+[Network Analyzer (c738:f298)]   (Sid: 17) Server -> Client : 839 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 17) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (c738:f298)] "GET /cgi-bin/nav.pl?page=menu&in=flights"   
+[Network Analyzer (c738:f298)]   (Sid: 17) Client -> Server @ : 761 bytes (Service=HTTP)
+[Web Request      (c738:f298)] "GET /cgi-bin/reservations.pl?page=welcome"   
+[Network Analyzer (c738:f298)]   (Sid: 18) Client -> Server @ : 762 bytes (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 17) Server -> Client : 1744 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 17) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (c738:f298)] "GET /WebTours/images/in_flights.gif"   
+[Network Analyzer (c738:f298)]   (Sid: 17) Client -> Server @ : 645 bytes (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 17) Server -> Client : 1023 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 18) Server -> Client : 4235 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 18) Server -> Client : 281 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 18) Server -> Client : 5 bytes  (Service=HTTP)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (c738:f298)]   (Sid: 17) Connection Terminated (by Server)
+[Network Analyzer (c738:f298)]   (Sid: 18) Connection Terminated (by Server)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 19)  PROXIED!
+[Web Request      (c738:f298)] "GET /v1/pages/Chc2LjEuMTcxNS4xNDQyL2VuIChHR0xMKRJMCUFCU6JtyxUKEgsNVGIprRIAGgAiABILDXudxKUSABoAIgASCw0fOzmFEgAaACIAEgsN2oWZYRIAGgAiABILDamOSr0SABoAIgAaAA==?alt=proto"   
+[Network Analyzer (c738:f298)]   (Sid: 10) Client -> Server @ : 632 bytes (SSL)(Service=HTTP)
+[Web Request      (c738:f298)] "GET /WebTours/images/home.gif"   
+[Network Analyzer (c738:f298)]   (Sid: 19) Client -> Server @ : 639 bytes (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 19) Server -> Client : 986 bytes  (Service=HTTP)
+[Web Request      (c738:f298)] "GET /WebTours/images/button_next.gif"   
+[Network Analyzer (c738:f298)]   (Sid: 19) Client -> Server @ : 647 bytes (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 19) Server -> Client : 1055 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 10) Server -> Client : 638 bytes (SSL) (Service=HTTP)
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 20)  PROXIED!
+[User action                 ] EndTransactionEvent transaction_click_flights [Network Analyzer (c738:f298)]   (Sid: 19) Connection Terminated (by Server)
+[User action                 ] StartTransactionEvent transaction_find_flight [Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (c738:f298)]   (Sid: 20) Connection Terminated (by Client)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 21)  PROXIED!
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Web Request      (c738:f298)] "POST /cgi-bin/reservations.pl"   
+[Network Analyzer (c738:f298)]   (Sid: 21) Client -> Server @ : 1144 bytes (Service=HTTP)
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 22)  PROXIED!
+[Network Analyzer (c738:f298)]   (Sid: 21) Server -> Client : 2703 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 21) Server -> Client : 5 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 21) Connection Terminated (by Server)
+[User action                 ] EndTransactionEvent transaction_find_flight [User action                 ] StartTransactionEvent transaction_select_flight [Network Analyzer (c738:f298)]   (Sid: 22) Connection Terminated (by Client)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 23)  PROXIED!
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Web Request      (c738:f298)] "POST /cgi-bin/reservations.pl"   
+[Network Analyzer (c738:f298)]   (Sid: 23) Client -> Server @ : 1037 bytes (Service=HTTP)
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 24)  PROXIED!
+[Network Analyzer (c738:f298)]   (Sid: 23) Server -> Client : 2965 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 23) Server -> Client : 5 bytes  (Service=HTTP)
+[User action                 ] EndTransactionEvent transaction_select_flight [Network Analyzer (c738:f298)]   (Sid: 23) Connection Terminated (by Server)
+[Network Analyzer (c738:f298)]   (Sid:  1) Connection Terminated (by Server)
+[User action                 ] StartTransactionEvent transaction_payment_details [Network Analyzer (c738:f298)]   (Sid:  3) Connection Terminated (by Server)
+[Network Analyzer (c738:f298)]   (Sid: 24) Connection Terminated (by Client)
+[Network Analyzer (c738:f298)]   (Sid:  5) Connection Terminated (by Server)
+[Network Analyzer (c738:f298)]   (Sid:  6) Connection Terminated (by Server)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 25)  PROXIED!
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Web Request      (c738:f298)] "POST /cgi-bin/reservations.pl"   
+[Network Analyzer (c738:f298)]   (Sid: 25) Client -> Server @ : 1193 bytes (Service=HTTP)
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 26)  PROXIED!
+[Network Analyzer (c738:f298)]   (Sid: 25) Server -> Client : 2842 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 25) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (c738:f298)] "GET /WebTours/images/bookanother.gif"   
+[Network Analyzer (c738:f298)]   (Sid: 25) Client -> Server @ : 610 bytes (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 25) Server -> Client : 1103 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 25) Connection Terminated (by Server)
+[User action                 ] EndTransactionEvent transaction_payment_details [Network Analyzer (c738:f298)]   (Sid: 11) Connection Terminated (by Server)
+[User action                 ] StartTransactionEvent transaction_logout [Network Analyzer (c738:f298)]   (Sid: 26) Connection Terminated (by Client)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (c738:e7b4)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 27)  PROXIED!
+[Network Analyzer (c738:e7b4)] Address lookup for DESKTOP-5GCN8T1 = 192.168.100.79
+[Web Request      (c738:f298)] "GET /cgi-bin/welcome.pl?signOff=1"   
+[Network Analyzer (c738:f298)]   (Sid: 27) Client -> Server @ : 755 bytes (Service=HTTP)
+[Network Analyzer (c738:e7b4)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 28)  PROXIED!
+[Network Analyzer (c738:f298)]   (Sid: 27) Server -> Client : 1021 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 27) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (c738:f298)] "GET /cgi-bin/nav.pl?in=home"   
+[Network Analyzer (c738:f298)]   (Sid: 27) Client -> Server @ : 636 bytes (Service=HTTP)
+[Web Request      (c738:f298)] "GET /WebTours/home.html"   
+[Network Analyzer (c738:f298)]   (Sid: 28) Client -> Server @ : 732 bytes (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 28) Server -> Client : 194 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 27) Server -> Client : 1735 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 27) Server -> Client : 5 bytes  (Service=HTTP)
+[Network Analyzer (c738:f298)]   (Sid: 28) Connection Terminated (by Server)
+[Network Analyzer (c738:f298)]   (Sid: 27) Connection Terminated (by Server)
+[User action                 ] EndTransactionEvent transaction_logout 

@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\bushi\LearnLoadRunner\Скрипты\search_ticket_without_buy
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\bushi\learnloadrunner\скрипты\search_ticket_without_buy\\logfile.log
+c:\users\bushi\learnloadrunner\скрипты\search_ticket_without_buy\\combined_search_ticket_without_buy.c
+c:\users\bushi\learnloadrunner\скрипты\search_ticket_without_buy\\pre_cci.c

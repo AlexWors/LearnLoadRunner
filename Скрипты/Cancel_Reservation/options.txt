@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\bushi\LearnLoadRunner\Скрипты\Cancel_Reservation
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\bushi\learnloadrunner\скрипты\cancel_reservation\\logfile.log
+c:\users\bushi\learnloadrunner\скрипты\cancel_reservation\\combined_Cancel_Reservation.c
+c:\users\bushi\learnloadrunner\скрипты\cancel_reservation\\pre_cci.c

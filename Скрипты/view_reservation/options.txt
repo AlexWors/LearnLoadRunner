@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\bushi\LearnLoadRunner\Скрипты\view_reservation
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\bushi\learnloadrunner\скрипты\view_reservation\\logfile.log
+c:\users\bushi\learnloadrunner\скрипты\view_reservation\\combined_view_reservation.c
+c:\users\bushi\learnloadrunner\скрипты\view_reservation\\pre_cci.c

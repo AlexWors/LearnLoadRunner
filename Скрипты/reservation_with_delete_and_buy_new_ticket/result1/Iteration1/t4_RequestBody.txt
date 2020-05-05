@@ -1,0 +1,6 @@
+"1=on&flightID=0-7-JB&flightID=209889653-1587-JB&flightID=209889653-2356-JB&flightID=209889653-"
+"3125-JB&flightID=209889653-3895-JB&flightID=209889653-4664-JB&flightID=209889653-5433-JB&fligh"
+"tID=209889653-6202-JB&flightID=251445203-6960-JB&flightID=251445203-7730-JB&flightID=251445203"
+"-8499-JB&removeFlights.x=27&removeFlights.y=12&.cgifields=6&.cgifields=11&.cgifields=3&.cgifie"
+"lds=7&.cgifields=9&.cgifields=2&.cgifields=8&.cgifields=1&.cgifields=4&.cgifields=10&.cgifield"
+"s=5"
