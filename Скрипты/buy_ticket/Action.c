@@ -1,6 +1,6 @@
 Action()
 {
-	lr_start_transaction("buy_ticket_transaction");
+	lr_start_transaction("1_buy_ticket_transaction");
 
 	web_set_sockets_option("SSL_VERSION", "AUTO");
 
@@ -79,6 +79,8 @@ Action()
 		LAST);
 
 	lr_end_transaction("transaction_login",LR_AUTO);
+	
+	lr_think_time(26);
 
 	lr_start_transaction("transaction_click_flights");
 
@@ -88,7 +90,8 @@ Action()
 	web_add_auto_header("Upgrade-Insecure-Requests", 
 		"1");
 
-	lr_think_time(26);
+	web_reg_find("Text=User has returned to the search page",
+		LAST);
 
 	web_url("Search Flights Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=search", 
@@ -101,13 +104,16 @@ Action()
 		LAST);
 
 	lr_end_transaction("transaction_click_flights",LR_AUTO);
+	
+	lr_think_time(5);
 
 	lr_start_transaction("transaction_find_flight");
 
 	web_add_auto_header("Origin", 
 		"http://localhost:1080");
 
-	lr_think_time(49);
+	web_reg_find("Text=Flight departing from",
+		LAST);
 
 	web_submit_data("reservations.pl", 
 		"Action=http://localhost:1080/cgi-bin/reservations.pl", 
@@ -119,13 +125,13 @@ Action()
 		"Mode=HTML", 
 		ITEMDATA, 
 		"Name=advanceDiscount", "Value=0", ENDITEM, 
-		"Name=depart", "Value=Denver", ENDITEM, 
-		"Name=departDate", "Value=05/07/2020", ENDITEM, 
-		"Name=arrive", "Value=London", ENDITEM, 
-		"Name=returnDate", "Value=05/08/2020", ENDITEM, 
+		"Name=depart", "Value={departCity}", ENDITEM, 
+		"Name=departDate", "Value={departDate}", ENDITEM, 
+		"Name=arrive", "Value={arriveCity}", ENDITEM, 
+		"Name=returnDate", "Value={returnDate}", ENDITEM, 
 		"Name=numPassengers", "Value=1", ENDITEM, 
-		"Name=seatPref", "Value=Aisle", ENDITEM, 
-		"Name=seatType", "Value=Business", ENDITEM, 
+		"Name=seatPref", "Value={Pref}", ENDITEM, 
+		"Name=seatType", "Value={Type}", ENDITEM, 
 		"Name=findFlights.x", "Value=42", ENDITEM, 
 		"Name=findFlights.y", "Value=11", ENDITEM, 
 		"Name=.cgifields", "Value=roundtrip", ENDITEM, 
@@ -135,10 +141,14 @@ Action()
 
 	lr_end_transaction("transaction_find_flight",LR_AUTO);
 
-	lr_think_time(37);
+	lr_think_time(5);
 
 	lr_start_transaction("transaction_select_flight");
 
+	web_reg_find("Text=Payment Details",
+		LAST);
+
+	
 	web_submit_data("reservations.pl_2", 
 		"Action=http://localhost:1080/cgi-bin/reservations.pl", 
 		"Method=POST", 
@@ -158,6 +168,8 @@ Action()
 		LAST);
 
 	lr_end_transaction("transaction_select_flight",LR_AUTO);
+	
+	lr_think_time(5);
 
 	lr_start_transaction("transaction_payment_details");
 
@@ -170,7 +182,8 @@ Action()
 	web_add_header("Origin", 
 		"http://localhost:1080");
 
-	lr_think_time(47);
+	web_reg_find("Text=Reservation Made!",
+		LAST);
 
 	web_submit_data("reservations.pl_3", 
 		"Action=http://localhost:1080/cgi-bin/reservations.pl", 
@@ -202,6 +215,8 @@ Action()
 		LAST);
 
 	lr_end_transaction("transaction_payment_details",LR_AUTO);
+	
+	lr_think_time(5);
 
 	lr_start_transaction("transaction_logout");
 
@@ -211,7 +226,8 @@ Action()
 	web_add_header("Upgrade-Insecure-Requests", 
 		"1");
 
-	lr_think_time(40);
+	web_reg_find("Text=A Session ID has been created",
+		LAST);
 
 	web_url("SignOff Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
@@ -225,7 +241,7 @@ Action()
 
 	lr_end_transaction("transaction_logout",LR_AUTO);
 	
-	lr_end_transaction("buy_ticket_transaction", LR_AUTO);
+	lr_end_transaction("1_buy_ticket_transaction", LR_AUTO);
 
 	return 0;
 }

@@ -52,13 +52,14 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="transaction_open_link__*delimiter*__transaction_login__*delimiter*__transaction_click_itinerary__*delimiter*__transaction_delete_reservation__*delimiter*__transaction_logout"
+Order="2_cansel_reservation_transaction__*delimiter*__transaction_open_link__*delimiter*__transaction_login__*delimiter*__transaction_click_itinerary__*delimiter*__transaction_delete_reservation__*delimiter*__transaction_logout"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
 LastReplayedRunName=result1
 ActiveRunName=result1
 [Transactions]
+2_cansel_reservation_transaction=
 transaction_open_link=
 transaction_login=
 transaction_click_itinerary=

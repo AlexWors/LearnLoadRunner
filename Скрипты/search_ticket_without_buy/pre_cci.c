@@ -2601,7 +2601,7 @@ vuser_init()
 # 1 "Action.c" 1
 Action()
 {
-	lr_start_transaction("search_ticket_without_buy_transaction");
+	lr_start_transaction("4_search_ticket_without_buy_transaction");
 
 	web_set_sockets_option("SSL_VERSION", "AUTO");
 
@@ -2637,6 +2637,8 @@ Action()
 		"Mode=HTML", 
 		"LAST");
 	lr_end_transaction("transaction_open_link", 2);
+	
+	lr_think_time(5);
 
 	lr_start_transaction("transaction_login");
 
@@ -2652,8 +2654,6 @@ Action()
 
 	web_add_auto_header("Sec-Fetch-Site", 
 		"same-origin");
-
-	lr_think_time(16);
 	
 	web_reg_find("Text=User password was correct",
 		"LAST");
@@ -2676,6 +2676,8 @@ Action()
 		"LAST");
 
 	lr_end_transaction("transaction_login",2);
+	
+	lr_think_time(5);
 
 	lr_start_transaction("transaction_click_flights");
 
@@ -2684,8 +2686,9 @@ Action()
 
 	web_add_auto_header("Upgrade-Insecure-Requests", 
 		"1");
-
-	lr_think_time(30);
+	
+	web_reg_find("Text=User has returned to the search page",
+		"LAST");
 
 	web_url("Search Flights Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=search", 
@@ -2698,13 +2701,16 @@ Action()
 		"LAST");
 
 	lr_end_transaction("transaction_click_flights",2);
+	
+	lr_think_time(5);
 
 	lr_start_transaction("transaction_find_flight");
 
 	web_add_auto_header("Origin", 
 		"http://localhost:1080");
-
-	lr_think_time(47);
+	
+	web_reg_find("Text=Flight Selections",
+		"LAST");
 
 	web_submit_data("reservations.pl", 
 		"Action=http://localhost:1080/cgi-bin/reservations.pl", 
@@ -2732,9 +2738,12 @@ Action()
 
 	lr_end_transaction("transaction_find_flight",2);
 
-	lr_think_time(39);
+	lr_think_time(5);
 
 	lr_start_transaction("transaction_select_flight");
+	
+	web_reg_find("Text=Flight Reservation",
+		"LAST");
 
 	web_submit_data("reservations.pl_2", 
 		"Action=http://localhost:1080/cgi-bin/reservations.pl", 
@@ -2755,14 +2764,17 @@ Action()
 		"LAST");
 
 	lr_end_transaction("transaction_select_flight",2);
+	
+	lr_think_time(5);
 
 	lr_start_transaction("transaction_logout");
 
 	(web_remove_auto_header("Origin", "ImplicitGen=Yes", "LAST"));
 
 	(web_remove_auto_header("Sec-Fetch-User", "ImplicitGen=Yes", "LAST"));
-
-	lr_think_time(33);
+	
+	web_reg_find("Text=A Session ID has been created",
+		"LAST");
 
 	web_url("SignOff Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
@@ -2776,7 +2788,7 @@ Action()
 
 	lr_end_transaction("transaction_logout",2);
 	
-	lr_end_transaction("search_ticket_without_buy_transaction", 2);
+	lr_end_transaction("4_search_ticket_without_buy_transaction", 2);
 
 	return 0;
 }

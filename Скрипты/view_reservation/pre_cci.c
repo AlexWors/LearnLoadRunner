@@ -2601,7 +2601,7 @@ vuser_init()
 # 1 "Action.c" 1
 Action()
 {
-	lr_start_transaction("view_reservation_transaction");
+	lr_start_transaction("5_view_reservation_transaction");
 
 	web_set_sockets_option("SSL_VERSION", "AUTO");
 
@@ -2637,6 +2637,8 @@ Action()
 		"Mode=HTML", 
 		"LAST");
 	lr_end_transaction("transaction_open_link", 2);
+	
+	lr_think_time(5);
 
 	lr_start_transaction("transaction_login");
 
@@ -2652,8 +2654,6 @@ Action()
 
 	web_add_auto_header("Sec-Fetch-Site", 
 		"same-origin");
-
-	lr_think_time(22);
 	
 	web_reg_find("Text=User password was correct",
 		"LAST");
@@ -2676,6 +2676,8 @@ Action()
 		"LAST");
 
 	lr_end_transaction("transaction_login",2);
+	
+	lr_think_time(5);
 
 	lr_start_transaction("transaction_cliclk_itinerary");
 
@@ -2684,8 +2686,9 @@ Action()
 
 	web_add_auto_header("Upgrade-Insecure-Requests", 
 		"1");
-
-	lr_think_time(37);
+	
+	web_reg_find("Text=User wants the intineraries",
+		"LAST");
 
 	web_url("Itinerary Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
@@ -2698,12 +2701,15 @@ Action()
 		"LAST");
 
 	lr_end_transaction("transaction_cliclk_itinerary",2);
+	
+	lr_think_time(5);
 
 	lr_start_transaction("transaction_logout");
 
 	(web_remove_auto_header("Sec-Fetch-User", "ImplicitGen=Yes", "LAST"));
-
-	lr_think_time(16);
+	
+	web_reg_find("Text=A Session ID has been created",
+		"LAST");
 
 	web_url("SignOff Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
@@ -2717,7 +2723,7 @@ Action()
 
 	lr_end_transaction("transaction_logout",2);
 	
-	lr_end_transaction("view_reservation_transaction", 2);
+	lr_end_transaction("5_view_reservation_transaction", 2);
 
 	return 0;
 }

@@ -2601,6 +2601,7 @@ vuser_init()
 # 1 "Action.c" 1
 Action()
 {
+	lr_start_transaction("2_cansel_reservation_transaction");
 
 	web_set_sockets_option("SSL_VERSION", "AUTO");
 
@@ -2637,6 +2638,8 @@ Action()
 		"LAST");
 	
 	lr_end_transaction("transaction_open_link", 2);
+	
+	lr_think_time(5);
 
 	lr_start_transaction("transaction_login");
 
@@ -2652,8 +2655,6 @@ Action()
 
 	web_add_auto_header("Sec-Fetch-Site", 
 		"same-origin");
-
-	lr_think_time(6);
 
 	web_reg_find("Text=User password was correct",
 		"LAST");
@@ -2676,6 +2677,8 @@ Action()
 		"LAST");
 
 	lr_end_transaction("transaction_login",2);
+	
+	lr_think_time(5);
 
 	lr_start_transaction("transaction_click_itinerary");
 
@@ -2684,8 +2687,9 @@ Action()
 
 	web_add_auto_header("Upgrade-Insecure-Requests", 
 		"1");
-
-	lr_think_time(46);
+	
+	web_reg_find("Text=User wants the intineraries",
+		"LAST");
 
 	web_url("Itinerary Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
@@ -2698,47 +2702,31 @@ Action()
 		"LAST");
 
 	lr_end_transaction("transaction_click_itinerary",2);
+	
+	lr_think_time(5);
 
 	lr_start_transaction("transaction_delete_reservation");
+	
+	
 
 	web_add_header("Origin", 
 		"http://localhost:1080");
+	
+	web_reg_find("Text=!-- Flight #1",
+		"LAST");
 
-	lr_think_time(33);
-
-	web_submit_data("itinerary.pl", 
-		"Action=http://localhost:1080/cgi-bin/itinerary.pl", 
-		"Method=POST", 
-		"TargetFrame=", 
-		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/itinerary.pl", 
-		"Snapshot=t4.inf", 
-		"Mode=HTML", 
+	
+	web_submit_form("itinerary.pl",  
+		"Snapshot=t4.inf",  
 		"ITEMDATA", 
-		"Name=1", "Value=on", "ENDITEM", 
-		"Name=flightID", "Value=156815205-846239-JB", "ENDITEM", 
-		"Name=flightID", "Value=0-15-JB", "ENDITEM", 
-		"Name=flightID", "Value=209889653-2356-JB", "ENDITEM", 
-		"Name=flightID", "Value=209889653-3125-JB", "ENDITEM", 
-		"Name=flightID", "Value=209889653-3895-JB", "ENDITEM", 
-		"Name=flightID", "Value=209889653-4664-JB", "ENDITEM", 
-		"Name=flightID", "Value=209889653-5433-JB", "ENDITEM", 
-		"Name=flightID", "Value=209889653-6202-JB", "ENDITEM", 
-		"Name=flightID", "Value=209889653-6971-JB", "ENDITEM", 
-		"Name=removeFlights.x", "Value=41", "ENDITEM", 
-		"Name=removeFlights.y", "Value=5", "ENDITEM", 
-		"Name=.cgifields", "Value=6", "ENDITEM", 
-		"Name=.cgifields", "Value=3", "ENDITEM", 
-		"Name=.cgifields", "Value=7", "ENDITEM", 
-		"Name=.cgifields", "Value=9", "ENDITEM", 
-		"Name=.cgifields", "Value=2", "ENDITEM", 
-		"Name=.cgifields", "Value=8", "ENDITEM", 
-		"Name=.cgifields", "Value=1", "ENDITEM", 
-		"Name=.cgifields", "Value=4", "ENDITEM", 
-		"Name=.cgifields", "Value=5", "ENDITEM", 
+		"Name=1", "Value=on", "ENDITEM",  
+		"Name=removeFlights.x", "Value=72", "ENDITEM", 
+		"Name=removeFlights.y", "Value=1", "ENDITEM",  
 		"LAST");
 
 	lr_end_transaction("transaction_delete_reservation",2);
+	
+	lr_think_time(5);
 
 	lr_start_transaction("transaction_logout");
 
@@ -2746,8 +2734,9 @@ Action()
 
 	web_add_header("Sec-Fetch-User", 
 		"?1");
-
-	lr_think_time(35);
+	
+	web_reg_find("Text=A Session ID has been created and loaded into",
+		"LAST");
 
 	web_url("SignOff Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
@@ -2760,6 +2749,8 @@ Action()
 		"LAST");
 
 	lr_end_transaction("transaction_logout",2);
+	
+	lr_end_transaction("2_cansel_reservation_transaction", 2);
 
 	return 0;
 }
