@@ -11,7 +11,14 @@
     <FileEntry Name="search_ticket_without_buy.usr" Filter="4" />
     <FileEntry Name="default.cfg" Filter="4" />
     <FileEntry Name="default.usp" Filter="4" />
+    <FileEntry Name="search_ticket_without_buy.prm" Filter="2" />
     <FileEntry Name="globals.h" Filter="2" />
+    <FileEntry Name="NewParam.dat" Filter="2" />
+    <FileEntry Name="pref.dat" Filter="2" />
+    <FileEntry Name="pass.dat" Filter="2" />
+    <FileEntry Name="login.dat" Filter="2" />
+    <FileEntry Name="departCity.dat" Filter="2" />
+    <FileEntry Name="type.dat" Filter="2" />
     <FileEntry Name="combined_search_ticket_without_buy.c" Filter="2" />
     <FileEntry Name="pre_cci.c" Filter="2" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
@@ -30,6 +37,7 @@
     <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
     <FileEntry Name="search_ticket_without_buy.c.pickle" Filter="1" />
     <FileEntry Name="search_ticket_without_buy.ci" Filter="1" />
+    <FileEntry Name="search_ticket_without_buy.prm.bak" Filter="1" />
     <FileEntry Name="TransactionsData.db" Filter="1" />
     <FileEntry Name="UserTasks.xml" Filter="1" />
     <FileEntry Name="data\" Filter="1" />

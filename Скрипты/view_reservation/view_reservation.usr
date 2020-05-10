@@ -1,7 +1,7 @@
 [General]
 Type=Multi
 DefaultCfg=default.cfg
-ParameterFile=
+ParameterFile=view_reservation.prm
 GlobalParameterFile=
 NewFunctionHeader=1
 RunType=cci

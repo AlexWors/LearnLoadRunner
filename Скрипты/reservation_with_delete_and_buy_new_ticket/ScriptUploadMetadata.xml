@@ -13,18 +13,38 @@
     <FileEntry Name="default.usp" Filter="4" />
     <FileEntry Name="reservation_with_delete_and_buy_new_ticket.prm" Filter="2" />
     <FileEntry Name="globals.h" Filter="2" />
+    <FileEntry Name="NewParam.dat" Filter="2" />
+    <FileEntry Name="arriveCity.dat" Filter="2" />
+    <FileEntry Name="Pref.dat" Filter="2" />
+    <FileEntry Name="date.dat" Filter="2" />
+    <FileEntry Name="lastName.dat" Filter="2" />
     <FileEntry Name="login.dat" Filter="2" />
+    <FileEntry Name="firstName.dat" Filter="2" />
+    <FileEntry Name="Passenger.dat" Filter="2" />
+    <FileEntry Name="card.dat" Filter="2" />
+    <FileEntry Name="departCity.dat" Filter="2" />
     <FileEntry Name="pass.dat" Filter="2" />
     <FileEntry Name="combined_reservation_with_delete_and_buy_new_ticket.c" Filter="2" />
     <FileEntry Name="pre_cci.c" Filter="2" />
+    <FileEntry Name="121762716440.idx" Filter="1" />
+    <FileEntry Name="144219109440.idx" Filter="1" />
+    <FileEntry Name="198069739440.idx" Filter="1" />
+    <FileEntry Name="231512928440.idx" Filter="1" />
+    <FileEntry Name="245336418440.idx" Filter="1" />
     <FileEntry Name="24716151440.idx" Filter="1" />
+    <FileEntry Name="251340520440.idx" Filter="1" />
     <FileEntry Name="42567182440.idx" Filter="1" />
+    <FileEntry Name="4256718244_8FX.681.idx" Filter="1" />
     <FileEntry Name="4256718244_cac.857.idx" Filter="1" />
     <FileEntry Name="4256718244_IZu.375.idx" Filter="1" />
     <FileEntry Name="4256718244_L3t.579.idx" Filter="1" />
     <FileEntry Name="4256718244_Nvf.141.idx" Filter="1" />
     <FileEntry Name="4256718244_OkO.379.idx" Filter="1" />
     <FileEntry Name="4256718244_S9R.255.idx" Filter="1" />
+    <FileEntry Name="4256718244_Z1u.73.idx" Filter="1" />
+    <FileEntry Name="47938481440.idx" Filter="1" />
+    <FileEntry Name="49776270440.idx" Filter="1" />
+    <FileEntry Name="96533550440.idx" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
     <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />

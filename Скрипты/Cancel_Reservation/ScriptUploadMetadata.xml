@@ -11,13 +11,17 @@
     <FileEntry Name="Cancel_Reservation.usr" Filter="4" />
     <FileEntry Name="default.cfg" Filter="4" />
     <FileEntry Name="default.usp" Filter="4" />
+    <FileEntry Name="Cancel_Reservation.prm" Filter="2" />
     <FileEntry Name="globals.h" Filter="2" />
+    <FileEntry Name="login.dat" Filter="2" />
+    <FileEntry Name="pass.dat" Filter="2" />
     <FileEntry Name="combined_Cancel_Reservation.c" Filter="2" />
     <FileEntry Name="pre_cci.c" Filter="2" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
     <FileEntry Name="Cancel_Reservation.c.pickle" Filter="1" />
     <FileEntry Name="Cancel_Reservation.ci" Filter="1" />
+    <FileEntry Name="Cancel_Reservation.prm.bak" Filter="1" />
     <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
     <FileEntry Name="custom_body_variables.txt" Filter="1" />
     <FileEntry Name="logfile.log" Filter="1" />

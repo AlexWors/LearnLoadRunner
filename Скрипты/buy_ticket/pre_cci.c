@@ -2601,7 +2601,7 @@ vuser_init()
 # 1 "Action.c" 1
 Action()
 {
-	lr_start_transaction("buy_ticket_transaction");
+	lr_start_transaction("1_buy_ticket_transaction");
 
 	web_set_sockets_option("SSL_VERSION", "AUTO");
 
@@ -2716,6 +2716,17 @@ Action()
 	web_reg_find("Text=Flight departing from",
 		"LAST");
 
+ 
+	web_reg_save_param_attrib(
+		"ParamName=outboundFlight",
+		"TagName=input",
+		"Extract=value",
+		"Name=outboundFlight",
+		"Type=radio",
+		"SEARCH_FILTERS",
+		"IgnoreRedirections=No",
+		"LAST");
+
 	web_submit_data("reservations.pl", 
 		"Action=http://localhost:1080/cgi-bin/reservations.pl", 
 		"Method=POST", 
@@ -2750,22 +2761,22 @@ Action()
 		"LAST");
 
 	
-	web_submit_data("reservations.pl_2", 
-		"Action=http://localhost:1080/cgi-bin/reservations.pl", 
-		"Method=POST", 
-		"TargetFrame=", 
-		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/reservations.pl", 
-		"Snapshot=t5.inf", 
-		"Mode=HTML", 
-		"ITEMDATA", 
-		"Name=outboundFlight", "Value=020;491;05/07/2020", "ENDITEM", 
-		"Name=numPassengers", "Value=1", "ENDITEM", 
-		"Name=advanceDiscount", "Value=0", "ENDITEM", 
-		"Name=seatType", "Value=Business", "ENDITEM", 
-		"Name=seatPref", "Value=Aisle", "ENDITEM", 
-		"Name=reserveFlights.x", "Value=24", "ENDITEM", 
-		"Name=reserveFlights.y", "Value=6", "ENDITEM", 
+	web_submit_data("reservations.pl_2",
+		"Action=http://localhost:1080/cgi-bin/reservations.pl",
+		"Method=POST",
+		"TargetFrame=",
+		"RecContentType=text/html",
+		"Referer=http://localhost:1080/cgi-bin/reservations.pl",
+		"Snapshot=t5.inf",
+		"Mode=HTML",
+		"ITEMDATA",
+		"Name=outboundFlight", "Value={outboundFlight}", "ENDITEM",
+		"Name=numPassengers", "Value=1", "ENDITEM",
+		"Name=advanceDiscount", "Value=0", "ENDITEM",
+		"Name=seatType", "Value=Business", "ENDITEM",
+		"Name=seatPref", "Value=Aisle", "ENDITEM",
+		"Name=reserveFlights.x", "Value=24", "ENDITEM",
+		"Name=reserveFlights.y", "Value=6", "ENDITEM",
 		"LAST");
 
 	lr_end_transaction("transaction_select_flight",2);
@@ -2786,33 +2797,33 @@ Action()
 	web_reg_find("Text=Reservation Made!",
 		"LAST");
 
-	web_submit_data("reservations.pl_3", 
-		"Action=http://localhost:1080/cgi-bin/reservations.pl", 
-		"Method=POST", 
-		"TargetFrame=", 
-		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/reservations.pl", 
-		"Snapshot=t6.inf", 
-		"Mode=HTML", 
-		"ITEMDATA", 
-		"Name=firstName", "Value=Jojo", "ENDITEM", 
-		"Name=lastName", "Value=Bean", "ENDITEM", 
-		"Name=address1", "Value=", "ENDITEM", 
-		"Name=address2", "Value=", "ENDITEM", 
-		"Name=pass1", "Value=Jojo Bean", "ENDITEM", 
-		"Name=creditCard", "Value=123456789", "ENDITEM", 
-		"Name=expDate", "Value=12/20", "ENDITEM", 
-		"Name=oldCCOption", "Value=", "ENDITEM", 
-		"Name=numPassengers", "Value=1", "ENDITEM", 
-		"Name=seatType", "Value=Business", "ENDITEM", 
-		"Name=seatPref", "Value=Aisle", "ENDITEM", 
-		"Name=outboundFlight", "Value=020;491;05/07/2020", "ENDITEM", 
-		"Name=advanceDiscount", "Value=0", "ENDITEM", 
-		"Name=returnFlight", "Value=", "ENDITEM", 
-		"Name=JSFormSubmit", "Value=off", "ENDITEM", 
-		"Name=buyFlights.x", "Value=36", "ENDITEM", 
-		"Name=buyFlights.y", "Value=4", "ENDITEM", 
-		"Name=.cgifields", "Value=saveCC", "ENDITEM", 
+	web_submit_data("reservations.pl_3",
+		"Action=http://localhost:1080/cgi-bin/reservations.pl",
+		"Method=POST",
+		"TargetFrame=",
+		"RecContentType=text/html",
+		"Referer=http://localhost:1080/cgi-bin/reservations.pl",
+		"Snapshot=t6.inf",
+		"Mode=HTML",
+		"ITEMDATA",
+		"Name=firstName", "Value=Jojo", "ENDITEM",
+		"Name=lastName", "Value=Bean", "ENDITEM",
+		"Name=address1", "Value=", "ENDITEM",
+		"Name=address2", "Value=", "ENDITEM",
+		"Name=pass1", "Value=Jojo Bean", "ENDITEM",
+		"Name=creditCard", "Value=123456789", "ENDITEM",
+		"Name=expDate", "Value=12/20", "ENDITEM",
+		"Name=oldCCOption", "Value=", "ENDITEM",
+		"Name=numPassengers", "Value=1", "ENDITEM",
+		"Name=seatType", "Value=Business", "ENDITEM",
+		"Name=seatPref", "Value=Aisle", "ENDITEM",
+		"Name=outboundFlight", "Value={outboundFlight}", "ENDITEM",
+		"Name=advanceDiscount", "Value=0", "ENDITEM",
+		"Name=returnFlight", "Value=", "ENDITEM",
+		"Name=JSFormSubmit", "Value=off", "ENDITEM",
+		"Name=buyFlights.x", "Value=36", "ENDITEM",
+		"Name=buyFlights.y", "Value=4", "ENDITEM",
+		"Name=.cgifields", "Value=saveCC", "ENDITEM",
 		"LAST");
 
 	lr_end_transaction("transaction_payment_details",2);
@@ -2842,7 +2853,7 @@ Action()
 
 	lr_end_transaction("transaction_logout",2);
 	
-	lr_end_transaction("buy_ticket_transaction", 2);
+	lr_end_transaction("1_buy_ticket_transaction", 2);
 
 	return 0;
 }

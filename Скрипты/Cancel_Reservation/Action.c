@@ -68,8 +68,8 @@ Action()
 		"Mode=HTML", 
 		ITEMDATA, 
 		"Name=userSession", "Value={userSession}", ENDITEM, 
-		"Name=username", "Value=jojo", ENDITEM, 
-		"Name=password", "Value=bean", ENDITEM, 
+		"Name=username", "Value={login}", ENDITEM, 
+		"Name=password", "Value={pass}", ENDITEM, 
 		"Name=login.x", "Value=0", ENDITEM, 
 		"Name=login.y", "Value=0", ENDITEM, 
 		"Name=JSFormSubmit", "Value=off", ENDITEM, 
@@ -114,7 +114,6 @@ Action()
 	web_reg_find("Text=!-- Flight #1",
 		LAST);
 
-	
 	web_submit_form("itinerary.pl",  
 		"Snapshot=t4.inf",  
 		ITEMDATA, 

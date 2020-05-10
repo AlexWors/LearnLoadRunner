@@ -72,7 +72,7 @@
     "IsWinInetMode": false,
     "MaxUsedConnections": 20,
     "RecordedBrowser": "Chrome",
-    "RecordingDate": "май-05-2020",
+    "RecordingDate": "Р В РЎВР В Р’В°Р В РІвЂћвЂ“-05-2020",
     "RecordingDuration": 412250,
     "RecordingMode": "N/A",
     "RecordingTimeStamp": 1588716279,
@@ -568,5 +568,5 @@
     "IncludeInScript": false,
     "IsScriptIncludeWebSocket": false
   },
-  "NumberOfCorrelations": 19
+  "NumberOfCorrelations": 18
 }

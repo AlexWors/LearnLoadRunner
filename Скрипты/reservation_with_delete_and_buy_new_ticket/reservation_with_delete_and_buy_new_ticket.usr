@@ -69,3 +69,9 @@ transaction_find_flight=
 transaction_select_ticket=
 transaction_payment_details=
 transaction_logout=
+[ParameterSimulation]
+NumVusers=1
+IsDurationIndefinite=0
+NumIterationsUntilCompletion=1
+IterationFromRTS=0
+NumIterationIndefinitely=1
