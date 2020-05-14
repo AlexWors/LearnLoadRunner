@@ -1,0 +1,2 @@
+"outboundFlight=630%3B87%3B05%2F14%2F2020&numPassengers=1&advanceDiscount=0&seatType=Business&s"
+"eatPref=Window&reserveFlights.x=24&reserveFlights.y=6"

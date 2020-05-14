@@ -29,18 +29,33 @@
     <FileEntry Name="126368960440.idx" Filter="1" />
     <FileEntry Name="129788421440.idx" Filter="1" />
     <FileEntry Name="134928993440.idx" Filter="1" />
+    <FileEntry Name="140145700440.idx" Filter="1" />
+    <FileEntry Name="145692941440.idx" Filter="1" />
+    <FileEntry Name="169048729440.idx" Filter="1" />
+    <FileEntry Name="173780932440.idx" Filter="1" />
+    <FileEntry Name="195411156440.idx" Filter="1" />
+    <FileEntry Name="200128580440.idx" Filter="1" />
+    <FileEntry Name="4069732440.idx" Filter="1" />
     <FileEntry Name="82675336440.idx" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
     <FileEntry Name="buy_ticket.c.pickle" Filter="1" />
     <FileEntry Name="buy_ticket.ci" Filter="1" />
     <FileEntry Name="buy_ticket.prm.bak" Filter="1" />
+    <FileEntry Name="buy_ticket.sdf" Filter="1" />
     <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
     <FileEntry Name="custom_body_variables.txt" Filter="1" />
     <FileEntry Name="logfile.log" Filter="1" />
     <FileEntry Name="lrw_custom_body.h" Filter="1" />
     <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv4DF.149.log" Filter="1" />
+    <FileEntry Name="mdrvauI.239.log" Filter="1" />
+    <FileEntry Name="mdrvBOT.39.log" Filter="1" />
+    <FileEntry Name="mdrvDct.219.log" Filter="1" />
+    <FileEntry Name="mdrvGBC.379.log" Filter="1" />
+    <FileEntry Name="mdrvloz.887.log" Filter="1" />
     <FileEntry Name="mdrvME6.489.log" Filter="1" />
+    <FileEntry Name="mdrvNAw.289.log" Filter="1" />
     <FileEntry Name="mdrvq5j.189.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />

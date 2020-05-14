@@ -54,7 +54,7 @@ vuser_end=cci
 [TransactionsOrder]
 Order="3_reservation_with_delete_and_buy_new_tcket_transaction__*delimiter*__transaction_open_link__*delimiter*__transaction_login__*delimiter*__transaction_click_itinerary__*delimiter*__transaction_delete_reservation__*delimiter*__transaction_click_flights__*delimiter*__transaction_find_flight__*delimiter*__transaction_select_ticket__*delimiter*__transaction_payment_details__*delimiter*__transaction_logout"
 [StateManagement]
-LastReplayStatus=2
+LastReplayStatus=1
 [ActiveReplay]
 LastReplayedRunName=result1
 ActiveRunName=result1

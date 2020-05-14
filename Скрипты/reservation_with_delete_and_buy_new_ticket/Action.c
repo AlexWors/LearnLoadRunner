@@ -2,7 +2,7 @@ Action()
 {
 	lr_start_transaction("3_reservation_with_delete_and_buy_new_tcket_transaction");
 
-	web_set_sockets_option("SSL_VERSION", "AUTO");
+//	web_set_sockets_option("SSL_VERSION", "AUTO");
 
 	web_add_auto_header("Sec-Fetch-Site", 
 		"none");
@@ -111,41 +111,15 @@ Action()
 	web_reg_find("Fail=Found",
 		"Text=Unfortunately, we could not delete",
 		LAST);
+	web_reg_find("Text=Flights List",
+		LAST);
 
-	web_submit_data("itinerary.pl",
-		"Action=http://localhost:1080/cgi-bin/itinerary.pl",
-		"Method=POST",
-		"TargetFrame=",
-		"RecContentType=text/html",
-		"Referer=http://localhost:1080/cgi-bin/itinerary.pl",
-		"Snapshot=t4.inf",
-		"Mode=HTML",
-		ITEMDATA,
-		"Name=1", "Value=on", ENDITEM,
-		"Name=flightID", "Value=0-7-JB", ENDITEM,
-		"Name=flightID", "Value=209889653-1587-JB", ENDITEM,
-		"Name=flightID", "Value=209889653-2356-JB", ENDITEM,
-		"Name=flightID", "Value=209889653-3125-JB", ENDITEM,
-		"Name=flightID", "Value=209889653-3895-JB", ENDITEM,
-		"Name=flightID", "Value=209889653-4664-JB", ENDITEM,
-		"Name=flightID", "Value=209889653-5433-JB", ENDITEM,
-		"Name=flightID", "Value=209889653-6202-JB", ENDITEM,
-		"Name=flightID", "Value=251445203-6960-JB", ENDITEM,
-		"Name=flightID", "Value=251445203-7730-JB", ENDITEM,
-		"Name=flightID", "Value=251445203-8499-JB", ENDITEM,
-		"Name=removeFlights.x", "Value=27", ENDITEM,
-		"Name=removeFlights.y", "Value=12", ENDITEM,
-		"Name=.cgifields", "Value=6", ENDITEM,
-		"Name=.cgifields", "Value=11", ENDITEM,
-		"Name=.cgifields", "Value=3", ENDITEM,
-		"Name=.cgifields", "Value=7", ENDITEM,
-		"Name=.cgifields", "Value=9", ENDITEM,
-		"Name=.cgifields", "Value=2", ENDITEM,
-		"Name=.cgifields", "Value=8", ENDITEM,
-		"Name=.cgifields", "Value=1", ENDITEM,
-		"Name=.cgifields", "Value=4", ENDITEM,
-		"Name=.cgifields", "Value=10", ENDITEM,
-		"Name=.cgifields", "Value=5", ENDITEM,
+	web_submit_form("itinerary.pl",  
+		"Snapshot=t4.inf",  
+		ITEMDATA, 
+		"Name=1", "Value=on", ENDITEM,  
+		"Name=removeFlights.x", "Value=72", ENDITEM, 
+		"Name=removeFlights.y", "Value=1", ENDITEM,  
 		LAST);
 
 	lr_end_transaction("transaction_delete_reservation",LR_AUTO);

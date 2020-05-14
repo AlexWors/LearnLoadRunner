@@ -2,7 +2,7 @@ Action()
 {
 	lr_start_transaction("4_search_ticket_without_buy_transaction");
 
-	web_set_sockets_option("SSL_VERSION", "AUTO");
+//	web_set_sockets_option("SSL_VERSION", "AUTO");
 
 	web_add_auto_header("Sec-Fetch-Site", 
 		"none");

@@ -1,6 +1,6 @@
 POST /cgi-bin/reservations.pl HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
-Referer: http://localhost:1080/cgi-bin/reservations.pl
+Referer: http://localhost:1080/cgi-bin/reservations.pl?page=welcome
 Sec-Fetch-Site: same-origin
 Sec-Fetch-Dest: frame
 Sec-Fetch-Mode: navigate
@@ -13,6 +13,6 @@ Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
 Accept: */*
 Connection: Keep-Alive
 Host: localhost:1080
-Cookie: MSO=SID&1589024458; MTUserInfo=firstName&Jojo&address2&&username&jojo&hash&47&lastName&Bean%0A&address1&&creditCard&&expDate&%0A
-Content-Length: 145
+Cookie: MSO=SID&1589379002; MTUserInfo=firstName&Jojo&address2&&username&jojo&hash&47&lastName&Bean%0A&address1&&creditCard&&expDate&%0A
+Content-Length: 237
 
