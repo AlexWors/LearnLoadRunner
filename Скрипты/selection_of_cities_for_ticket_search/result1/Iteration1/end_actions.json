@@ -1,0 +1,29 @@
+[
+    {
+        "actionName": "vuser_end",
+        "steps": [
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: SignOff Button",
+                "infFile": "t6.inf",
+                "time": 1589752834129
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "transaction_logout",
+                "rawStartTime": 1589752833937,
+                "rawEndTime": 1589752834130,
+                "thinkTime": 0.0,
+                "wastedTime": 0.017041921615600587
+            },
+            {
+                "transactionName": "3_selection_of_cities_for_ticket_search",
+                "rawStartTime": 1589752812524,
+                "rawEndTime": 1589752834130,
+                "thinkTime": 20.00139,
+                "wastedTime": 0.5018060207366943
+            }
+        ]
+    }
+]

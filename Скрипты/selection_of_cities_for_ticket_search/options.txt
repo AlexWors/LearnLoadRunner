@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\bushi\LearnLoadRunner\Скрипты\selection_of_cities_for_ticket_search
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\bushi\learnloadrunner\скрипты\selection_of_cities_for_ticket_search\\logfile.log
+c:\users\bushi\learnloadrunner\скрипты\selection_of_cities_for_ticket_search\\combined_reservation_with_delete_and_buy_new_ticket.c
+c:\users\bushi\learnloadrunner\скрипты\selection_of_cities_for_ticket_search\\pre_cci.c

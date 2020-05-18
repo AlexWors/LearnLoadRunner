@@ -152,7 +152,7 @@ Action()
 
 	lr_think_time(5);
 
-	lr_start_transaction("transaction_select_flight");
+	lr_start_transaction("transaction_select_ticket");
 
 	web_reg_find("Text=Payment Details",
 		LAST);
@@ -176,10 +176,10 @@ Action()
 		"Name=reserveFlights.y", "Value=6", ENDITEM,
 		LAST);
 
-	lr_end_transaction("transaction_select_flight",LR_AUTO);
+	lr_end_transaction("transaction_select_ticket",LR_AUTO);
 	
 	lr_think_time(5);
-
+	
 	lr_start_transaction("transaction_payment_details");
 
 	web_revert_auto_header("Origin");

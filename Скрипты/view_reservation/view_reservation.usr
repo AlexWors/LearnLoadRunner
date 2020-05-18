@@ -36,9 +36,9 @@ Default Profile=default.cfg
 [ExtraFiles]
 globals.h=
 [Modified Actions]
-vuser_init=0
+vuser_init=1
 Action=1
-vuser_end=0
+vuser_end=1
 [Recorded Actions]
 vuser_init=0
 Action=1
@@ -52,7 +52,7 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="5_view_reservation_transaction__*delimiter*__transaction_open_link__*delimiter*__transaction_login__*delimiter*__transaction_cliclk_itinerary__*delimiter*__transaction_logout"
+Order="5_view_reservation_transaction__*delimiter*__transaction_open_link__*delimiter*__transaction_login__*delimiter*__transaction_click_itinerary__*delimiter*__transaction_logout"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
@@ -62,5 +62,5 @@ ActiveRunName=result1
 5_view_reservation_transaction=
 transaction_open_link=
 transaction_login=
-transaction_cliclk_itinerary=
+transaction_click_itinerary=
 transaction_logout=

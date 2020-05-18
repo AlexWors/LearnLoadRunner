@@ -1,0 +1,48 @@
+[
+    {
+        "actionName": "vuser_init",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: WebTours",
+                "infFile": "t1.inf",
+                "time": 1589752813066
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: login.pl",
+                "infFile": "t2.inf",
+                "time": 1589752818412
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: Search Flights Button",
+                "infFile": "t3.inf",
+                "time": 1589752823687
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "transaction_open_link",
+                "rawStartTime": 1589752812538,
+                "rawEndTime": 1589752813066,
+                "thinkTime": 0.0,
+                "wastedTime": 0.27895641326904299
+            },
+            {
+                "transactionName": "transaction_login",
+                "rawStartTime": 1589752818067,
+                "rawEndTime": 1589752818412,
+                "thinkTime": 0.0,
+                "wastedTime": 0.07512187957763672
+            },
+            {
+                "transactionName": "transaction_click_flights",
+                "rawStartTime": 1589752823413,
+                "rawEndTime": 1589752823687,
+                "thinkTime": 0.0,
+                "wastedTime": 0.06685400009155274
+            }
+        ]
+    }
+]

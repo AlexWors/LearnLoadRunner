@@ -103,24 +103,37 @@ Action()
 	lr_end_transaction("transaction_click_itinerary",LR_AUTO);
 	
 	lr_think_time(5);
-
+	
 	lr_start_transaction("transaction_delete_reservation");
 	
-	
-
-	web_add_header("Origin", 
+web_add_header("Origin", 
 		"http://localhost:1080");
-	
-	web_reg_find("Text=!-- Flight #1",
+
+	web_add_header("Sec-Fetch-Dest", 
+		"frame");
+
+	web_add_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_header("Sec-Fetch-Site", 
+		"same-origin");
+
+	web_add_header("Sec-Fetch-User", 
+		"?1");
+
+	web_add_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_reg_find("text=Flights List",
 		LAST);
 
-	web_submit_form("itinerary.pl",  
-		"Snapshot=t4.inf",  
-		ITEMDATA, 
-		"Name=1", "Value=on", ENDITEM,  
-		"Name=removeFlights.x", "Value=72", ENDITEM, 
-		"Name=removeFlights.y", "Value=1", ENDITEM,  
-		LAST);
+	web_submit_form("itinerary.pl", 
+    "Snapshot=t100.inf", 
+    ITEMDATA, 
+    "Name=1", "Value=on", ENDITEM,  
+    "Name=removeFlights.x", "Value=72", ENDITEM, 
+    "Name=removeFlights.y", "Value=1", ENDITEM, 
+    LAST);
 
 	lr_end_transaction("transaction_delete_reservation",LR_AUTO);
 	

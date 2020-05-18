@@ -149,8 +149,8 @@ Action()
 	lr_end_transaction("transaction_find_flight",LR_AUTO);
 
 	lr_think_time(5);
-
-	lr_start_transaction("transaction_select_flight");
+	
+	lr_start_transaction("transaction_select_ticket");
 	
 	web_reg_find("Text=Flight Reservation",
 		LAST);
@@ -173,7 +173,7 @@ Action()
 		"Name=reserveFlights.y", "Value=5", ENDITEM,
 		LAST);
 
-	lr_end_transaction("transaction_select_flight",LR_AUTO);
+	lr_end_transaction("transaction_select_ticket",LR_AUTO);
 	
 	lr_think_time(5);
 
@@ -199,6 +199,6 @@ Action()
 	lr_end_transaction("transaction_logout",LR_AUTO);
 	
 	lr_end_transaction("4_search_ticket_without_buy_transaction", LR_AUTO);
-
+	
 	return 0;
 }
