@@ -1,29 +1,7 @@
 [
     {
         "actionName": "vuser_end",
-        "steps": [
-            {
-                "stepId": "STEP7",
-                "stepName": "Url: SignOff Button",
-                "infFile": "t8.inf",
-                "time": 1589795945368
-            }
-        ],
-        "transactions": [
-            {
-                "transactionName": "transaction_logout",
-                "rawStartTime": 1589795945139,
-                "rawEndTime": 1589795945369,
-                "thinkTime": 0.0,
-                "wastedTime": 0.05503082275390625
-            },
-            {
-                "transactionName": "1_buy_ticket_transaction",
-                "rawStartTime": 1589795913292,
-                "rawEndTime": 1589795945369,
-                "thinkTime": 30.0031,
-                "wastedTime": 0.6773538589477539
-            }
-        ]
+        "steps": [],
+        "transactions": []
     }
 ]

@@ -2594,6 +2594,13 @@ void
 # 1 "vuser_init.c" 1
 vuser_init()
 {
+	return 0;
+}
+# 4 "c:\\users\\bushi\\learnloadrunner\\\361\352\360\350\357\362\373\\buy_ticket\\\\combined_buy_ticket.c" 2
+
+# 1 "Action.c" 1
+Action()
+{
 	lr_start_transaction("1_buy_ticket_transaction");
 
  
@@ -2633,7 +2640,7 @@ vuser_init()
 	
 	lr_end_transaction("transaction_open_link", 2);
 
-	lr_think_time(5);
+	lr_think_time(2);
 
 	lr_start_transaction("transaction_login");
 
@@ -2672,7 +2679,7 @@ vuser_init()
 
 	lr_end_transaction("transaction_login",2);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 
 	lr_start_transaction("transaction_click_flights");
 
@@ -2697,7 +2704,7 @@ vuser_init()
 
 	lr_end_transaction("transaction_click_flights",2);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 
 	lr_start_transaction("transaction_find_flight");
 
@@ -2744,7 +2751,7 @@ vuser_init()
 
 	lr_end_transaction("transaction_find_flight",2);
 
-	lr_think_time(5);
+	lr_think_time(2);
 
 	lr_start_transaction("transaction_select_ticket");
 
@@ -2772,14 +2779,8 @@ vuser_init()
 
 	lr_end_transaction("transaction_select_ticket",2);
 	
-	lr_think_time(5);
-	return 0;
-}
-# 4 "c:\\users\\bushi\\learnloadrunner\\\361\352\360\350\357\362\373\\buy_ticket\\\\combined_buy_ticket.c" 2
-
-# 1 "Action.c" 1
-Action()
-{
+	lr_think_time(2);
+	
 	lr_start_transaction("transaction_payment_details");
 
 	(web_remove_auto_header("Origin", "ImplicitGen=Yes", "LAST"));
@@ -2825,16 +2826,7 @@ Action()
 
 	lr_end_transaction("transaction_payment_details",2);
 	
-	
-
-	return 0;
-}
-# 5 "c:\\users\\bushi\\learnloadrunner\\\361\352\360\350\357\362\373\\buy_ticket\\\\combined_buy_ticket.c" 2
-
-# 1 "vuser_end.c" 1
-vuser_end()
-{
-	lr_think_time(5);
+	lr_think_time(2);
 
 	lr_start_transaction("transaction_logout");
 
@@ -2860,6 +2852,14 @@ vuser_end()
 	lr_end_transaction("transaction_logout",2);
 	
 	lr_end_transaction("1_buy_ticket_transaction", 2);
+
+	return 0;
+}
+# 5 "c:\\users\\bushi\\learnloadrunner\\\361\352\360\350\357\362\373\\buy_ticket\\\\combined_buy_ticket.c" 2
+
+# 1 "vuser_end.c" 1
+vuser_end()
+{
 	return 0;
 }
 # 6 "c:\\users\\bushi\\learnloadrunner\\\361\352\360\350\357\362\373\\buy_ticket\\\\combined_buy_ticket.c" 2

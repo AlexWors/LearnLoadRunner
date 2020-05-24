@@ -1,1234 +1,1233 @@
-Virtual User Script started at: 18.05.2020 12:58:33
+Virtual User Script started at: 22.05.2020 20:40:42
 Starting action vuser_init.
 Web Turbo Replay of LoadRunner 2020.0.0 for Windows 10; build 793 (ноя 27 2019 19:51:20)  	[MsgId: MMSG-26983]
 Run mode: HTML  	[MsgId: MMSG-26993]
 Replay user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36  	[MsgId: MMSG-26988]
 Runtime Settings file: "C:\Users\bushi\LearnLoadRunner\Скрипты\buy_ticket\\default.cfg"  	[MsgId: MMSG-27141]
-vuser_init.c(3): Notify: Transaction "1_buy_ticket_transaction" started.
-vuser_init.c(7): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
-vuser_init.c(7): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
-vuser_init.c(10): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
-vuser_init.c(10): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
-vuser_init.c(13): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
-vuser_init.c(13): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
-vuser_init.c(16): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
-vuser_init.c(16): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
-vuser_init.c(19): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
-vuser_init.c(19): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
-vuser_init.c(22): Notify: Transaction "transaction_open_link" started.
-vuser_init.c(25): web_reg_save_param started  	[MsgId: MMSG-26355]
-vuser_init.c(25): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
-vuser_init.c(30): web_url("WebTours") started  	[MsgId: MMSG-26355]
-vuser_init.c(30): t=790ms: 298-byte response headers for "http://localhost:1080/WebTours/" (RelFrameId=1, Internal ID=1)
-vuser_init.c(30):     HTTP/1.1 200 OK\r\n
-vuser_init.c(30):     Date: Mon, 18 May 2020 09:58:33 GMT\r\n
-vuser_init.c(30):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(30):     Last-Modified: Tue, 28 Apr 2020 12:55:54 GMT\r\n
-vuser_init.c(30):     ETag: "100000006f417-16e-5a4595a1ef3e1"\r\n
-vuser_init.c(30):     Accept-Ranges: bytes\r\n
-vuser_init.c(30):     Content-Length: 366\r\n
-vuser_init.c(30):     Keep-Alive: timeout=5, max=100\r\n
-vuser_init.c(30):     Connection: Keep-Alive\r\n
-vuser_init.c(30):     Content-Type: text/html\r\n
-vuser_init.c(30):     \r\n
-vuser_init.c(30): t=819ms: 366-byte response body for "http://localhost:1080/WebTours/" (RelFrameId=1, Internal ID=1)
-vuser_init.c(30):     <HTML>\n
-vuser_init.c(30):     <HEAD>\n
-vuser_init.c(30):     <title>Web Tours</title>\n
-vuser_init.c(30):     <frameset rows = "65,*" border="1" bordercolor="#E0E7F1">\n
-vuser_init.c(30):     <frame name="header" src="header.html" scrolling="no" noresize="noresize" marginheight="2"
-vuser_init.c(30):      marginwidth="2"/>\n
-vuser_init.c(30):     <frame name="body" src="/cgi-bin/welcome.pl?signOff=true" scrolling="auto" noresize="nores
-vuser_init.c(30):     ize" marginheight="2" marginwidth="2" />\n
-vuser_init.c(30):     </frameset>\n
-vuser_init.c(30):     </HEAD>\n
-vuser_init.c(30):     </HTML>\n
-vuser_init.c(30):     \n
-vuser_init.c(30): Detected non-resource "http://localhost:1080/WebTours/header.html" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
-vuser_init.c(30): Detected non-resource "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
-vuser_init.c(30): t=878ms: 298-byte response headers for "http://localhost:1080/WebTours/header.html" (RelFrameId=1.1, Internal ID=2)
-vuser_init.c(30):     HTTP/1.1 200 OK\r\n
-vuser_init.c(30):     Date: Mon, 18 May 2020 09:58:33 GMT\r\n
-vuser_init.c(30):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(30):     Last-Modified: Tue, 28 Apr 2020 12:55:54 GMT\r\n
-vuser_init.c(30):     ETag: "100000006f415-2c6-5a4595a1dbb92"\r\n
-vuser_init.c(30):     Accept-Ranges: bytes\r\n
-vuser_init.c(30):     Content-Length: 710\r\n
-vuser_init.c(30):     Keep-Alive: timeout=5, max=100\r\n
-vuser_init.c(30):     Connection: Keep-Alive\r\n
-vuser_init.c(30):     Content-Type: text/html\r\n
-vuser_init.c(30):     \r\n
-vuser_init.c(30): t=889ms: 710-byte response body for "http://localhost:1080/WebTours/header.html" (RelFrameId=1.1, Internal ID=2)
-vuser_init.c(30):     <!DOCTYPE html>\n
-vuser_init.c(30):     <HTML xmlns="http://www.w3.org/1999/xhtml">\n
-vuser_init.c(30):     <HEAD></HEAD>\n
-vuser_init.c(30):     <BODY bgcolor="#003366" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0">\n
-vuser_init.c(30):     \t\t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
-vuser_init.c(30):     bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \n
-vuser_init.c(30):     \t\t<table width="100%" border="0" cellspacing="0" cellpadding="0">\n
-vuser_init.c(30):     \t\t\t<tr>\n
-vuser_init.c(30):     \t\t\t\t<td align="left" valign="middle" width="50%"><img src="images/hp_logo.png" alt="" 
-vuser_init.c(30):     height="45" width="69" align="absmiddle" border="0"/><img src="images/webtours.png" alt=""
-vuser_init.c(30):      height="45" width="130" align="absmiddle" border="0"/></td>\n
-vuser_init.c(30):     \t\t\t\t<td align="right"></td>\n
-vuser_init.c(30):     \t\t\t\t<td></td>\n
-vuser_init.c(30):     \t\t\t</tr>\n
-vuser_init.c(30):     \t\t</table>\n
-vuser_init.c(30):     \t</BODY>\n
-vuser_init.c(30):     </HTML>
-vuser_init.c(30): Found resource "http://localhost:1080/WebTours/images/hp_logo.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
-vuser_init.c(30): Found resource "http://localhost:1080/WebTours/images/webtours.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
-vuser_init.c(30): t=905ms: 297-byte response headers for "http://localhost:1080/WebTours/images/hp_logo.png" (RelFrameId=, Internal ID=4)
-vuser_init.c(30):     HTTP/1.1 200 OK\r\n
-vuser_init.c(30):     Date: Mon, 18 May 2020 09:58:33 GMT\r\n
-vuser_init.c(30):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(30):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
-vuser_init.c(30):     ETag: "100000006f42e-259-5a4595a28ae89"\r\n
-vuser_init.c(30):     Accept-Ranges: bytes\r\n
-vuser_init.c(30):     Content-Length: 601\r\n
-vuser_init.c(30):     Keep-Alive: timeout=5, max=99\r\n
-vuser_init.c(30):     Connection: Keep-Alive\r\n
-vuser_init.c(30):     Content-Type: image/png\r\n
-vuser_init.c(30):     \r\n
-vuser_init.c(30): t=908ms: 601-byte response body for "http://localhost:1080/WebTours/images/hp_logo.png" (RelFrameId=, Internal ID=4)
-vuser_init.c(30): t=913ms: 300-byte response headers for "http://localhost:1080/WebTours/images/webtours.png" (RelFrameId=, Internal ID=5)
-vuser_init.c(30):     HTTP/1.1 200 OK\r\n
-vuser_init.c(30):     Date: Mon, 18 May 2020 09:58:33 GMT\r\n
-vuser_init.c(30):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(30):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
-vuser_init.c(30):     ETag: "100000006f43a-105b-5a4595a2cb90d"\r\n
-vuser_init.c(30):     Accept-Ranges: bytes\r\n
-vuser_init.c(30):     Content-Length: 4187\r\n
-vuser_init.c(30):     Keep-Alive: timeout=5, max=100\r\n
-vuser_init.c(30):     Connection: Keep-Alive\r\n
-vuser_init.c(30):     Content-Type: image/png\r\n
-vuser_init.c(30):     \r\n
-vuser_init.c(30): t=916ms: 4187-byte response body for "http://localhost:1080/WebTours/images/webtours.png" (RelFrameId=, Internal ID=5)
-vuser_init.c(30): t=949ms: 328-byte response headers for "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" (RelFrameId=1.2, Internal ID=3)
-vuser_init.c(30):     HTTP/1.1 200 OK\r\n
-vuser_init.c(30):     Date: Mon, 18 May 2020 09:58:33 GMT\r\n
-vuser_init.c(30):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(30):     Set-Cookie: MSO=SID&1589795913; path=/\r\n
-vuser_init.c(30):     Set-Cookie: MTUserInfo=; path=/; expires=Sun, 17-May-2020 09:58:33 GMT\r\n
-vuser_init.c(30):     Keep-Alive: timeout=5, max=100\r\n
-vuser_init.c(30):     Connection: Keep-Alive\r\n
-vuser_init.c(30):     Transfer-Encoding: chunked\r\n
-vuser_init.c(30):     Content-Type: text/html; charset=ISO-8859-1\r\n
-vuser_init.c(30):     \r\n
-vuser_init.c(30): t=951ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" (RelFrameId=1.2, Internal ID=3)
-vuser_init.c(30):     2ae\r\n
-vuser_init.c(30): t=951ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" (RelFrameId=1.2, Internal ID=3)
-vuser_init.c(30):     \r\n
-vuser_init.c(30): t=952ms: 686-byte chunked response body for "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" (RelFrameId=1.2, Internal ID=3)
-vuser_init.c(30):     <!-- \n
-vuser_init.c(30):      A Session ID has been created and loaded into a cookie called MSO.\n
-vuser_init.c(30):      Also, the server options have been loaded into the cookie called\n
-vuser_init.c(30):      MSO as well.  The server options can be set via the Admin page.\n
-vuser_init.c(30):      --->\n
-vuser_init.c(30):     \n
-vuser_init.c(30):     <html>\n
-vuser_init.c(30):     <title>Web Tours</title>\n
-vuser_init.c(30):        <!-- Frame Set -->\n
-vuser_init.c(30):        <frameset cols="160,*" border="1" frameborder="1">\n
-vuser_init.c(30):           <!-- Navigation Frame -->\n
-vuser_init.c(30):           <frame src="nav.pl?in=home" name="navbar" marginheight="2" marginwidth="2" \n
-vuser_init.c(30):                 noresize="noresize" scrolling="auto"/>\n
-vuser_init.c(30):           <!-- Home Frame -->\n
-vuser_init.c(30):           <frame src="/WebTours/home.html" name="info" marginheight="2" marginwidth="2" \n
-vuser_init.c(30):                 noresize="noresize" scrolling="auto"/>\n
-vuser_init.c(30):        </frameset>\n
-vuser_init.c(30):     </html>\n
-vuser_init.c(30):     \n
-vuser_init.c(30):     </body>\n
-vuser_init.c(30):     </html>
-vuser_init.c(30): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
-vuser_init.c(30): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
-vuser_init.c(30): t=956ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" (RelFrameId=1.2, Internal ID=3)
-vuser_init.c(30):     0\r\n
-vuser_init.c(30):     \r\n
-vuser_init.c(30): t=972ms: 298-byte response headers for "http://localhost:1080/WebTours/home.html" (RelFrameId=1.2.2, Internal ID=7)
-vuser_init.c(30):     HTTP/1.1 200 OK\r\n
-vuser_init.c(30):     Date: Mon, 18 May 2020 09:58:33 GMT\r\n
-vuser_init.c(30):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(30):     Last-Modified: Tue, 28 Apr 2020 12:55:54 GMT\r\n
-vuser_init.c(30):     ETag: "100000006f416-551-5a4595a1e636f"\r\n
-vuser_init.c(30):     Accept-Ranges: bytes\r\n
-vuser_init.c(30):     Content-Length: 1361\r\n
-vuser_init.c(30):     Keep-Alive: timeout=5, max=99\r\n
-vuser_init.c(30):     Connection: Keep-Alive\r\n
-vuser_init.c(30):     Content-Type: text/html\r\n
-vuser_init.c(30):     \r\n
-vuser_init.c(30): t=974ms: 1361-byte response body for "http://localhost:1080/WebTours/home.html" (RelFrameId=1.2.2, Internal ID=7)
-vuser_init.c(30):     <HTML>\n
-vuser_init.c(30):     <HEAD>\n
-vuser_init.c(30):     \t<title>Web Tours</title>\n
-vuser_init.c(30):     </HEAD>\n
-vuser_init.c(30):     <style>\n
-vuser_init.c(30):     \tblockquote {font-family: tahoma; font-size : 10pt}\n
-vuser_init.c(30):     \tH1 {font-family: tahoma; font-size : 22pt; color: #003366}\n
-vuser_init.c(30):     \tsmall {font-family: tahoma; font-size : 8pt}\n
-vuser_init.c(30):     \tH3{font-family: tahoma; font-size : 10pt; color: black}\n
-vuser_init.c(30):     \tA {FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Tahoma; TEXT-DECORATIO
-vuser_init.c(30):     N: none}\n
-vuser_init.c(30):     \tA:hover{ FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #993333; FONT-FAMILY: Tahoma;TEXT-DE
-vuser_init.c(30):     CORATION: underline}\n
-vuser_init.c(30):     \tTD {font-family: tahoma; font-size : 10pt; color: black}\n
-vuser_init.c(30):     </style>\n
-vuser_init.c(30):     <body bgcolor="#e0e7f1">\n
-vuser_init.c(30):     <BR/>\n
-vuser_init.c(30):     <BR/>\n
-vuser_init.c(30):     <BR/>\n
-vuser_init.c(30):     <br/>\n
-vuser_init.c(30):     <table border="0">\n
-vuser_init.c(30):     <tr><td></td></tr>\n
-vuser_init.c(30):     <TR><TD></TD></TR>\n
-vuser_init.c(30):     <TR><TD>\n
-vuser_init.c(30):     <blockquote>\n
-vuser_init.c(30):     <H1><b>Web Tours</b></H1>\n
-vuser_init.c(30):     Welcome to the Web Tours site.\n
-vuser_init.c(30):     <br/>\n
-vuser_init.c(30):     To make reservations,please enter your account information to the left.\n
-vuser_init.c(30):     <br/>\n
-vuser_init.c(30):     If you haven't registered yet, <A href="/cgi-bin/login.pl?username=&amp;password=&amp;getI
-vuser_init.c(30):     nfo=true" ><B>sign up now</B></A> to get access to all our resources.\n
-vuser_init.c(30):     <br/>\n
-vuser_init.c(30):     To configure the server options, use <A href="/cgi-bin/admin.pl" target="body" ><b>adminis
-vuser_init.c(30):     tration</b></A> link.\n
-vuser_init.c(30):     <br/><br/><br/><br/><br/><br/>\n
-vuser_init.c(30):     <br/><small>\n
-vuser_init.c(30):     This product uses parts of the SMT Kernel, Copyright (c) 1991-99 <A href="http://www.imati
-vuser_init.c(30):     x.com" target="new"><B><small>iMatix Corporation</small></B></A> \n
-vuser_init.c(30):     </small>\n
-vuser_init.c(30):     </blockquote></TD>\n
-vuser_init.c(30):     <TD></TD></TR>\n
-vuser_init.c(30):     </table>\n
-vuser_init.c(30):     </body>\n
-vuser_init.c(30):     </HTML>\n
-vuser_init.c(30): t=1031ms: 255-byte response headers for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.2.1, Internal ID=6)
-vuser_init.c(30):     HTTP/1.1 200 OK\r\n
-vuser_init.c(30):     Date: Mon, 18 May 2020 09:58:33 GMT\r\n
-vuser_init.c(30):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(30):     Expires: Sun, 17 May 2020 09:58:33 GMT\r\n
-vuser_init.c(30):     Keep-Alive: timeout=5, max=98\r\n
-vuser_init.c(30):     Connection: Keep-Alive\r\n
-vuser_init.c(30):     Transfer-Encoding: chunked\r\n
-vuser_init.c(30):     Content-Type: text/html; charset=ISO-8859-1\r\n
-vuser_init.c(30):     \r\n
-vuser_init.c(30): t=1033ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.2.1, Internal ID=6)
-vuser_init.c(30):     5ce\r\n
-vuser_init.c(30): t=1033ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.2.1, Internal ID=6)
-vuser_init.c(30):     \r\n
-vuser_init.c(30): t=1034ms: 1486-byte chunked response body for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.2.1, Internal ID=6)
-vuser_init.c(30):     <!DOCTYPE html\n
-vuser_init.c(30):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
-vuser_init.c(30):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
-vuser_init.c(30):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
-vuser_init.c(30):     <head>\n
-vuser_init.c(30):     <title>Web Tours Navigation Bar</title>\n
-vuser_init.c(30):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
-vuser_init.c(30):     </head>\n
-vuser_init.c(30):     <body bgcolor="#E0E7F1">\n
-vuser_init.c(30):     <style>\n
-vuser_init.c(30):     blockquote {font-family: tahoma; font-size : 10pt}\n
-vuser_init.c(30):     H1 {font-family: tahoma; font-size : 22pt; color: #993333}\n
-vuser_init.c(30):     H3 {font-family: tahoma; font-size : 10pt; color: black}\n
-vuser_init.c(30):     small {font-family: tahoma; font-size : 8pt}\n
-vuser_init.c(30):     </style>\n
-vuser_init.c(30):     <form method="post" action="/cgi-bin/login.pl" target="body">\n
-vuser_init.c(30):     <input type="hidden" name="userSession" value="128780.551883354zzctVtQpzDHfDQHttpiQHicf"/>
-vuser_init.c(30):     \n
-vuser_init.c(30):     <table border="0"><tr><td>&nbsp;</td>\n
-vuser_init.c(30):     <td>&nbsp;</td></tr>\n
-vuser_init.c(30):     <tr><td>&nbsp;</td>\n
-vuser_init.c(30):     <td>&nbsp;</td></tr>\n
-vuser_init.c(30):     <tr><td>&nbsp;</td>\n
-vuser_init.c(30):     <td><small>&nbsp;Username</small></td></tr>\n
-vuser_init.c(30):     <tr><td>&nbsp;</td>\n
-vuser_init.c(30):     <td><input type="text" name="username" value="" size="14" maxlength="14"/></td></tr>\n
-vuser_init.c(30):     <tr><td>&nbsp;</td>\n
-vuser_init.c(30):     <td><small>&nbsp;Password</small></td>\n
-vuser_init.c(30):     <tr><td>&nbsp;</td>\n
-vuser_init.c(30):     <td><input type="password" name="password" value="" size="14" maxlength="14"/></td></tr>\n
-vuser_init.c(30):     <tr><td>&nbsp;</td>\n
-vuser_init.c(30):     <td>&nbsp;</td></tr>\n
-vuser_init.c(30):     <tr><td>&nbsp;</td>\n
-vuser_init.c(30):     <td><input type="image" name="login" value="Login" alt="Login" border="1" \n
-vuser_init.c(30):     src="/WebTours/images/mer_login.gif"/></td></tr>\n
-vuser_init.c(30):     <tr><td>&nbsp;</td><td>&nbsp;</td></tr>\n
-vuser_init.c(30):     </table><input type="hidden" name="JSFormSubmit" value="off"/>\n
-vuser_init.c(30):     </form>\n
-vuser_init.c(30):     \n
-vuser_init.c(30):     </body>\n
-vuser_init.c(30):     </html>\n
-vuser_init.c(30): Notify: Saving Parameter "userSession = 128780.551883354zzctVtQpzDHfDQHttpiQHicf".
-vuser_init.c(30): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
-vuser_init.c(30): t=1040ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.2.1, Internal ID=6)
-vuser_init.c(30):     0\r\n
-vuser_init.c(30):     \r\n
-vuser_init.c(30): t=1051ms: 297-byte response headers for "http://localhost:1080/WebTours/images/mer_login.gif" (RelFrameId=, Internal ID=8)
-vuser_init.c(30):     HTTP/1.1 200 OK\r\n
-vuser_init.c(30):     Date: Mon, 18 May 2020 09:58:33 GMT\r\n
-vuser_init.c(30):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(30):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
-vuser_init.c(30):     ETag: "100000006f436-2a7-5a4595a2b5d9c"\r\n
-vuser_init.c(30):     Accept-Ranges: bytes\r\n
-vuser_init.c(30):     Content-Length: 679\r\n
-vuser_init.c(30):     Keep-Alive: timeout=5, max=98\r\n
-vuser_init.c(30):     Connection: Keep-Alive\r\n
-vuser_init.c(30):     Content-Type: image/gif\r\n
-vuser_init.c(30):     \r\n
-vuser_init.c(30): t=1053ms: 679-byte response body for "http://localhost:1080/WebTours/images/mer_login.gif" (RelFrameId=, Internal ID=8)
-vuser_init.c(30): web_url("WebTours") was successful, 10076 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-vuser_init.c(40): Notify: Transaction "transaction_open_link" ended with a "Pass" status (Duration: 0.5771 Wasted Time: 0.3165).
-vuser_init.c(42): lr_think_time: 5,00 seconds.
-vuser_init.c(44): Notify: Transaction "transaction_login" started.
-vuser_init.c(46): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
-vuser_init.c(46): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
-vuser_init.c(46): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
-vuser_init.c(48): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
-vuser_init.c(48): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
-vuser_init.c(51): web_remove_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
-vuser_init.c(51): Previous automatically added web header for "Upgrade-Insecure-Requests" removed  	[MsgId: MMSG-26587]
-vuser_init.c(51): web_remove/revert_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
-vuser_init.c(53): web_add_header("Origin") started  	[MsgId: MMSG-26355]
-vuser_init.c(53): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
-vuser_init.c(56): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
-vuser_init.c(56): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
-vuser_init.c(59): web_reg_find started  	[MsgId: MMSG-26355]
-vuser_init.c(59): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-vuser_init.c(62): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
-vuser_init.c(62): Notify: Parameter Substitution: parameter "userSession" =  "128780.551883354zzctVtQpzDHfDQHttpiQHicf"
-vuser_init.c(62): Notify: Next row for parameter login = 1 [table  = login].
-vuser_init.c(62): Notify: Parameter Substitution: parameter "login" =  "jojo"
-vuser_init.c(62): Notify: Parameter Substitution: parameter "pass" =  "bean"
-vuser_init.c(62): t=6374ms: 359-byte response headers for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=9)
-vuser_init.c(62):     HTTP/1.1 200 OK\r\n
-vuser_init.c(62):     Date: Mon, 18 May 2020 09:58:38 GMT\r\n
-vuser_init.c(62):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(62):     Expires: 5s\r\n
-vuser_init.c(62):     Set-Cookie: MTUserInfo=firstName&Jojo&address2&&username&jojo&hash&47&lastName&Bean%0A&add
-vuser_init.c(62):     ress1&&creditCard&&expDate&%0A; path=/\r\n
-vuser_init.c(62):     Keep-Alive: timeout=5, max=100\r\n
-vuser_init.c(62):     Connection: Keep-Alive\r\n
-vuser_init.c(62):     Transfer-Encoding: chunked\r\n
-vuser_init.c(62):     Content-Type: text/html; charset=ISO-8859-1\r\n
-vuser_init.c(62):     \r\n
-vuser_init.c(62): t=6395ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=9)
-vuser_init.c(62):     1e1\r\n
-vuser_init.c(62): t=6396ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=9)
-vuser_init.c(62):     \r\n
-vuser_init.c(62): t=6396ms: 481-byte chunked response body for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=9)
-vuser_init.c(62):     <!--\n
-vuser_init.c(62):     User password was correct - added a cookie with the user's default\n
-vuser_init.c(62):     information.  Set the user up to make reservations...\n
-vuser_init.c(62):     \n
-vuser_init.c(62):     --->\n
-vuser_init.c(62):     \n
-vuser_init.c(62):     <html>\n
-vuser_init.c(62):     <title>Web Tours</title>\n
-vuser_init.c(62):     <frameset cols="160,*" border=1 frameborder=1>\n
-vuser_init.c(62):     <frame src="nav.pl?page=menu&in=home" name="navbar" marginheight="2" marginwidth="2" nores
-vuser_init.c(62):     ize="noresize" scrolling="auto"/>\n
-vuser_init.c(62):     <frame src="login.pl?intro=true" name="info" marginheight="2" marginwidth="2" noresize="no
-vuser_init.c(62):     resize" scrolling="auto"/>\n
-vuser_init.c(62):     </frameset>\n
-vuser_init.c(62):     \n
-vuser_init.c(62):     </body>\n
-vuser_init.c(62):     </html>
-vuser_init.c(62): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
-vuser_init.c(62): Detected non-resource "http://localhost:1080/cgi-bin/login.pl?intro=true" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
-vuser_init.c(62): t=6399ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=9)
-vuser_init.c(62):     0\r\n
-vuser_init.c(62):     \r\n
-vuser_init.c(62): t=6477ms: 256-byte response headers for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" (RelFrameId=1.1, Internal ID=10)
-vuser_init.c(62):     HTTP/1.1 200 OK\r\n
-vuser_init.c(62):     Date: Mon, 18 May 2020 09:58:39 GMT\r\n
-vuser_init.c(62):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(62):     Expires: Sun, 17 May 2020 09:58:39 GMT\r\n
-vuser_init.c(62):     Keep-Alive: timeout=5, max=100\r\n
-vuser_init.c(62):     Connection: Keep-Alive\r\n
-vuser_init.c(62):     Transfer-Encoding: chunked\r\n
-vuser_init.c(62):     Content-Type: text/html; charset=ISO-8859-1\r\n
-vuser_init.c(62):     \r\n
-vuser_init.c(62): t=6478ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" (RelFrameId=1.1, Internal ID=10)
-vuser_init.c(62):     5ca\r\n
-vuser_init.c(62): t=6479ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" (RelFrameId=1.1, Internal ID=10)
-vuser_init.c(62):     \r\n
-vuser_init.c(62): t=6480ms: 1482-byte chunked response body for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" (RelFrameId=1.1, Internal ID=10)
-vuser_init.c(62):     <!DOCTYPE html\n
-vuser_init.c(62):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
-vuser_init.c(62):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
-vuser_init.c(62):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
-vuser_init.c(62):     <head>\n
-vuser_init.c(62):     <title>Web Tours Navigation Bar</title>\n
-vuser_init.c(62):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
-vuser_init.c(62):     </head>\n
-vuser_init.c(62):     <body bgcolor="#E0E7F1">\n
-vuser_init.c(62):     \n
-vuser_init.c(62):     <style>\n
-vuser_init.c(62):     \tblockquote {font-family: tahoma; font-size : 10pt}\n
-vuser_init.c(62):     \tH1 {font-family: tahoma; font-size : 22pt; color: #993333}\n
-vuser_init.c(62):     \tsmall {font-family: tahoma; font-size : 8pt}\n
-vuser_init.c(62):     \tH3{font-family: tahoma; font-size : 10pt; color: black}\n
-vuser_init.c(62):     \tA {FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Tahoma; TEXT-DECORATIO
-vuser_init.c(62):     N: none}\n
-vuser_init.c(62):     \tA:hover{ FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #993333; FONT-FAMILY: Tahoma;TEXT-DE
-vuser_init.c(62):     CORATION: underline}\n
-vuser_init.c(62):     \tTD {font-family: tahoma; font-size : 10pt; color: black}\n
-vuser_init.c(62):     </style>\n
-vuser_init.c(62):     \n
-vuser_init.c(62):     <BR><BR><center>\n
-vuser_init.c(62):     \n
-vuser_init.c(62):     <br clear="both"/><center><A HREF="welcome.pl?page=search" TARGET="body"><IMG BORDER="0" S
-vuser_init.c(62):     RC="/WebTours/images/flights.gif" \n
-vuser_init.c(62):     ALT="Search Flights Button"/></A>\n
-vuser_init.c(62):     <br clear="both"/><A HREF="welcome.pl?page=itinerary" TARGET="body"><IMG BORDER="0" SRC="/
-vuser_init.c(62):     WebTours/images/itinerary.gif" \n
-vuser_init.c(62):     ALT="Itinerary Button"/></A>\n
-vuser_init.c(62):     <br clear="both"/><A HREF="welcome.pl?page=menus" TARGET="body"><IMG BORDER="0" SRC="/WebT
-vuser_init.c(62):     ours/images/in_home.gif" \n
-vuser_init.c(62):     ALT="Home Button"/></A>\n
-vuser_init.c(62):     <br clear><A HREF="welcome.pl?signOff=1" TARGET="body"><IMG BORDER="0" SRC="/WebTours/imag
-vuser_init.c(62):     es/signoff.gif" \n
-vuser_init.c(62):     ALT="SignOff Button"/></A></center>\n
-vuser_init.c(62):     \n
-vuser_init.c(62):     </body>\n
-vuser_init.c(62):     </html>\n
-vuser_init.c(62): Found resource "http://localhost:1080/WebTours/images/flights.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
-vuser_init.c(62): Found resource "http://localhost:1080/WebTours/images/itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
-vuser_init.c(62): Found resource "http://localhost:1080/WebTours/images/in_home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
-vuser_init.c(62): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
-vuser_init.c(62): t=6486ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" (RelFrameId=1.1, Internal ID=10)
-vuser_init.c(62):     0\r\n
-vuser_init.c(62):     \r\n
-vuser_init.c(62): t=6496ms: 297-byte response headers for "http://localhost:1080/WebTours/images/flights.gif" (RelFrameId=, Internal ID=12)
-vuser_init.c(62):     HTTP/1.1 200 OK\r\n
-vuser_init.c(62):     Date: Mon, 18 May 2020 09:58:39 GMT\r\n
-vuser_init.c(62):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(62):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
-vuser_init.c(62):     ETag: "100000006f429-2d6-5a4595a26f17f"\r\n
-vuser_init.c(62):     Accept-Ranges: bytes\r\n
-vuser_init.c(62):     Content-Length: 726\r\n
-vuser_init.c(62):     Keep-Alive: timeout=5, max=99\r\n
-vuser_init.c(62):     Connection: Keep-Alive\r\n
-vuser_init.c(62):     Content-Type: image/gif\r\n
-vuser_init.c(62):     \r\n
-vuser_init.c(62): t=6497ms: 726-byte response body for "http://localhost:1080/WebTours/images/flights.gif" (RelFrameId=, Internal ID=12)
-vuser_init.c(62): t=6500ms: 229-byte response headers for "http://localhost:1080/cgi-bin/login.pl?intro=true" (RelFrameId=1.2, Internal ID=11)
-vuser_init.c(62):     HTTP/1.1 200 OK\r\n
-vuser_init.c(62):     Date: Mon, 18 May 2020 09:58:39 GMT\r\n
-vuser_init.c(62):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(62):     Expires: 5s\r\n
-vuser_init.c(62):     Keep-Alive: timeout=5, max=100\r\n
-vuser_init.c(62):     Connection: Keep-Alive\r\n
-vuser_init.c(62):     Transfer-Encoding: chunked\r\n
-vuser_init.c(62):     Content-Type: text/html; charset=ISO-8859-1\r\n
-vuser_init.c(62):     \r\n
-vuser_init.c(62): t=6501ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl?intro=true" (RelFrameId=1.2, Internal ID=11)
-vuser_init.c(62):     396\r\n
-vuser_init.c(62): t=6501ms: 7-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl?intro=true" (RelFrameId=1.2, Internal ID=11)
-vuser_init.c(62):     \r\n
-vuser_init.c(62):     0\r\n
-vuser_init.c(62):     \r\n
-vuser_init.c(62): t=6502ms: 918-byte chunked response body for "http://localhost:1080/cgi-bin/login.pl?intro=true" (RelFrameId=1.2, Internal ID=11)
-vuser_init.c(62):     <!DOCTYPE html\n
-vuser_init.c(62):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
-vuser_init.c(62):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
-vuser_init.c(62):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
-vuser_init.c(62):     <head>\n
-vuser_init.c(62):     <title>Welcome to Web Tours</title>\n
-vuser_init.c(62):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
-vuser_init.c(62):     </head>\n
-vuser_init.c(62):     <body bgcolor="#E0E7F1">\n
-vuser_init.c(62):     <p /><style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; fon
-vuser_init.c(62):     t-size : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family:
-vuser_init.c(62):      tahoma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: 
-vuser_init.c(62):     black}</style><BR/><BR/><BR/><BR/><BR/><blockquote>Welcome, <b>jojo</b>, to the Web Tours 
-vuser_init.c(62):     reservation pages.<BR/>Using the menu to the left, you can search for new flights to book,
-vuser_init.c(62):      \n
-vuser_init.c(62):     or review/edit the flights already booked.  Don't forget to sign off when\n
-vuser_init.c(62):     you're done!\n
-vuser_init.c(62):     </blockquote>\n
-vuser_init.c(62):     </body>\n
-vuser_init.c(62):     </html>
-vuser_init.c(62): t=6512ms: 298-byte response headers for "http://localhost:1080/WebTours/images/itinerary.gif" (RelFrameId=, Internal ID=13)
-vuser_init.c(62):     HTTP/1.1 200 OK\r\n
-vuser_init.c(62):     Date: Mon, 18 May 2020 09:58:39 GMT\r\n
-vuser_init.c(62):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(62):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
-vuser_init.c(62):     ETag: "100000006f433-2dd-5a4595a2a67ab"\r\n
-vuser_init.c(62):     Accept-Ranges: bytes\r\n
-vuser_init.c(62):     Content-Length: 733\r\n
-vuser_init.c(62):     Keep-Alive: timeout=5, max=100\r\n
-vuser_init.c(62):     Connection: Keep-Alive\r\n
-vuser_init.c(62):     Content-Type: image/gif\r\n
-vuser_init.c(62):     \r\n
-vuser_init.c(62): t=6514ms: 733-byte response body for "http://localhost:1080/WebTours/images/itinerary.gif" (RelFrameId=, Internal ID=13)
-vuser_init.c(62): t=6516ms: 298-byte response headers for "http://localhost:1080/WebTours/images/in_home.gif" (RelFrameId=, Internal ID=14)
-vuser_init.c(62):     HTTP/1.1 200 OK\r\n
-vuser_init.c(62):     Date: Mon, 18 May 2020 09:58:39 GMT\r\n
-vuser_init.c(62):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(62):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
-vuser_init.c(62):     ETag: "100000006f430-2b0-5a4595a295a4d"\r\n
-vuser_init.c(62):     Accept-Ranges: bytes\r\n
-vuser_init.c(62):     Content-Length: 688\r\n
-vuser_init.c(62):     Keep-Alive: timeout=5, max=100\r\n
-vuser_init.c(62):     Connection: Keep-Alive\r\n
-vuser_init.c(62):     Content-Type: image/gif\r\n
-vuser_init.c(62):     \r\n
-vuser_init.c(62): t=6518ms: 688-byte response body for "http://localhost:1080/WebTours/images/in_home.gif" (RelFrameId=, Internal ID=14)
-vuser_init.c(62): t=6520ms: 298-byte response headers for "http://localhost:1080/WebTours/images/signoff.gif" (RelFrameId=, Internal ID=15)
-vuser_init.c(62):     HTTP/1.1 200 OK\r\n
-vuser_init.c(62):     Date: Mon, 18 May 2020 09:58:39 GMT\r\n
-vuser_init.c(62):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(62):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
-vuser_init.c(62):     ETag: "100000006f439-2ef-5a4595a2c5f43"\r\n
-vuser_init.c(62):     Accept-Ranges: bytes\r\n
-vuser_init.c(62):     Content-Length: 751\r\n
-vuser_init.c(62):     Keep-Alive: timeout=5, max=100\r\n
-vuser_init.c(62):     Connection: Keep-Alive\r\n
-vuser_init.c(62):     Content-Type: image/gif\r\n
-vuser_init.c(62):     \r\n
-vuser_init.c(62): t=6522ms: 751-byte response body for "http://localhost:1080/WebTours/images/signoff.gif" (RelFrameId=, Internal ID=15)
-vuser_init.c(62): Registered web_reg_find successful for "Text=User password was correct" (count=1)  	[MsgId: MMSG-26364]
-vuser_init.c(62): web_submit_data("login.pl") was successful, 5779 body bytes, 2035 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
-vuser_init.c(79): Notify: Transaction "transaction_login" ended with a "Pass" status (Duration: 0.3369 Wasted Time: 0.0741).
-vuser_init.c(81): lr_think_time: 5.00 seconds.
-vuser_init.c(83): Notify: Transaction "transaction_click_flights" started.
-vuser_init.c(85): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
-vuser_init.c(85): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
-vuser_init.c(88): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
-vuser_init.c(88): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
-vuser_init.c(91): web_reg_find started  	[MsgId: MMSG-26355]
-vuser_init.c(91): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-vuser_init.c(94): web_url("Search Flights Button") started  	[MsgId: MMSG-26355]
-vuser_init.c(94): t=11681ms: 216-byte response headers for "http://localhost:1080/cgi-bin/welcome.pl?page=search" (RelFrameId=1, Internal ID=16)
-vuser_init.c(94):     HTTP/1.1 200 OK\r\n
-vuser_init.c(94):     Date: Mon, 18 May 2020 09:58:44 GMT\r\n
-vuser_init.c(94):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(94):     Keep-Alive: timeout=5, max=100\r\n
-vuser_init.c(94):     Connection: Keep-Alive\r\n
-vuser_init.c(94):     Transfer-Encoding: chunked\r\n
-vuser_init.c(94):     Content-Type: text/html; charset=ISO-8859-1\r\n
-vuser_init.c(94):     \r\n
-vuser_init.c(94): t=11696ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?page=search" (RelFrameId=1, Internal ID=16)
-vuser_init.c(94):     268\r\n
-vuser_init.c(94): t=11696ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?page=search" (RelFrameId=1, Internal ID=16)
-vuser_init.c(94):     \r\n
-vuser_init.c(94): t=11697ms: 616-byte chunked response body for "http://localhost:1080/cgi-bin/welcome.pl?page=search" (RelFrameId=1, Internal ID=16)
-vuser_init.c(94):     <!-- \n
-vuser_init.c(94):      User has returned to the search page.  Since user has already logged on,\n
-vuser_init.c(94):      we can give them the menu in the navbar.\n
-vuser_init.c(94):      --->\n
-vuser_init.c(94):     \n
-vuser_init.c(94):     <html>\n
-vuser_init.c(94):     <title>Web Tours</title>\n
-vuser_init.c(94):        <!-- Frame Set -->\n
-vuser_init.c(94):        <frameset cols="160,*" border="1" frameborder="1">\n
-vuser_init.c(94):           <!-- Navigation Frame -->\n
-vuser_init.c(94):           <frame src="nav.pl?page=menu&in=flights" name="navbar" \n
-vuser_init.c(94):                 marginheight="2" marginwidth="2" norseize="noresize" scrolling="auto"/>\n
-vuser_init.c(94):           <!-- Reservation Frame -->\n
-vuser_init.c(94):           <frame src="reservations.pl?page=welcome" name="info" \n
-vuser_init.c(94):                 marginheight="2" marginwidth="2" norseize="noresize" scrolling="auto"/>\n
-vuser_init.c(94):        </frameset>\n
-vuser_init.c(94):     </html>\n
-vuser_init.c(94): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights" in "http://localhost:1080/cgi-bin/welcome.pl?page=search"  	[MsgId: MMSG-26574]
-vuser_init.c(94): Detected non-resource "http://localhost:1080/cgi-bin/reservations.pl?page=welcome" in "http://localhost:1080/cgi-bin/welcome.pl?page=search"  	[MsgId: MMSG-26574]
-vuser_init.c(94): t=11699ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?page=search" (RelFrameId=1, Internal ID=16)
-vuser_init.c(94):     0\r\n
-vuser_init.c(94):     \r\n
-vuser_init.c(94): t=11775ms: 256-byte response headers for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights" (RelFrameId=1.1, Internal ID=17)
-vuser_init.c(94):     HTTP/1.1 200 OK\r\n
-vuser_init.c(94):     Date: Mon, 18 May 2020 09:58:44 GMT\r\n
-vuser_init.c(94):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(94):     Expires: Sun, 17 May 2020 09:58:44 GMT\r\n
-vuser_init.c(94):     Keep-Alive: timeout=5, max=100\r\n
-vuser_init.c(94):     Connection: Keep-Alive\r\n
-vuser_init.c(94):     Transfer-Encoding: chunked\r\n
-vuser_init.c(94):     Content-Type: text/html; charset=ISO-8859-1\r\n
-vuser_init.c(94):     \r\n
-vuser_init.c(94): t=11776ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights" (RelFrameId=1.1, Internal ID=17)
-vuser_init.c(94):     5ca\r\n
-vuser_init.c(94): t=11777ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights" (RelFrameId=1.1, Internal ID=17)
-vuser_init.c(94):     \r\n
-vuser_init.c(94): t=11778ms: 1482-byte chunked response body for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights" (RelFrameId=1.1, Internal ID=17)
-vuser_init.c(94):     <!DOCTYPE html\n
-vuser_init.c(94):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
-vuser_init.c(94):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
-vuser_init.c(94):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
-vuser_init.c(94):     <head>\n
-vuser_init.c(94):     <title>Web Tours Navigation Bar</title>\n
-vuser_init.c(94):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
-vuser_init.c(94):     </head>\n
-vuser_init.c(94):     <body bgcolor="#E0E7F1">\n
-vuser_init.c(94):     \n
-vuser_init.c(94):     <style>\n
-vuser_init.c(94):     \tblockquote {font-family: tahoma; font-size : 10pt}\n
-vuser_init.c(94):     \tH1 {font-family: tahoma; font-size : 22pt; color: #993333}\n
-vuser_init.c(94):     \tsmall {font-family: tahoma; font-size : 8pt}\n
-vuser_init.c(94):     \tH3{font-family: tahoma; font-size : 10pt; color: black}\n
-vuser_init.c(94):     \tA {FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Tahoma; TEXT-DECORATIO
-vuser_init.c(94):     N: none}\n
-vuser_init.c(94):     \tA:hover{ FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #993333; FONT-FAMILY: Tahoma;TEXT-DE
-vuser_init.c(94):     CORATION: underline}\n
-vuser_init.c(94):     \tTD {font-family: tahoma; font-size : 10pt; color: black}\n
-vuser_init.c(94):     </style>\n
-vuser_init.c(94):     \n
-vuser_init.c(94):     <BR><BR><center>\n
-vuser_init.c(94):     \n
-vuser_init.c(94):     <br clear="both"/><center><A HREF="welcome.pl?page=search" TARGET="body"><IMG BORDER="0" S
-vuser_init.c(94):     RC="/WebTours/images/in_flights.gif" \n
-vuser_init.c(94):     ALT="Search Flights Button"/></A>\n
-vuser_init.c(94):     <br clear="both"/><A HREF="welcome.pl?page=itinerary" TARGET="body"><IMG BORDER="0" SRC="/
-vuser_init.c(94):     WebTours/images/itinerary.gif" \n
-vuser_init.c(94):     ALT="Itinerary Button"/></A>\n
-vuser_init.c(94):     <br clear="both"/><A HREF="welcome.pl?page=menus" TARGET="body"><IMG BORDER="0" SRC="/WebT
-vuser_init.c(94):     ours/images/home.gif" \n
-vuser_init.c(94):     ALT="Home Button"/></A>\n
-vuser_init.c(94):     <br clear><A HREF="welcome.pl?signOff=1" TARGET="body"><IMG BORDER="0" SRC="/WebTours/imag
-vuser_init.c(94):     es/signoff.gif" \n
-vuser_init.c(94):     ALT="SignOff Button"/></A></center>\n
-vuser_init.c(94):     \n
-vuser_init.c(94):     </body>\n
-vuser_init.c(94):     </html>\n
-vuser_init.c(94): Found resource "http://localhost:1080/WebTours/images/in_flights.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights"  	[MsgId: MMSG-26659]
-vuser_init.c(94): Resource "http://localhost:1080/WebTours/images/itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-vuser_init.c(94): Found resource "http://localhost:1080/WebTours/images/home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights"  	[MsgId: MMSG-26659]
-vuser_init.c(94): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-vuser_init.c(94): t=11783ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights" (RelFrameId=1.1, Internal ID=17)
-vuser_init.c(94):     0\r\n
-vuser_init.c(94):     \r\n
-vuser_init.c(94): t=11793ms: 297-byte response headers for "http://localhost:1080/WebTours/images/in_flights.gif" (RelFrameId=, Internal ID=19)
-vuser_init.c(94):     HTTP/1.1 200 OK\r\n
-vuser_init.c(94):     Date: Mon, 18 May 2020 09:58:44 GMT\r\n
-vuser_init.c(94):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(94):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
-vuser_init.c(94):     ETag: "100000006f42f-2d6-5a4595a290852"\r\n
-vuser_init.c(94):     Accept-Ranges: bytes\r\n
-vuser_init.c(94):     Content-Length: 726\r\n
-vuser_init.c(94):     Keep-Alive: timeout=5, max=99\r\n
-vuser_init.c(94):     Connection: Keep-Alive\r\n
-vuser_init.c(94):     Content-Type: image/gif\r\n
-vuser_init.c(94):     \r\n
-vuser_init.c(94): t=11794ms: 726-byte response body for "http://localhost:1080/WebTours/images/in_flights.gif" (RelFrameId=, Internal ID=19)
-vuser_init.c(94): t=11797ms: 298-byte response headers for "http://localhost:1080/WebTours/images/home.gif" (RelFrameId=, Internal ID=20)
-vuser_init.c(94):     HTTP/1.1 200 OK\r\n
-vuser_init.c(94):     Date: Mon, 18 May 2020 09:58:44 GMT\r\n
-vuser_init.c(94):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(94):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
-vuser_init.c(94):     ETag: "100000006f42d-2b0-5a4595a286073"\r\n
-vuser_init.c(94):     Accept-Ranges: bytes\r\n
-vuser_init.c(94):     Content-Length: 688\r\n
-vuser_init.c(94):     Keep-Alive: timeout=5, max=100\r\n
-vuser_init.c(94):     Connection: Keep-Alive\r\n
-vuser_init.c(94):     Content-Type: image/gif\r\n
-vuser_init.c(94):     \r\n
-vuser_init.c(94): t=11799ms: 688-byte response body for "http://localhost:1080/WebTours/images/home.gif" (RelFrameId=, Internal ID=20)
-vuser_init.c(94): t=11801ms: 256-byte response headers for "http://localhost:1080/cgi-bin/reservations.pl?page=welcome" (RelFrameId=1.2, Internal ID=18)
-vuser_init.c(94):     HTTP/1.1 200 OK\r\n
-vuser_init.c(94):     Date: Mon, 18 May 2020 09:58:44 GMT\r\n
-vuser_init.c(94):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(94):     Expires: Sun, 17 May 2020 09:58:44 GMT\r\n
-vuser_init.c(94):     Keep-Alive: timeout=5, max=100\r\n
-vuser_init.c(94):     Connection: Keep-Alive\r\n
-vuser_init.c(94):     Transfer-Encoding: chunked\r\n
-vuser_init.c(94):     Content-Type: text/html; charset=ISO-8859-1\r\n
-vuser_init.c(94):     \r\n
-vuser_init.c(94): t=11803ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl?page=welcome" (RelFrameId=1.2, Internal ID=18)
-vuser_init.c(94):     f84\r\n
-vuser_init.c(94): t=11803ms: 7-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl?page=welcome" (RelFrameId=1.2, Internal ID=18)
-vuser_init.c(94):     \r\n
-vuser_init.c(94):     112\r\n
-vuser_init.c(94): t=11804ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl?page=welcome" (RelFrameId=1.2, Internal ID=18)
-vuser_init.c(94):     \r\n
-vuser_init.c(94): t=11804ms: 4246-byte chunked response body for "http://localhost:1080/cgi-bin/reservations.pl?page=welcome" (RelFrameId=1.2, Internal ID=18)
-vuser_init.c(94):     <!DOCTYPE html\n
-vuser_init.c(94):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
-vuser_init.c(94):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
-vuser_init.c(94):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
-vuser_init.c(94):     <head>\n
-vuser_init.c(94):     <title>Flight Selections</title>\n
-vuser_init.c(94):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
-vuser_init.c(94):     </head>\n
-vuser_init.c(94):     <body bgcolor="#E0E7F1">\n
-vuser_init.c(94):     <style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; font-siz
-vuser_init.c(94):     e : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family: taho
-vuser_init.c(94):     ma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: black
-vuser_init.c(94):     }</style><BR/><BR/><h1><font color="#003366">&nbsp;&nbsp;<b>Find Flight</font></b></h1><bl
-vuser_init.c(94):     ockquote>\n
-vuser_init.c(94):     <form method="post" action="reservations.pl" enctype="application/x-www-form-urlencoded" o
-vuser_init.c(94):     nsubmit="" name="DestForm">\n
-vuser_init.c(94):     <input type="hidden" name="advanceDiscount" value="0"  /><table border="0" cellspacing="5"
-vuser_init.c(94):     ><tr><td align="left">Departure City :</td> <td><select name="depart" >\n
-vuser_init.c(94):     <option selected="selected" value="Denver">Denver</option>\n
-vuser_init.c(94):     <option value="Frankfurt">Frankfurt</option>\n
-vuser_init.c(94):     <option value="London">London</option>\n
-vuser_init.c(94):     <option value="Los Angeles">Los Angeles</option>\n
-vuser_init.c(94):     <option value="Paris">Paris</option>\n
-vuser_init.c(94):     <option value="Portland">Portland</option>\n
-vuser_init.c(94):     <option value="San Francisco">San Francisco</option>\n
-vuser_init.c(94):     <option value="Seattle">Seattle</option>\n
-vuser_init.c(94):     <option value="Sydney">Sydney</option>\n
-vuser_init.c(94):     <option value="Zurich">Zurich</option>\n
-vuser_init.c(94):     </select></td> <td align="left">Departure Date :</td> <td><input type="text" name="departD
-vuser_init.c(94):     ate" value="05/19/2020" size="10" maxlength="10" /> \n
-vuser_init.c(94):     <!-- Departure Date Applet -->\n
-vuser_init.c(94):     <APPLET CODEBASE="/WebTours/classes/" CODE="FormDateUpdate.class" MAYSCRIPT Width=26 Heigh
-vuser_init.c(94):     t=28 BORDER=0>\n
-vuser_init.c(94):        <PARAM NAME=CalenderTitle  VALUE="Select Departure Date">\n
-vuser_init.c(94):        <PARAM NAME=HtmlFormIndex  VALUE=0>\n
-vuser_init.c(94):        <PARAM NAME=HtmlEditIndex  VALUE=2>\n
-vuser_init.c(94):        <PARAM NAME=AutoClose      VALUE=1>\n
-vuser_init.c(94):        <PARAM NAME=Label          VALUE="...">\n
-vuser_init.c(94):     </APPLET>\n
-vuser_init.c(94):     </td></tr> <tr><td align="left">Arrival City :</td> <td><select name="arrive" >\n
-vuser_init.c(94):     <option selected="selected" value="Denver">Denver</option>\n
-vuser_init.c(94):     <option value="Frankfurt">Frankfurt</option>\n
-vuser_init.c(94):     <option value="London">London</option>\n
-vuser_init.c(94):     <option value="Los Angeles">Los Angeles</option>\n
-vuser_init.c(94):     <option value="Paris">Paris</option>\n
-vuser_init.c(94):     <option value="Portland">Portland</option>\n
-vuser_init.c(94):     <option value="San Francisco">San Francisco</option>\n
-vuser_init.c(94):     <option value="Seattle">Seattle</option>\n
-vuser_init.c(94):     <option value="Sydney">Sydney</option>\n
-vuser_init.c(94):     <option value="Zurich">Zurich</option>\n
-vuser_init.c(94):     </select></td> <td align="left">Return Date :</td> <td><input type="text" name="returnDate
-vuser_init.c(94):     " value="05/20/2020" size="10" maxlength="10" /> \n
-vuser_init.c(94):     <!-- Return Date Applet -->\n
-vuser_init.c(94):     <APPLET CODEBASE="/WebTours/classes/" CODE="FormDateUpdate.class" MAYSCRIPT Width=26 Heigh
-vuser_init.c(94):     t=28 BORDER=0>\n
-vuser_init.c(94):        <PARAM NAME=CalenderTitle  VALUE="Select Return Date">\n
-vuser_init.c(94):        <PARAM NAME=HtmlFormIndex  VALUE=0>\n
-vuser_init.c(94):        <PARAM NAME=HtmlEditIndex  VALUE=4>\n
-vuser_init.c(94):        <PARAM NAME=AutoClose      VALUE=1>\n
-vuser_init.c(94):        <PARAM NAME=Label          VALUE="...">\n
-vuser_init.c(94):     </APPLET>\n
-vuser_init.c(94):     </td></tr> <tr><td align="left">No. of Passengers : </td> <td><input type="text" name="num
-vuser_init.c(94):     Passengers" value="1" size="3" maxlength="8" /></td> <td colspan="2"><label><input type="c
-vuser_init.c(94):     heckbox" name="roundtrip" value="on" />Roundtrip ticket</label></td></tr> <tr><td>Seating 
-vuser_init.c(94):     Preference</td> <td /> <td>Type of Seat</td></tr> <tr><td><label><input type="radio" name=
-vuser_init.c(94):     "seatPref" value="Aisle" />Aisle</label><br /> <label><input type="radio" name="seatPref" 
-vuser_init.c(94):     value="Window" />Window</label><br /> <label><input type="radio" name="seatPref" value="No
-vuser_init.c(94):     ne" checked="checked" />None</label><br /></td> <td /> <td><label><input type="radio" name
-vuser_init.c(94):     ="seatType" value="First" />First</label><br /> <label><input type="radio" name="seatType"
-vuser_init.c(94):      value="Business" />Business</label><br /> <label><input type="radio" name="seatType" valu
-vuser_init.c(94):     e="Coach" checked="checked" />Coach</label><br /></td></tr> <tr><td height="10" /></tr> <t
-vuser_init.c(94):     r><td align="center" colspan="4"><input type="image" name="findFlights" src="/WebTours/ima
-vuser_init.c(94):     ges/button_next.gif" border="0" /></td></tr></table><div><input type="hidden" name=".cgifi
-vuser_init.c(94):     elds" value="roundtrip"  /><input type="hidden" name=".cgifields" value="seatType"  /><inp
-vuser_init.c(94):     ut type="hidden" name=".cgifields" value="seatPref"  /></div></form>\n
-vuser_init.c(94):     </blockquote>\n
-vuser_init.c(94):     \n
-vuser_init.c(94):     </body>\n
-vuser_init.c(94):     </html>\n
-vuser_init.c(94): Found resource "http://localhost:1080/WebTours/images/button_next.gif" in HTML "http://localhost:1080/cgi-bin/reservations.pl?page=welcome"  	[MsgId: MMSG-26659]
-vuser_init.c(94): t=11812ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl?page=welcome" (RelFrameId=1.2, Internal ID=18)
-vuser_init.c(94):     0\r\n
-vuser_init.c(94):     \r\n
-vuser_init.c(94): t=11822ms: 297-byte response headers for "http://localhost:1080/WebTours/images/button_next.gif" (RelFrameId=, Internal ID=21)
-vuser_init.c(94):     HTTP/1.1 200 OK\r\n
-vuser_init.c(94):     Date: Mon, 18 May 2020 09:58:44 GMT\r\n
-vuser_init.c(94):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(94):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
-vuser_init.c(94):     ETag: "100000006f426-2f6-5a4595a25d09c"\r\n
-vuser_init.c(94):     Accept-Ranges: bytes\r\n
-vuser_init.c(94):     Content-Length: 758\r\n
-vuser_init.c(94):     Keep-Alive: timeout=5, max=98\r\n
-vuser_init.c(94):     Connection: Keep-Alive\r\n
-vuser_init.c(94):     Content-Type: image/gif\r\n
-vuser_init.c(94):     \r\n
-vuser_init.c(94): t=11823ms: 758-byte response body for "http://localhost:1080/WebTours/images/button_next.gif" (RelFrameId=, Internal ID=21)
-vuser_init.c(94): Registered web_reg_find successful for "Text=User has returned to the search page" (count=1)  	[MsgId: MMSG-26364]
-vuser_init.c(94): web_url("Search Flights Button") was successful, 8516 body bytes, 1620 header bytes, 43 chunking overhead bytes  	[MsgId: MMSG-26385]
-vuser_init.c(104): Notify: Transaction "transaction_click_flights" ended with a "Pass" status (Duration: 0,2967 Wasted Time: 0,0735).
-vuser_init.c(106): lr_think_time: 5,00 seconds.
-vuser_init.c(108): Notify: Transaction "transaction_find_flight" started.
-vuser_init.c(110): web_add_auto_header("Origin") started  	[MsgId: MMSG-26355]
-vuser_init.c(110): web_add_auto_header("Origin") was successful  	[MsgId: MMSG-26392]
-vuser_init.c(113): web_reg_find started  	[MsgId: MMSG-26355]
-vuser_init.c(113): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-vuser_init.c(117): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
-vuser_init.c(117): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
-vuser_init.c(127): web_submit_data("reservations.pl") started  	[MsgId: MMSG-26355]
-vuser_init.c(127): Notify: Parameter Substitution: parameter "departCity" =  "Denver"
-vuser_init.c(127): Notify: Parameter Substitution: parameter "departDate" =  "05/18/2020"
-vuser_init.c(127): Notify: Parameter Substitution: parameter "arriveCity" =  "Zurich"
-vuser_init.c(127): Notify: Parameter Substitution: parameter "returnDate" =  "06/17/2020"
-vuser_init.c(127): Notify: Parameter Substitution: parameter "Pref" =  "Asile"
-vuser_init.c(127): Notify: Parameter Substitution: parameter "Type" =  "First"
-vuser_init.c(127): t=16991ms: 256-byte response headers for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=22)
-vuser_init.c(127):     HTTP/1.1 200 OK\r\n
-vuser_init.c(127):     Date: Mon, 18 May 2020 09:58:49 GMT\r\n
-vuser_init.c(127):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(127):     Expires: Sun, 17 May 2020 09:58:49 GMT\r\n
-vuser_init.c(127):     Keep-Alive: timeout=5, max=100\r\n
-vuser_init.c(127):     Connection: Keep-Alive\r\n
-vuser_init.c(127):     Transfer-Encoding: chunked\r\n
-vuser_init.c(127):     Content-Type: text/html; charset=ISO-8859-1\r\n
-vuser_init.c(127):     \r\n
-vuser_init.c(127): t=17012ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=22)
-vuser_init.c(127):     985\r\n
-vuser_init.c(127): t=17012ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=22)
-vuser_init.c(127):     \r\n
-vuser_init.c(127): t=17013ms: 2437-byte chunked response body for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=22)
-vuser_init.c(127):     <!DOCTYPE html\n
-vuser_init.c(127):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
-vuser_init.c(127):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
-vuser_init.c(127):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
-vuser_init.c(127):     <head>\n
-vuser_init.c(127):     <title>Flight Selections</title>\n
-vuser_init.c(127):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
-vuser_init.c(127):     </head>\n
-vuser_init.c(127):     <body bgcolor="#E0E7F1">\n
-vuser_init.c(127):     <style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; font-siz
-vuser_init.c(127):     e : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family: taho
-vuser_init.c(127):     ma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: black
-vuser_init.c(127):     }</style><BR/><BR/><h1><font color="#003366">&nbsp;&nbsp;<b>Find Flight</font></b></h1><bl
-vuser_init.c(127):     ockquote>\n
-vuser_init.c(127):     <form method="post" action="reservations.pl" enctype="application/x-www-form-urlencoded">\n
-vuser_init.c(127):     \n
-vuser_init.c(127):     <center>\n
-vuser_init.c(127):     <!-- From Denver (0) To Zurich (9) -->\n
-vuser_init.c(127):     <table cellspacing="2" border="0" width="50%">\n
-vuser_init.c(127):     <blockquote>Flight departing from <B>Denver</B> to <B>Zurich</B> on <B>05/18/2020</B><BR/>
-vuser_init.c(127):     <BR/><tr bgcolor="#5E7884"><td align="center"><font color="white"><B>Flight</B></font>\n
-vuser_init.c(127):           \t\t<td align="center"><font color="white"><B>Departure time</B>\n
-vuser_init.c(127):           \t\t<td align="center"><font color="white"><B>Cost</B>\n
-vuser_init.c(127):     <tr bgcolor="#EFF2F7"><td align="center"><input type="radio" name="outboundFlight" value="
-vuser_init.c(127):     090;789;05/18/2020" checked="checked" >Blue Sky Air 090<td align="center">8am<td align="ce
-vuser_init.c(127):     nter">$ 789</TD></TR><tr bgcolor="#EFF2F7"><td align="center"><input type="radio" name="ou
-vuser_init.c(127):     tboundFlight" value="091;703;05/18/2020">Blue Sky Air 091<td align="center">1pm<td align="
-vuser_init.c(127):     center">$ 703</TD></TR><tr bgcolor="#EFF2F7"><td align="center"><input type="radio" name="
-vuser_init.c(127):     outboundFlight" value="092;746;05/18/2020">Blue Sky Air 092<td align="center">5pm<td align
-vuser_init.c(127):     ="center">$ 746</TD></TR><tr bgcolor="#EFF2F7"><td align="center"><input type="radio" name
-vuser_init.c(127):     ="outboundFlight" value="093;646;05/18/2020">Blue Sky Air 093<td align="center">11pm<td al
-vuser_init.c(127):     ign="center">$ 646</TD></TR></table>\n
-vuser_init.c(127):     \n
-vuser_init.c(127):     <input type="hidden" name="numPassengers" value="1"  /><input type="hidden" name="advanceD
-vuser_init.c(127):     iscount" value="0"  /><input type="hidden" name="seatType" value="First"  /><input type="h
-vuser_init.c(127):     idden" name="seatPref" value="Asile"  />\n
-vuser_init.c(127):     <P><center><table width=80% cellspacing=1><tr><td align=center>\n
-vuser_init.c(127):     <input type="image" name="reserveFlights" src="/WebTours/images/button_next.gif" border="0
-vuser_init.c(127):     " />\n
-vuser_init.c(127):     <td>&nbsp;<td align=center></table></center></form></center>\n
-vuser_init.c(127):     </blockquote>\n
-vuser_init.c(127):     \n
-vuser_init.c(127):     </body>\n
-vuser_init.c(127):     </html>
-vuser_init.c(127): Resource "http://localhost:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-vuser_init.c(127): t=17017ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=22)
-vuser_init.c(127):     0\r\n
-vuser_init.c(127):     \r\n
-vuser_init.c(127): Notify: Saving Parameter "outboundFlight = 090;789;05/18/2020".
-vuser_init.c(127): Registered web_reg_find successful for "Text=Flight departing from" (count=1)  	[MsgId: MMSG-26364]
-vuser_init.c(127): web_submit_data("reservations.pl") was successful, 2437 body bytes, 256 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-vuser_init.c(151): Notify: Transaction "transaction_find_flight" ended with a "Pass" status (Duration: 0,1640 Wasted Time: 0,0430).
-vuser_init.c(153): lr_think_time: 5,00 seconds.
-vuser_init.c(155): Notify: Transaction "transaction_select_ticket" started.
-vuser_init.c(157): web_reg_find started  	[MsgId: MMSG-26355]
-vuser_init.c(157): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-vuser_init.c(161): web_submit_data("reservations.pl_2") started  	[MsgId: MMSG-26355]
-vuser_init.c(161): Notify: Parameter Substitution: parameter "outboundFlight" =  "090;789;05/18/2020"
-vuser_init.c(161): Notify: Parameter Substitution: parameter "Type" =  "First"
-vuser_init.c(161): Notify: Parameter Substitution: parameter "Pref" =  "Asile"
-vuser_init.c(161): t=22154ms: 256-byte response headers for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=23)
-vuser_init.c(161):     HTTP/1.1 200 OK\r\n
-vuser_init.c(161):     Date: Mon, 18 May 2020 09:58:54 GMT\r\n
-vuser_init.c(161):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_init.c(161):     Expires: Sun, 17 May 2020 09:58:54 GMT\r\n
-vuser_init.c(161):     Keep-Alive: timeout=5, max=100\r\n
-vuser_init.c(161):     Connection: Keep-Alive\r\n
-vuser_init.c(161):     Transfer-Encoding: chunked\r\n
-vuser_init.c(161):     Content-Type: text/html; charset=ISO-8859-1\r\n
-vuser_init.c(161):     \r\n
-vuser_init.c(161): t=22176ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=23)
-vuser_init.c(161):     a8b\r\n
-vuser_init.c(161): t=22176ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=23)
-vuser_init.c(161):     \r\n
-vuser_init.c(161): t=22177ms: 2699-byte chunked response body for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=23)
-vuser_init.c(161):     <!DOCTYPE html\n
-vuser_init.c(161):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
-vuser_init.c(161):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
-vuser_init.c(161):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
-vuser_init.c(161):     <head>\n
-vuser_init.c(161):     <title>Flight Reservation</title>\n
-vuser_init.c(161):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
-vuser_init.c(161):     </head>\n
-vuser_init.c(161):     <body bgcolor="#E0E7F1">\n
-vuser_init.c(161):     <style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; font-siz
-vuser_init.c(161):     e : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family: taho
-vuser_init.c(161):     ma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: black
-vuser_init.c(161):     }</style><BR/><BR/><h1><font color="#003366">&nbsp;&nbsp;<b>Payment Details</font></b></h1
-vuser_init.c(161):     ><blockquote><form method="post" action="reservations.pl" enctype="application/x-www-form-
-vuser_init.c(161):     urlencoded" onsubmit="return true ;">\n
-vuser_init.c(161):     <table><tr><td align="right">First Name : <td><input type="text" name="firstName" value="J
-vuser_init.c(161):     ojo" size="15" /><tr><td align="right">Last Name : <td><input type="text" name="lastName" 
-vuser_init.c(161):     value="Bean&#10;" size="15" /><tr><td align="right">Street Address : <td colspan="3"><inpu
-vuser_init.c(161):     t type="text" name="address1"  size="30" /><tr><td align="right">City/State/Zip : <td cols
-vuser_init.c(161):     pan="3"><input type="text" name="address2"  size="30" /><tr><td align="right">Passenger Na
-vuser_init.c(161):     mes : <td colspan="3"><input type="text" name="pass1" value="Jojo Bean&#10;" size="30" /><
-vuser_init.c(161):     tr><td height="10"><tr><td height="10" align="center" colspan="4">Total for 1 ticket(s) is
-vuser_init.c(161):      = $ 789<tr><td align="right">Credit Card : <td><input type="text" name="creditCard"  size
-vuser_init.c(161):     ="20" maxlength="20" /><td align="right">Exp Date : <td><input type="text" name="expDate" 
-vuser_init.c(161):     value="&#10;" size="5" maxlength="5" /><tr><TD><td colspan="3" align="left"><label><input 
-vuser_init.c(161):     type="checkbox" name="saveCC" value="on" />Save this Credit Card Information</label><input
-vuser_init.c(161):      type="hidden" name="oldCCOption" value=""  /></table><input type="hidden" name="numPassen
-vuser_init.c(161):     gers" value="1"  /><input type="hidden" name="seatType" value="First"  /><input type="hidd
-vuser_init.c(161):     en" name="seatPref" value="Asile"  /><input type="hidden" name="outboundFlight" value="090
-vuser_init.c(161):     ;789;05/18/2020"  /><input type="hidden" name="advanceDiscount" value="0"  /><input type="
-vuser_init.c(161):     hidden" name="returnFlight" value=""  /><input type="hidden" name="JSFormSubmit" value="of
-vuser_init.c(161):     f"  /><center><table width=80% cellspacing=1><tr><td align=center>\n
-vuser_init.c(161):     <input type="image" name="buyFlights" src="/WebTours/images/button_next.gif" border="0" />
-vuser_init.c(161):     <div><input type="hidden" name=".cgifields" value="saveCC"  /></div></form>\n
-vuser_init.c(161):     <td>&nbsp;<td align=center><form method="post" action="reservations.pl" enctype="applicati
-vuser_init.c(161):     on/x-www-form-urlencoded" onsubmit="void(0);">\n
-vuser_init.c(161):     </form></table></center></blockquote>\n
-vuser_init.c(161):     </body>\n
-vuser_init.c(161):     </html>
-vuser_init.c(161): Resource "http://localhost:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-vuser_init.c(161): t=22180ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=23)
-vuser_init.c(161):     0\r\n
-vuser_init.c(161):     \r\n
-vuser_init.c(161): Registered web_reg_find successful for "Text=Payment Details" (count=1)  	[MsgId: MMSG-26364]
-vuser_init.c(161): web_submit_data("reservations.pl_2") was successful, 2699 body bytes, 256 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-vuser_init.c(179): Notify: Transaction "transaction_select_ticket" ended with a "Pass" status (Duration: 0.1606 Wasted Time: 0.0401).
-vuser_init.c(181): lr_think_time: 5.00 seconds.
 Ending action vuser_init.
 Running Vuser...
 Starting iteration 1.
-Warning -27077: The "vuser_init" section contains web function(s) when the "Simulate a new user on each iteration" Runtime Setting is ON.  This may produce unpredictable results with multiple iterations  	[MsgId: MWAR-27077]
 Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
 Starting action Action.
-Action.c(3): Notify: Transaction "transaction_payment_details" started.
-Action.c(5): web_remove_auto_header("Origin") started  	[MsgId: MMSG-26355]
-Action.c(5): Previous automatically added web header for "Origin" removed  	[MsgId: MMSG-26587]
-Action.c(5): web_remove/revert_auto_header("Origin") was successful  	[MsgId: MMSG-26392]
-Action.c(7): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
-Action.c(7): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
-Action.c(7): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
-Action.c(9): web_remove_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
-Action.c(9): Previous automatically added web header for "Upgrade-Insecure-Requests" removed  	[MsgId: MMSG-26587]
-Action.c(9): web_remove/revert_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
-Action.c(11): web_add_header("Origin") started  	[MsgId: MMSG-26355]
-Action.c(11): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
-Action.c(14): web_reg_find started  	[MsgId: MMSG-26355]
-Action.c(14): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-Action.c(17): web_submit_data("reservations.pl_3") started  	[MsgId: MMSG-26355]
-Action.c(17): Notify: Parameter Substitution: parameter "firstName" =  "Jojo"
-Action.c(17): Notify: Next row for parameter lastName = 1 [table  = lastName].
-Action.c(17): Notify: Parameter Substitution: parameter "lastName" =  "Bean"
-Action.c(17): Notify: Parameter Substitution: parameter "passenger" =  "Jojo Bean"
-Action.c(17): Notify: Parameter Substitution: parameter "card" =  "1234567789"
-Action.c(17): Notify: Parameter Substitution: parameter "date" =  "12/20"
-Action.c(17): Notify: Parameter Substitution: parameter "Type" =  "First"
-Action.c(17): Notify: Parameter Substitution: parameter "Pref" =  "Asile"
-Action.c(17): Notify: Parameter Substitution: parameter "outboundFlight" =  "090;789;05/18/2020"
-Action.c(17): t=27367ms: 362-byte response headers for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=24)
-Action.c(17):     HTTP/1.1 200 OK\r\n
-Action.c(17):     Date: Mon, 18 May 2020 09:58:59 GMT\r\n
-Action.c(17):     Server: Apache/2.2.21 (Win32)\r\n
-Action.c(17):     Expires: Sun, 17 May 2020 09:58:59 GMT\r\n
-Action.c(17):     Set-Cookie: MTUserInfo=firstName&Jojo&username&jojo&address2&&hash&47&address1&&lastName&B
-Action.c(17):     ean%0A; path=/\r\n
-Action.c(17):     Keep-Alive: timeout=5, max=100\r\n
-Action.c(17):     Connection: Keep-Alive\r\n
-Action.c(17):     Transfer-Encoding: chunked\r\n
-Action.c(17):     Content-Type: text/html; charset=ISO-8859-1\r\n
-Action.c(17):     \r\n
-Action.c(17): t=27389ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=24)
-Action.c(17):     9a7\r\n
-Action.c(17): t=27389ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=24)
-Action.c(17):     \r\n
-Action.c(17): t=27390ms: 2471-byte chunked response body for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=24)
-Action.c(17):     <!DOCTYPE html\n
-Action.c(17):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
-Action.c(17):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
-Action.c(17):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
-Action.c(17):     <head>\n
-Action.c(17):     <title>Reservation Made!</title>\n
-Action.c(17):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
-Action.c(17):     </head>\n
-Action.c(17):     <body bgcolor="#E0E7F1">\n
-Action.c(17):     <style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; font-siz
-Action.c(17):     e : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family: taho
-Action.c(17):     ma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: black
-Action.c(17):     }</style><BR/><BR/><h1><font color="#003366">&nbsp;&nbsp;<b>Invoice</font></b></h1><blockq
-Action.c(17):     uote>\n
-Action.c(17):     <CENTER>\n
-Action.c(17):     <small><B>Thank you for booking through Web Tours.</B></small>\n
-Action.c(17):     <BR/>\n
-Action.c(17):     <BR/>\n
-Action.c(17):     <!-- Customer Name header -->\n
-Action.c(17):     <Table width="85%" border="0" cellspacing="0" >\n
-Action.c(17):       <TR bgcolor="#5E7884">\n
-Action.c(17):          <TD colspan="2" align="center">\n
-Action.c(17):             <font color="white"><b>JojoBean's Flight Invoice</b></font>\n
-Action.c(17):          </TD>\n
-Action.c(17):          <TD width="160" align="right">\n
-Action.c(17):              <font color="white"><small>Mon May 18 12:58:59 2020\n
-Action.c(17):     </small>\n
-Action.c(17):          </TD>\n
-Action.c(17):       </TR>\n
-Action.c(17):     </Table>\n
-Action.c(17):     \n
-Action.c(17):     <Table width="85%" border="0" cellspacing="1" >\n
-Action.c(17):     <!-- Flight Item header -->\n
-Action.c(17):       <TR bgcolor="#EFF2F7">\n
-Action.c(17):          <TD colspan="2" align="left">\n
-Action.c(17):              Flights Reservation Requests:\n
-Action.c(17):         </TD>\n
-Action.c(17):         <TD align="center">Cost\n
-Action.c(17):         </TD>\n
-Action.c(17):       </TR>\n
-Action.c(17):     \n
-Action.c(17):     <!-- Flight reserved -->\n
-Action.c(17):     <TR bgcolor="#EFF2F7">\n
-Action.c(17):         <TD valign="top">1.</TD>\n
-Action.c(17):         <TD align="left">\n
-Action.c(17):            A First Class ticket\n
-Action.c(17):      from Denver to Zurich.</u></b>\n
-Action.c(17):     <br/>\n
-Action.c(17):     <center>\n
-Action.c(17):            <i>\n
-Action.c(17):               05/18/2020 :  8am : Flight 090 leaves Denver  for Zurich.<br>\n
-Action.c(17):            <br/>\n
-Action.c(17):         </TD>\n
-Action.c(17):         <TD valign="top">\n
-Action.c(17):              $789\n
-Action.c(17):         </TD>\n
-Action.c(17):       </TR>\n
-Action.c(17):     <!-- Total Cost -->\n
-Action.c(17):       <TR bgcolor="#EFF2F7">\n
-Action.c(17):         <TD>*\n
-Action.c(17):         </TD>\n
-Action.c(17):         <TD > Total Cost\n
-Action.c(17):         </TD>\n
-Action.c(17):         <TD>\n
-Action.c(17):            <b> $789 </b>\n
-Action.c(17):         </TD>\n
-Action.c(17):       </TR>\n
-Action.c(17):     \n
-Action.c(17):       <TR bgcolor="#EFF2F7">\n
-Action.c(17):         <TD>-\n
-Action.c(17):         </TD>\n
-Action.c(17):         <TD >\n
-Action.c(17):            Total Charged to Credit Card # 1234567789\n
-Action.c(17):         </TD>\n
-Action.c(17):         <TD>\n
-Action.c(17):            <b> $789 </b>\n
-Action.c(17):         </TD>\n
-Action.c(17):       </TR>\n
-Action.c(17):     \n
-Action.c(17):       <TR bgcolor="#EFF2F7">\n
-Action.c(17):         <TD>*\n
-Action.c(17):         </TD>\n
-Action.c(17):         <TD >\n
-Action.c(17):             Credit Account Balance\n
-Action.c(17):         </TD>\n
-Action.c(17):         <TD>\n
-Action.c(17):            <b> $0.00 </b>\n
-Action.c(17):         </TD>\n
-Action.c(17):       </TR></Table>\n
-Action.c(17):     <BR/>\n
-Action.c(17):     <Table width="85%" border="0">\n
-Action.c(17):       <tr>\n
-Action.c(17):         <td align=right>\n
-Action.c(17):     <form method="post" action="" enctype="application/x-www-form-urlencoded">\n
-Action.c(17):     <input type="image" name="Book Another" src="/WebTours/images/bookanother.gif" border="0" 
-Action.c(17):     /></form>    </td>\n
-Action.c(17):       </tr>\n
-Action.c(17):     </Table>\n
-Action.c(17):     \n
-Action.c(17):     </Center>\n
-Action.c(17):     \n
-Action.c(17):     </body>\n
-Action.c(17):     </html>
-Action.c(17): Found resource "http://localhost:1080/WebTours/images/bookanother.gif" in HTML "http://localhost:1080/cgi-bin/reservations.pl"  	[MsgId: MMSG-26659]
-Action.c(17): t=27401ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=24)
-Action.c(17):     0\r\n
-Action.c(17):     \r\n
-Action.c(17): t=27414ms: 298-byte response headers for "http://localhost:1080/WebTours/images/bookanother.gif" (RelFrameId=, Internal ID=25)
-Action.c(17):     HTTP/1.1 200 OK\r\n
-Action.c(17):     Date: Mon, 18 May 2020 09:59:00 GMT\r\n
-Action.c(17):     Server: Apache/2.2.21 (Win32)\r\n
-Action.c(17):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
-Action.c(17):     ETag: "100000006f425-326-5a4595a256f04"\r\n
-Action.c(17):     Accept-Ranges: bytes\r\n
-Action.c(17):     Content-Length: 806\r\n
-Action.c(17):     Keep-Alive: timeout=5, max=100\r\n
-Action.c(17):     Connection: Keep-Alive\r\n
-Action.c(17):     Content-Type: image/gif\r\n
-Action.c(17):     \r\n
-Action.c(17): t=27416ms: 806-byte response body for "http://localhost:1080/WebTours/images/bookanother.gif" (RelFrameId=, Internal ID=25)
-Action.c(17): Registered web_reg_find successful for "Text=Reservation Made!" (count=1)  	[MsgId: MMSG-26364]
-Action.c(17): web_submit_data("reservations.pl_3") was successful, 3277 body bytes, 660 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(46): Notify: Transaction "transaction_payment_details" ended with a "Pass" status (Duration: 0,2347 Wasted Time: 0,0752).
+Action.c(3): Notify: Transaction "1_buy_ticket_transaction" started.
+Action.c(7): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(7): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(10): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(10): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(13): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(13): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(16): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(16): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(19): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(19): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(22): Notify: Transaction "transaction_open_link" started.
+Action.c(25): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(25): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(30): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(30): t=405ms: 298-byte response headers for "http://localhost:1080/WebTours/" (RelFrameId=1, Internal ID=1)
+Action.c(30):     HTTP/1.1 200 OK\r\n
+Action.c(30):     Date: Fri, 22 May 2020 17:40:42 GMT\r\n
+Action.c(30):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(30):     Last-Modified: Tue, 28 Apr 2020 12:55:54 GMT\r\n
+Action.c(30):     ETag: "100000006f417-16e-5a4595a1ef3e1"\r\n
+Action.c(30):     Accept-Ranges: bytes\r\n
+Action.c(30):     Content-Length: 366\r\n
+Action.c(30):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(30):     Connection: Keep-Alive\r\n
+Action.c(30):     Content-Type: text/html\r\n
+Action.c(30):     \r\n
+Action.c(30): t=432ms: 366-byte response body for "http://localhost:1080/WebTours/" (RelFrameId=1, Internal ID=1)
+Action.c(30):     <HTML>\n
+Action.c(30):     <HEAD>\n
+Action.c(30):     <title>Web Tours</title>\n
+Action.c(30):     <frameset rows = "65,*" border="1" bordercolor="#E0E7F1">\n
+Action.c(30):     <frame name="header" src="header.html" scrolling="no" noresize="noresize" marginheight="2"
+Action.c(30):      marginwidth="2"/>\n
+Action.c(30):     <frame name="body" src="/cgi-bin/welcome.pl?signOff=true" scrolling="auto" noresize="nores
+Action.c(30):     ize" marginheight="2" marginwidth="2" />\n
+Action.c(30):     </frameset>\n
+Action.c(30):     </HEAD>\n
+Action.c(30):     </HTML>\n
+Action.c(30):     \n
+Action.c(30): Detected non-resource "http://localhost:1080/WebTours/header.html" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(30): Detected non-resource "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(30): t=493ms: 298-byte response headers for "http://localhost:1080/WebTours/header.html" (RelFrameId=1.1, Internal ID=2)
+Action.c(30):     HTTP/1.1 200 OK\r\n
+Action.c(30):     Date: Fri, 22 May 2020 17:40:42 GMT\r\n
+Action.c(30):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(30):     Last-Modified: Tue, 28 Apr 2020 12:55:54 GMT\r\n
+Action.c(30):     ETag: "100000006f415-2c6-5a4595a1dbb92"\r\n
+Action.c(30):     Accept-Ranges: bytes\r\n
+Action.c(30):     Content-Length: 710\r\n
+Action.c(30):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(30):     Connection: Keep-Alive\r\n
+Action.c(30):     Content-Type: text/html\r\n
+Action.c(30):     \r\n
+Action.c(30): t=495ms: 710-byte response body for "http://localhost:1080/WebTours/header.html" (RelFrameId=1.1, Internal ID=2)
+Action.c(30):     <!DOCTYPE html>\n
+Action.c(30):     <HTML xmlns="http://www.w3.org/1999/xhtml">\n
+Action.c(30):     <HEAD></HEAD>\n
+Action.c(30):     <BODY bgcolor="#003366" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0">\n
+Action.c(30):     \t\t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
+Action.c(30):     bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \n
+Action.c(30):     \t\t<table width="100%" border="0" cellspacing="0" cellpadding="0">\n
+Action.c(30):     \t\t\t<tr>\n
+Action.c(30):     \t\t\t\t<td align="left" valign="middle" width="50%"><img src="images/hp_logo.png" alt="" 
+Action.c(30):     height="45" width="69" align="absmiddle" border="0"/><img src="images/webtours.png" alt=""
+Action.c(30):      height="45" width="130" align="absmiddle" border="0"/></td>\n
+Action.c(30):     \t\t\t\t<td align="right"></td>\n
+Action.c(30):     \t\t\t\t<td></td>\n
+Action.c(30):     \t\t\t</tr>\n
+Action.c(30):     \t\t</table>\n
+Action.c(30):     \t</BODY>\n
+Action.c(30):     </HTML>
+Action.c(30): Found resource "http://localhost:1080/WebTours/images/hp_logo.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(30): Found resource "http://localhost:1080/WebTours/images/webtours.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(30): t=503ms: 297-byte response headers for "http://localhost:1080/WebTours/images/hp_logo.png" (RelFrameId=, Internal ID=4)
+Action.c(30):     HTTP/1.1 200 OK\r\n
+Action.c(30):     Date: Fri, 22 May 2020 17:40:42 GMT\r\n
+Action.c(30):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(30):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
+Action.c(30):     ETag: "100000006f42e-259-5a4595a28ae89"\r\n
+Action.c(30):     Accept-Ranges: bytes\r\n
+Action.c(30):     Content-Length: 601\r\n
+Action.c(30):     Keep-Alive: timeout=5, max=99\r\n
+Action.c(30):     Connection: Keep-Alive\r\n
+Action.c(30):     Content-Type: image/png\r\n
+Action.c(30):     \r\n
+Action.c(30): t=505ms: 601-byte response body for "http://localhost:1080/WebTours/images/hp_logo.png" (RelFrameId=, Internal ID=4)
+Action.c(30): t=510ms: 300-byte response headers for "http://localhost:1080/WebTours/images/webtours.png" (RelFrameId=, Internal ID=5)
+Action.c(30):     HTTP/1.1 200 OK\r\n
+Action.c(30):     Date: Fri, 22 May 2020 17:40:42 GMT\r\n
+Action.c(30):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(30):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
+Action.c(30):     ETag: "100000006f43a-105b-5a4595a2cb90d"\r\n
+Action.c(30):     Accept-Ranges: bytes\r\n
+Action.c(30):     Content-Length: 4187\r\n
+Action.c(30):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(30):     Connection: Keep-Alive\r\n
+Action.c(30):     Content-Type: image/png\r\n
+Action.c(30):     \r\n
+Action.c(30): t=513ms: 4187-byte response body for "http://localhost:1080/WebTours/images/webtours.png" (RelFrameId=, Internal ID=5)
+Action.c(30): t=559ms: 328-byte response headers for "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" (RelFrameId=1.2, Internal ID=3)
+Action.c(30):     HTTP/1.1 200 OK\r\n
+Action.c(30):     Date: Fri, 22 May 2020 17:40:42 GMT\r\n
+Action.c(30):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(30):     Set-Cookie: MSO=SID&1590169243; path=/\r\n
+Action.c(30):     Set-Cookie: MTUserInfo=; path=/; expires=Thu, 21-May-2020 17:40:43 GMT\r\n
+Action.c(30):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(30):     Connection: Keep-Alive\r\n
+Action.c(30):     Transfer-Encoding: chunked\r\n
+Action.c(30):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(30):     \r\n
+Action.c(30): t=560ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" (RelFrameId=1.2, Internal ID=3)
+Action.c(30):     2ae\r\n
+Action.c(30): t=561ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" (RelFrameId=1.2, Internal ID=3)
+Action.c(30):     \r\n
+Action.c(30): t=561ms: 686-byte chunked response body for "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" (RelFrameId=1.2, Internal ID=3)
+Action.c(30):     <!-- \n
+Action.c(30):      A Session ID has been created and loaded into a cookie called MSO.\n
+Action.c(30):      Also, the server options have been loaded into the cookie called\n
+Action.c(30):      MSO as well.  The server options can be set via the Admin page.\n
+Action.c(30):      --->\n
+Action.c(30):     \n
+Action.c(30):     <html>\n
+Action.c(30):     <title>Web Tours</title>\n
+Action.c(30):        <!-- Frame Set -->\n
+Action.c(30):        <frameset cols="160,*" border="1" frameborder="1">\n
+Action.c(30):           <!-- Navigation Frame -->\n
+Action.c(30):           <frame src="nav.pl?in=home" name="navbar" marginheight="2" marginwidth="2" \n
+Action.c(30):                 noresize="noresize" scrolling="auto"/>\n
+Action.c(30):           <!-- Home Frame -->\n
+Action.c(30):           <frame src="/WebTours/home.html" name="info" marginheight="2" marginwidth="2" \n
+Action.c(30):                 noresize="noresize" scrolling="auto"/>\n
+Action.c(30):        </frameset>\n
+Action.c(30):     </html>\n
+Action.c(30):     \n
+Action.c(30):     </body>\n
+Action.c(30):     </html>
+Action.c(30): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(30): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(30): t=565ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" (RelFrameId=1.2, Internal ID=3)
+Action.c(30):     0\r\n
+Action.c(30):     \r\n
+Action.c(30): t=582ms: 298-byte response headers for "http://localhost:1080/WebTours/home.html" (RelFrameId=1.2.2, Internal ID=7)
+Action.c(30):     HTTP/1.1 200 OK\r\n
+Action.c(30):     Date: Fri, 22 May 2020 17:40:43 GMT\r\n
+Action.c(30):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(30):     Last-Modified: Tue, 28 Apr 2020 12:55:54 GMT\r\n
+Action.c(30):     ETag: "100000006f416-551-5a4595a1e636f"\r\n
+Action.c(30):     Accept-Ranges: bytes\r\n
+Action.c(30):     Content-Length: 1361\r\n
+Action.c(30):     Keep-Alive: timeout=5, max=99\r\n
+Action.c(30):     Connection: Keep-Alive\r\n
+Action.c(30):     Content-Type: text/html\r\n
+Action.c(30):     \r\n
+Action.c(30): t=584ms: 1361-byte response body for "http://localhost:1080/WebTours/home.html" (RelFrameId=1.2.2, Internal ID=7)
+Action.c(30):     <HTML>\n
+Action.c(30):     <HEAD>\n
+Action.c(30):     \t<title>Web Tours</title>\n
+Action.c(30):     </HEAD>\n
+Action.c(30):     <style>\n
+Action.c(30):     \tblockquote {font-family: tahoma; font-size : 10pt}\n
+Action.c(30):     \tH1 {font-family: tahoma; font-size : 22pt; color: #003366}\n
+Action.c(30):     \tsmall {font-family: tahoma; font-size : 8pt}\n
+Action.c(30):     \tH3{font-family: tahoma; font-size : 10pt; color: black}\n
+Action.c(30):     \tA {FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Tahoma; TEXT-DECORATIO
+Action.c(30):     N: none}\n
+Action.c(30):     \tA:hover{ FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #993333; FONT-FAMILY: Tahoma;TEXT-DE
+Action.c(30):     CORATION: underline}\n
+Action.c(30):     \tTD {font-family: tahoma; font-size : 10pt; color: black}\n
+Action.c(30):     </style>\n
+Action.c(30):     <body bgcolor="#e0e7f1">\n
+Action.c(30):     <BR/>\n
+Action.c(30):     <BR/>\n
+Action.c(30):     <BR/>\n
+Action.c(30):     <br/>\n
+Action.c(30):     <table border="0">\n
+Action.c(30):     <tr><td></td></tr>\n
+Action.c(30):     <TR><TD></TD></TR>\n
+Action.c(30):     <TR><TD>\n
+Action.c(30):     <blockquote>\n
+Action.c(30):     <H1><b>Web Tours</b></H1>\n
+Action.c(30):     Welcome to the Web Tours site.\n
+Action.c(30):     <br/>\n
+Action.c(30):     To make reservations,please enter your account information to the left.\n
+Action.c(30):     <br/>\n
+Action.c(30):     If you haven't registered yet, <A href="/cgi-bin/login.pl?username=&amp;password=&amp;getI
+Action.c(30):     nfo=true" ><B>sign up now</B></A> to get access to all our resources.\n
+Action.c(30):     <br/>\n
+Action.c(30):     To configure the server options, use <A href="/cgi-bin/admin.pl" target="body" ><b>adminis
+Action.c(30):     tration</b></A> link.\n
+Action.c(30):     <br/><br/><br/><br/><br/><br/>\n
+Action.c(30):     <br/><small>\n
+Action.c(30):     This product uses parts of the SMT Kernel, Copyright (c) 1991-99 <A href="http://www.imati
+Action.c(30):     x.com" target="new"><B><small>iMatix Corporation</small></B></A> \n
+Action.c(30):     </small>\n
+Action.c(30):     </blockquote></TD>\n
+Action.c(30):     <TD></TD></TR>\n
+Action.c(30):     </table>\n
+Action.c(30):     </body>\n
+Action.c(30):     </HTML>\n
+Action.c(30): t=651ms: 255-byte response headers for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.2.1, Internal ID=6)
+Action.c(30):     HTTP/1.1 200 OK\r\n
+Action.c(30):     Date: Fri, 22 May 2020 17:40:43 GMT\r\n
+Action.c(30):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(30):     Expires: Thu, 21 May 2020 17:40:43 GMT\r\n
+Action.c(30):     Keep-Alive: timeout=5, max=98\r\n
+Action.c(30):     Connection: Keep-Alive\r\n
+Action.c(30):     Transfer-Encoding: chunked\r\n
+Action.c(30):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(30):     \r\n
+Action.c(30): t=653ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.2.1, Internal ID=6)
+Action.c(30):     5d1\r\n
+Action.c(30): t=653ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.2.1, Internal ID=6)
+Action.c(30):     \r\n
+Action.c(30): t=654ms: 1489-byte chunked response body for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.2.1, Internal ID=6)
+Action.c(30):     <!DOCTYPE html\n
+Action.c(30):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
+Action.c(30):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
+Action.c(30):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
+Action.c(30):     <head>\n
+Action.c(30):     <title>Web Tours Navigation Bar</title>\n
+Action.c(30):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
+Action.c(30):     </head>\n
+Action.c(30):     <body bgcolor="#E0E7F1">\n
+Action.c(30):     <style>\n
+Action.c(30):     blockquote {font-family: tahoma; font-size : 10pt}\n
+Action.c(30):     H1 {font-family: tahoma; font-size : 22pt; color: #993333}\n
+Action.c(30):     H3 {font-family: tahoma; font-size : 10pt; color: black}\n
+Action.c(30):     small {font-family: tahoma; font-size : 8pt}\n
+Action.c(30):     </style>\n
+Action.c(30):     <form method="post" action="/cgi-bin/login.pl" target="body">\n
+Action.c(30):     <input type="hidden" name="userSession" value="128810.79327663zzcfHAfpVHQVzzzHDQHftpcDVAHf
+Action.c(30):     "/>\n
+Action.c(30):     <table border="0"><tr><td>&nbsp;</td>\n
+Action.c(30):     <td>&nbsp;</td></tr>\n
+Action.c(30):     <tr><td>&nbsp;</td>\n
+Action.c(30):     <td>&nbsp;</td></tr>\n
+Action.c(30):     <tr><td>&nbsp;</td>\n
+Action.c(30):     <td><small>&nbsp;Username</small></td></tr>\n
+Action.c(30):     <tr><td>&nbsp;</td>\n
+Action.c(30):     <td><input type="text" name="username" value="" size="14" maxlength="14"/></td></tr>\n
+Action.c(30):     <tr><td>&nbsp;</td>\n
+Action.c(30):     <td><small>&nbsp;Password</small></td>\n
+Action.c(30):     <tr><td>&nbsp;</td>\n
+Action.c(30):     <td><input type="password" name="password" value="" size="14" maxlength="14"/></td></tr>\n
+Action.c(30):     <tr><td>&nbsp;</td>\n
+Action.c(30):     <td>&nbsp;</td></tr>\n
+Action.c(30):     <tr><td>&nbsp;</td>\n
+Action.c(30):     <td><input type="image" name="login" value="Login" alt="Login" border="1" \n
+Action.c(30):     src="/WebTours/images/mer_login.gif"/></td></tr>\n
+Action.c(30):     <tr><td>&nbsp;</td><td>&nbsp;</td></tr>\n
+Action.c(30):     </table><input type="hidden" name="JSFormSubmit" value="off"/>\n
+Action.c(30):     </form>\n
+Action.c(30):     \n
+Action.c(30):     </body>\n
+Action.c(30):     </html>\n
+Action.c(30): Notify: Saving Parameter "userSession = 128810.79327663zzcfHAfpVHQVzzzHDQHftpcDVAHf".
+Action.c(30): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
+Action.c(30): t=660ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.2.1, Internal ID=6)
+Action.c(30):     0\r\n
+Action.c(30):     \r\n
+Action.c(30): t=670ms: 297-byte response headers for "http://localhost:1080/WebTours/images/mer_login.gif" (RelFrameId=, Internal ID=8)
+Action.c(30):     HTTP/1.1 200 OK\r\n
+Action.c(30):     Date: Fri, 22 May 2020 17:40:43 GMT\r\n
+Action.c(30):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(30):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
+Action.c(30):     ETag: "100000006f436-2a7-5a4595a2b5d9c"\r\n
+Action.c(30):     Accept-Ranges: bytes\r\n
+Action.c(30):     Content-Length: 679\r\n
+Action.c(30):     Keep-Alive: timeout=5, max=98\r\n
+Action.c(30):     Connection: Keep-Alive\r\n
+Action.c(30):     Content-Type: image/gif\r\n
+Action.c(30):     \r\n
+Action.c(30): t=672ms: 679-byte response body for "http://localhost:1080/WebTours/images/mer_login.gif" (RelFrameId=, Internal ID=8)
+Action.c(30): web_url("WebTours") was successful, 10079 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(40): Notify: Transaction "transaction_open_link" ended with a "Pass" status (Duration: 0.5231 Wasted Time: 0.2521).
+Action.c(42): lr_think_time: 2.00 seconds.
+Action.c(44): Notify: Transaction "transaction_login" started.
+Action.c(46): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(46): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(46): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(48): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(48): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(51): web_remove_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(51): Previous automatically added web header for "Upgrade-Insecure-Requests" removed  	[MsgId: MMSG-26587]
+Action.c(51): web_remove/revert_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(53): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(53): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(56): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(56): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(59): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(59): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(62): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(62): Notify: Parameter Substitution: parameter "userSession" =  "128810.79327663zzcfHAfpVHQVzzzHDQHftpcDVAHf"
+Action.c(62): Notify: Next row for parameter login = 1 [table  = login].
+Action.c(62): Notify: Parameter Substitution: parameter "login" =  "jojo"
+Action.c(62): Notify: Parameter Substitution: parameter "pass" =  "bean"
+Action.c(62): t=2970ms: 358-byte response headers for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=9)
+Action.c(62):     HTTP/1.1 200 OK\r\n
+Action.c(62):     Date: Fri, 22 May 2020 17:40:45 GMT\r\n
+Action.c(62):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(62):     Expires: 5s\r\n
+Action.c(62):     Set-Cookie: MTUserInfo=firstName&Jojo&address2&&username&jojo&hash&47&lastName&Bean%0A&add
+Action.c(62):     ress1&&creditCard&&expDate&%0A; path=/\r\n
+Action.c(62):     Keep-Alive: timeout=5, max=97\r\n
+Action.c(62):     Connection: Keep-Alive\r\n
+Action.c(62):     Transfer-Encoding: chunked\r\n
+Action.c(62):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(62):     \r\n
+Action.c(62): t=2990ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=9)
+Action.c(62):     1e1\r\n
+Action.c(62): t=2991ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=9)
+Action.c(62):     \r\n
+Action.c(62): t=2991ms: 481-byte chunked response body for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=9)
+Action.c(62):     <!--\n
+Action.c(62):     User password was correct - added a cookie with the user's default\n
+Action.c(62):     information.  Set the user up to make reservations...\n
+Action.c(62):     \n
+Action.c(62):     --->\n
+Action.c(62):     \n
+Action.c(62):     <html>\n
+Action.c(62):     <title>Web Tours</title>\n
+Action.c(62):     <frameset cols="160,*" border=1 frameborder=1>\n
+Action.c(62):     <frame src="nav.pl?page=menu&in=home" name="navbar" marginheight="2" marginwidth="2" nores
+Action.c(62):     ize="noresize" scrolling="auto"/>\n
+Action.c(62):     <frame src="login.pl?intro=true" name="info" marginheight="2" marginwidth="2" noresize="no
+Action.c(62):     resize" scrolling="auto"/>\n
+Action.c(62):     </frameset>\n
+Action.c(62):     \n
+Action.c(62):     </body>\n
+Action.c(62):     </html>
+Action.c(62): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(62): Detected non-resource "http://localhost:1080/cgi-bin/login.pl?intro=true" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(62): t=2993ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=9)
+Action.c(62):     0\r\n
+Action.c(62):     \r\n
+Action.c(62): t=3077ms: 255-byte response headers for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" (RelFrameId=1.1, Internal ID=10)
+Action.c(62):     HTTP/1.1 200 OK\r\n
+Action.c(62):     Date: Fri, 22 May 2020 17:40:45 GMT\r\n
+Action.c(62):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(62):     Expires: Thu, 21 May 2020 17:40:45 GMT\r\n
+Action.c(62):     Keep-Alive: timeout=5, max=97\r\n
+Action.c(62):     Connection: Keep-Alive\r\n
+Action.c(62):     Transfer-Encoding: chunked\r\n
+Action.c(62):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(62):     \r\n
+Action.c(62): t=3078ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" (RelFrameId=1.1, Internal ID=10)
+Action.c(62):     5ca\r\n
+Action.c(62): t=3079ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" (RelFrameId=1.1, Internal ID=10)
+Action.c(62):     \r\n
+Action.c(62): t=3080ms: 1482-byte chunked response body for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" (RelFrameId=1.1, Internal ID=10)
+Action.c(62):     <!DOCTYPE html\n
+Action.c(62):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
+Action.c(62):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
+Action.c(62):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
+Action.c(62):     <head>\n
+Action.c(62):     <title>Web Tours Navigation Bar</title>\n
+Action.c(62):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
+Action.c(62):     </head>\n
+Action.c(62):     <body bgcolor="#E0E7F1">\n
+Action.c(62):     \n
+Action.c(62):     <style>\n
+Action.c(62):     \tblockquote {font-family: tahoma; font-size : 10pt}\n
+Action.c(62):     \tH1 {font-family: tahoma; font-size : 22pt; color: #993333}\n
+Action.c(62):     \tsmall {font-family: tahoma; font-size : 8pt}\n
+Action.c(62):     \tH3{font-family: tahoma; font-size : 10pt; color: black}\n
+Action.c(62):     \tA {FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Tahoma; TEXT-DECORATIO
+Action.c(62):     N: none}\n
+Action.c(62):     \tA:hover{ FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #993333; FONT-FAMILY: Tahoma;TEXT-DE
+Action.c(62):     CORATION: underline}\n
+Action.c(62):     \tTD {font-family: tahoma; font-size : 10pt; color: black}\n
+Action.c(62):     </style>\n
+Action.c(62):     \n
+Action.c(62):     <BR><BR><center>\n
+Action.c(62):     \n
+Action.c(62):     <br clear="both"/><center><A HREF="welcome.pl?page=search" TARGET="body"><IMG BORDER="0" S
+Action.c(62):     RC="/WebTours/images/flights.gif" \n
+Action.c(62):     ALT="Search Flights Button"/></A>\n
+Action.c(62):     <br clear="both"/><A HREF="welcome.pl?page=itinerary" TARGET="body"><IMG BORDER="0" SRC="/
+Action.c(62):     WebTours/images/itinerary.gif" \n
+Action.c(62):     ALT="Itinerary Button"/></A>\n
+Action.c(62):     <br clear="both"/><A HREF="welcome.pl?page=menus" TARGET="body"><IMG BORDER="0" SRC="/WebT
+Action.c(62):     ours/images/in_home.gif" \n
+Action.c(62):     ALT="Home Button"/></A>\n
+Action.c(62):     <br clear><A HREF="welcome.pl?signOff=1" TARGET="body"><IMG BORDER="0" SRC="/WebTours/imag
+Action.c(62):     es/signoff.gif" \n
+Action.c(62):     ALT="SignOff Button"/></A></center>\n
+Action.c(62):     \n
+Action.c(62):     </body>\n
+Action.c(62):     </html>\n
+Action.c(62): Found resource "http://localhost:1080/WebTours/images/flights.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(62): Found resource "http://localhost:1080/WebTours/images/itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(62): Found resource "http://localhost:1080/WebTours/images/in_home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(62): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(62): t=3086ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" (RelFrameId=1.1, Internal ID=10)
+Action.c(62):     0\r\n
+Action.c(62):     \r\n
+Action.c(62): t=3096ms: 228-byte response headers for "http://localhost:1080/cgi-bin/login.pl?intro=true" (RelFrameId=1.2, Internal ID=11)
+Action.c(62):     HTTP/1.1 200 OK\r\n
+Action.c(62):     Date: Fri, 22 May 2020 17:40:45 GMT\r\n
+Action.c(62):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(62):     Expires: 5s\r\n
+Action.c(62):     Keep-Alive: timeout=5, max=99\r\n
+Action.c(62):     Connection: Keep-Alive\r\n
+Action.c(62):     Transfer-Encoding: chunked\r\n
+Action.c(62):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(62):     \r\n
+Action.c(62): t=3098ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl?intro=true" (RelFrameId=1.2, Internal ID=11)
+Action.c(62):     396\r\n
+Action.c(62): t=3098ms: 7-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl?intro=true" (RelFrameId=1.2, Internal ID=11)
+Action.c(62):     \r\n
+Action.c(62):     0\r\n
+Action.c(62):     \r\n
+Action.c(62): t=3098ms: 918-byte chunked response body for "http://localhost:1080/cgi-bin/login.pl?intro=true" (RelFrameId=1.2, Internal ID=11)
+Action.c(62):     <!DOCTYPE html\n
+Action.c(62):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
+Action.c(62):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
+Action.c(62):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
+Action.c(62):     <head>\n
+Action.c(62):     <title>Welcome to Web Tours</title>\n
+Action.c(62):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
+Action.c(62):     </head>\n
+Action.c(62):     <body bgcolor="#E0E7F1">\n
+Action.c(62):     <p /><style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; fon
+Action.c(62):     t-size : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family:
+Action.c(62):      tahoma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: 
+Action.c(62):     black}</style><BR/><BR/><BR/><BR/><BR/><blockquote>Welcome, <b>jojo</b>, to the Web Tours 
+Action.c(62):     reservation pages.<BR/>Using the menu to the left, you can search for new flights to book,
+Action.c(62):      \n
+Action.c(62):     or review/edit the flights already booked.  Don't forget to sign off when\n
+Action.c(62):     you're done!\n
+Action.c(62):     </blockquote>\n
+Action.c(62):     </body>\n
+Action.c(62):     </html>
+Action.c(62): t=3103ms: 297-byte response headers for "http://localhost:1080/WebTours/images/flights.gif" (RelFrameId=, Internal ID=12)
+Action.c(62):     HTTP/1.1 200 OK\r\n
+Action.c(62):     Date: Fri, 22 May 2020 17:40:45 GMT\r\n
+Action.c(62):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(62):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
+Action.c(62):     ETag: "100000006f429-2d6-5a4595a26f17f"\r\n
+Action.c(62):     Accept-Ranges: bytes\r\n
+Action.c(62):     Content-Length: 726\r\n
+Action.c(62):     Keep-Alive: timeout=5, max=96\r\n
+Action.c(62):     Connection: Keep-Alive\r\n
+Action.c(62):     Content-Type: image/gif\r\n
+Action.c(62):     \r\n
+Action.c(62): t=3105ms: 726-byte response body for "http://localhost:1080/WebTours/images/flights.gif" (RelFrameId=, Internal ID=12)
+Action.c(62): t=3107ms: 297-byte response headers for "http://localhost:1080/WebTours/images/itinerary.gif" (RelFrameId=, Internal ID=13)
+Action.c(62):     HTTP/1.1 200 OK\r\n
+Action.c(62):     Date: Fri, 22 May 2020 17:40:45 GMT\r\n
+Action.c(62):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(62):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
+Action.c(62):     ETag: "100000006f433-2dd-5a4595a2a67ab"\r\n
+Action.c(62):     Accept-Ranges: bytes\r\n
+Action.c(62):     Content-Length: 733\r\n
+Action.c(62):     Keep-Alive: timeout=5, max=99\r\n
+Action.c(62):     Connection: Keep-Alive\r\n
+Action.c(62):     Content-Type: image/gif\r\n
+Action.c(62):     \r\n
+Action.c(62): t=3108ms: 733-byte response body for "http://localhost:1080/WebTours/images/itinerary.gif" (RelFrameId=, Internal ID=13)
+Action.c(62): t=3111ms: 298-byte response headers for "http://localhost:1080/WebTours/images/in_home.gif" (RelFrameId=, Internal ID=14)
+Action.c(62):     HTTP/1.1 200 OK\r\n
+Action.c(62):     Date: Fri, 22 May 2020 17:40:45 GMT\r\n
+Action.c(62):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(62):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
+Action.c(62):     ETag: "100000006f430-2b0-5a4595a295a4d"\r\n
+Action.c(62):     Accept-Ranges: bytes\r\n
+Action.c(62):     Content-Length: 688\r\n
+Action.c(62):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(62):     Connection: Keep-Alive\r\n
+Action.c(62):     Content-Type: image/gif\r\n
+Action.c(62):     \r\n
+Action.c(62): t=3113ms: 688-byte response body for "http://localhost:1080/WebTours/images/in_home.gif" (RelFrameId=, Internal ID=14)
+Action.c(62): t=3115ms: 298-byte response headers for "http://localhost:1080/WebTours/images/signoff.gif" (RelFrameId=, Internal ID=15)
+Action.c(62):     HTTP/1.1 200 OK\r\n
+Action.c(62):     Date: Fri, 22 May 2020 17:40:45 GMT\r\n
+Action.c(62):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(62):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
+Action.c(62):     ETag: "100000006f439-2ef-5a4595a2c5f43"\r\n
+Action.c(62):     Accept-Ranges: bytes\r\n
+Action.c(62):     Content-Length: 751\r\n
+Action.c(62):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(62):     Connection: Keep-Alive\r\n
+Action.c(62):     Content-Type: image/gif\r\n
+Action.c(62):     \r\n
+Action.c(62): t=3116ms: 751-byte response body for "http://localhost:1080/WebTours/images/signoff.gif" (RelFrameId=, Internal ID=15)
+Action.c(62): Registered web_reg_find successful for "Text=User password was correct" (count=1)  	[MsgId: MMSG-26364]
+Action.c(62): web_submit_data("login.pl") was successful, 5779 body bytes, 2031 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(79): Notify: Transaction "transaction_login" ended with a "Pass" status (Duration: 0.3455 Wasted Time: 0.0802).
+Action.c(81): lr_think_time: 2.00 seconds.
+Action.c(83): Notify: Transaction "transaction_click_flights" started.
+Action.c(85): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(85): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(88): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(88): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(91): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(91): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(94): web_url("Search Flights Button") started  	[MsgId: MMSG-26355]
+Action.c(94): t=5292ms: 215-byte response headers for "http://localhost:1080/cgi-bin/welcome.pl?page=search" (RelFrameId=1, Internal ID=16)
+Action.c(94):     HTTP/1.1 200 OK\r\n
+Action.c(94):     Date: Fri, 22 May 2020 17:40:47 GMT\r\n
+Action.c(94):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(94):     Keep-Alive: timeout=5, max=95\r\n
+Action.c(94):     Connection: Keep-Alive\r\n
+Action.c(94):     Transfer-Encoding: chunked\r\n
+Action.c(94):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(94):     \r\n
+Action.c(94): t=5306ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?page=search" (RelFrameId=1, Internal ID=16)
+Action.c(94):     268\r\n
+Action.c(94): t=5307ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?page=search" (RelFrameId=1, Internal ID=16)
+Action.c(94):     \r\n
+Action.c(94): t=5308ms: 616-byte chunked response body for "http://localhost:1080/cgi-bin/welcome.pl?page=search" (RelFrameId=1, Internal ID=16)
+Action.c(94):     <!-- \n
+Action.c(94):      User has returned to the search page.  Since user has already logged on,\n
+Action.c(94):      we can give them the menu in the navbar.\n
+Action.c(94):      --->\n
+Action.c(94):     \n
+Action.c(94):     <html>\n
+Action.c(94):     <title>Web Tours</title>\n
+Action.c(94):        <!-- Frame Set -->\n
+Action.c(94):        <frameset cols="160,*" border="1" frameborder="1">\n
+Action.c(94):           <!-- Navigation Frame -->\n
+Action.c(94):           <frame src="nav.pl?page=menu&in=flights" name="navbar" \n
+Action.c(94):                 marginheight="2" marginwidth="2" norseize="noresize" scrolling="auto"/>\n
+Action.c(94):           <!-- Reservation Frame -->\n
+Action.c(94):           <frame src="reservations.pl?page=welcome" name="info" \n
+Action.c(94):                 marginheight="2" marginwidth="2" norseize="noresize" scrolling="auto"/>\n
+Action.c(94):        </frameset>\n
+Action.c(94):     </html>\n
+Action.c(94): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights" in "http://localhost:1080/cgi-bin/welcome.pl?page=search"  	[MsgId: MMSG-26574]
+Action.c(94): Detected non-resource "http://localhost:1080/cgi-bin/reservations.pl?page=welcome" in "http://localhost:1080/cgi-bin/welcome.pl?page=search"  	[MsgId: MMSG-26574]
+Action.c(94): t=5310ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?page=search" (RelFrameId=1, Internal ID=16)
+Action.c(94):     0\r\n
+Action.c(94):     \r\n
+Action.c(94): t=5392ms: 255-byte response headers for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights" (RelFrameId=1.1, Internal ID=17)
+Action.c(94):     HTTP/1.1 200 OK\r\n
+Action.c(94):     Date: Fri, 22 May 2020 17:40:47 GMT\r\n
+Action.c(94):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(94):     Expires: Thu, 21 May 2020 17:40:47 GMT\r\n
+Action.c(94):     Keep-Alive: timeout=5, max=96\r\n
+Action.c(94):     Connection: Keep-Alive\r\n
+Action.c(94):     Transfer-Encoding: chunked\r\n
+Action.c(94):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(94):     \r\n
+Action.c(94): t=5394ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights" (RelFrameId=1.1, Internal ID=17)
+Action.c(94):     5ca\r\n
+Action.c(94): t=5394ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights" (RelFrameId=1.1, Internal ID=17)
+Action.c(94):     \r\n
+Action.c(94): t=5395ms: 1482-byte chunked response body for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights" (RelFrameId=1.1, Internal ID=17)
+Action.c(94):     <!DOCTYPE html\n
+Action.c(94):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
+Action.c(94):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
+Action.c(94):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
+Action.c(94):     <head>\n
+Action.c(94):     <title>Web Tours Navigation Bar</title>\n
+Action.c(94):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
+Action.c(94):     </head>\n
+Action.c(94):     <body bgcolor="#E0E7F1">\n
+Action.c(94):     \n
+Action.c(94):     <style>\n
+Action.c(94):     \tblockquote {font-family: tahoma; font-size : 10pt}\n
+Action.c(94):     \tH1 {font-family: tahoma; font-size : 22pt; color: #993333}\n
+Action.c(94):     \tsmall {font-family: tahoma; font-size : 8pt}\n
+Action.c(94):     \tH3{font-family: tahoma; font-size : 10pt; color: black}\n
+Action.c(94):     \tA {FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Tahoma; TEXT-DECORATIO
+Action.c(94):     N: none}\n
+Action.c(94):     \tA:hover{ FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #993333; FONT-FAMILY: Tahoma;TEXT-DE
+Action.c(94):     CORATION: underline}\n
+Action.c(94):     \tTD {font-family: tahoma; font-size : 10pt; color: black}\n
+Action.c(94):     </style>\n
+Action.c(94):     \n
+Action.c(94):     <BR><BR><center>\n
+Action.c(94):     \n
+Action.c(94):     <br clear="both"/><center><A HREF="welcome.pl?page=search" TARGET="body"><IMG BORDER="0" S
+Action.c(94):     RC="/WebTours/images/in_flights.gif" \n
+Action.c(94):     ALT="Search Flights Button"/></A>\n
+Action.c(94):     <br clear="both"/><A HREF="welcome.pl?page=itinerary" TARGET="body"><IMG BORDER="0" SRC="/
+Action.c(94):     WebTours/images/itinerary.gif" \n
+Action.c(94):     ALT="Itinerary Button"/></A>\n
+Action.c(94):     <br clear="both"/><A HREF="welcome.pl?page=menus" TARGET="body"><IMG BORDER="0" SRC="/WebT
+Action.c(94):     ours/images/home.gif" \n
+Action.c(94):     ALT="Home Button"/></A>\n
+Action.c(94):     <br clear><A HREF="welcome.pl?signOff=1" TARGET="body"><IMG BORDER="0" SRC="/WebTours/imag
+Action.c(94):     es/signoff.gif" \n
+Action.c(94):     ALT="SignOff Button"/></A></center>\n
+Action.c(94):     \n
+Action.c(94):     </body>\n
+Action.c(94):     </html>\n
+Action.c(94): Found resource "http://localhost:1080/WebTours/images/in_flights.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights"  	[MsgId: MMSG-26659]
+Action.c(94): Resource "http://localhost:1080/WebTours/images/itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(94): Found resource "http://localhost:1080/WebTours/images/home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights"  	[MsgId: MMSG-26659]
+Action.c(94): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(94): t=5401ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights" (RelFrameId=1.1, Internal ID=17)
+Action.c(94):     0\r\n
+Action.c(94):     \r\n
+Action.c(94): t=5407ms: 297-byte response headers for "http://localhost:1080/WebTours/images/in_flights.gif" (RelFrameId=, Internal ID=19)
+Action.c(94):     HTTP/1.1 200 OK\r\n
+Action.c(94):     Date: Fri, 22 May 2020 17:40:47 GMT\r\n
+Action.c(94):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(94):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
+Action.c(94):     ETag: "100000006f42f-2d6-5a4595a290852"\r\n
+Action.c(94):     Accept-Ranges: bytes\r\n
+Action.c(94):     Content-Length: 726\r\n
+Action.c(94):     Keep-Alive: timeout=5, max=94\r\n
+Action.c(94):     Connection: Keep-Alive\r\n
+Action.c(94):     Content-Type: image/gif\r\n
+Action.c(94):     \r\n
+Action.c(94): t=5409ms: 726-byte response body for "http://localhost:1080/WebTours/images/in_flights.gif" (RelFrameId=, Internal ID=19)
+Action.c(94): t=5412ms: 297-byte response headers for "http://localhost:1080/WebTours/images/home.gif" (RelFrameId=, Internal ID=20)
+Action.c(94):     HTTP/1.1 200 OK\r\n
+Action.c(94):     Date: Fri, 22 May 2020 17:40:47 GMT\r\n
+Action.c(94):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(94):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
+Action.c(94):     ETag: "100000006f42d-2b0-5a4595a286073"\r\n
+Action.c(94):     Accept-Ranges: bytes\r\n
+Action.c(94):     Content-Length: 688\r\n
+Action.c(94):     Keep-Alive: timeout=5, max=98\r\n
+Action.c(94):     Connection: Keep-Alive\r\n
+Action.c(94):     Content-Type: image/gif\r\n
+Action.c(94):     \r\n
+Action.c(94): t=5414ms: 688-byte response body for "http://localhost:1080/WebTours/images/home.gif" (RelFrameId=, Internal ID=20)
+Action.c(94): t=5418ms: 255-byte response headers for "http://localhost:1080/cgi-bin/reservations.pl?page=welcome" (RelFrameId=1.2, Internal ID=18)
+Action.c(94):     HTTP/1.1 200 OK\r\n
+Action.c(94):     Date: Fri, 22 May 2020 17:40:47 GMT\r\n
+Action.c(94):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(94):     Expires: Thu, 21 May 2020 17:40:47 GMT\r\n
+Action.c(94):     Keep-Alive: timeout=5, max=98\r\n
+Action.c(94):     Connection: Keep-Alive\r\n
+Action.c(94):     Transfer-Encoding: chunked\r\n
+Action.c(94):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(94):     \r\n
+Action.c(94): t=5419ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl?page=welcome" (RelFrameId=1.2, Internal ID=18)
+Action.c(94):     f84\r\n
+Action.c(94): t=5419ms: 7-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl?page=welcome" (RelFrameId=1.2, Internal ID=18)
+Action.c(94):     \r\n
+Action.c(94):     112\r\n
+Action.c(94): t=5420ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl?page=welcome" (RelFrameId=1.2, Internal ID=18)
+Action.c(94):     \r\n
+Action.c(94): t=5421ms: 4246-byte chunked response body for "http://localhost:1080/cgi-bin/reservations.pl?page=welcome" (RelFrameId=1.2, Internal ID=18)
+Action.c(94):     <!DOCTYPE html\n
+Action.c(94):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
+Action.c(94):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
+Action.c(94):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
+Action.c(94):     <head>\n
+Action.c(94):     <title>Flight Selections</title>\n
+Action.c(94):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
+Action.c(94):     </head>\n
+Action.c(94):     <body bgcolor="#E0E7F1">\n
+Action.c(94):     <style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; font-siz
+Action.c(94):     e : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family: taho
+Action.c(94):     ma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: black
+Action.c(94):     }</style><BR/><BR/><h1><font color="#003366">&nbsp;&nbsp;<b>Find Flight</font></b></h1><bl
+Action.c(94):     ockquote>\n
+Action.c(94):     <form method="post" action="reservations.pl" enctype="application/x-www-form-urlencoded" o
+Action.c(94):     nsubmit="" name="DestForm">\n
+Action.c(94):     <input type="hidden" name="advanceDiscount" value="0"  /><table border="0" cellspacing="5"
+Action.c(94):     ><tr><td align="left">Departure City :</td> <td><select name="depart" >\n
+Action.c(94):     <option selected="selected" value="Denver">Denver</option>\n
+Action.c(94):     <option value="Frankfurt">Frankfurt</option>\n
+Action.c(94):     <option value="London">London</option>\n
+Action.c(94):     <option value="Los Angeles">Los Angeles</option>\n
+Action.c(94):     <option value="Paris">Paris</option>\n
+Action.c(94):     <option value="Portland">Portland</option>\n
+Action.c(94):     <option value="San Francisco">San Francisco</option>\n
+Action.c(94):     <option value="Seattle">Seattle</option>\n
+Action.c(94):     <option value="Sydney">Sydney</option>\n
+Action.c(94):     <option value="Zurich">Zurich</option>\n
+Action.c(94):     </select></td> <td align="left">Departure Date :</td> <td><input type="text" name="departD
+Action.c(94):     ate" value="05/23/2020" size="10" maxlength="10" /> \n
+Action.c(94):     <!-- Departure Date Applet -->\n
+Action.c(94):     <APPLET CODEBASE="/WebTours/classes/" CODE="FormDateUpdate.class" MAYSCRIPT Width=26 Heigh
+Action.c(94):     t=28 BORDER=0>\n
+Action.c(94):        <PARAM NAME=CalenderTitle  VALUE="Select Departure Date">\n
+Action.c(94):        <PARAM NAME=HtmlFormIndex  VALUE=0>\n
+Action.c(94):        <PARAM NAME=HtmlEditIndex  VALUE=2>\n
+Action.c(94):        <PARAM NAME=AutoClose      VALUE=1>\n
+Action.c(94):        <PARAM NAME=Label          VALUE="...">\n
+Action.c(94):     </APPLET>\n
+Action.c(94):     </td></tr> <tr><td align="left">Arrival City :</td> <td><select name="arrive" >\n
+Action.c(94):     <option selected="selected" value="Denver">Denver</option>\n
+Action.c(94):     <option value="Frankfurt">Frankfurt</option>\n
+Action.c(94):     <option value="London">London</option>\n
+Action.c(94):     <option value="Los Angeles">Los Angeles</option>\n
+Action.c(94):     <option value="Paris">Paris</option>\n
+Action.c(94):     <option value="Portland">Portland</option>\n
+Action.c(94):     <option value="San Francisco">San Francisco</option>\n
+Action.c(94):     <option value="Seattle">Seattle</option>\n
+Action.c(94):     <option value="Sydney">Sydney</option>\n
+Action.c(94):     <option value="Zurich">Zurich</option>\n
+Action.c(94):     </select></td> <td align="left">Return Date :</td> <td><input type="text" name="returnDate
+Action.c(94):     " value="05/24/2020" size="10" maxlength="10" /> \n
+Action.c(94):     <!-- Return Date Applet -->\n
+Action.c(94):     <APPLET CODEBASE="/WebTours/classes/" CODE="FormDateUpdate.class" MAYSCRIPT Width=26 Heigh
+Action.c(94):     t=28 BORDER=0>\n
+Action.c(94):        <PARAM NAME=CalenderTitle  VALUE="Select Return Date">\n
+Action.c(94):        <PARAM NAME=HtmlFormIndex  VALUE=0>\n
+Action.c(94):        <PARAM NAME=HtmlEditIndex  VALUE=4>\n
+Action.c(94):        <PARAM NAME=AutoClose      VALUE=1>\n
+Action.c(94):        <PARAM NAME=Label          VALUE="...">\n
+Action.c(94):     </APPLET>\n
+Action.c(94):     </td></tr> <tr><td align="left">No. of Passengers : </td> <td><input type="text" name="num
+Action.c(94):     Passengers" value="1" size="3" maxlength="8" /></td> <td colspan="2"><label><input type="c
+Action.c(94):     heckbox" name="roundtrip" value="on" />Roundtrip ticket</label></td></tr> <tr><td>Seating 
+Action.c(94):     Preference</td> <td /> <td>Type of Seat</td></tr> <tr><td><label><input type="radio" name=
+Action.c(94):     "seatPref" value="Aisle" />Aisle</label><br /> <label><input type="radio" name="seatPref" 
+Action.c(94):     value="Window" />Window</label><br /> <label><input type="radio" name="seatPref" value="No
+Action.c(94):     ne" checked="checked" />None</label><br /></td> <td /> <td><label><input type="radio" name
+Action.c(94):     ="seatType" value="First" />First</label><br /> <label><input type="radio" name="seatType"
+Action.c(94):      value="Business" />Business</label><br /> <label><input type="radio" name="seatType" valu
+Action.c(94):     e="Coach" checked="checked" />Coach</label><br /></td></tr> <tr><td height="10" /></tr> <t
+Action.c(94):     r><td align="center" colspan="4"><input type="image" name="findFlights" src="/WebTours/ima
+Action.c(94):     ges/button_next.gif" border="0" /></td></tr></table><div><input type="hidden" name=".cgifi
+Action.c(94):     elds" value="roundtrip"  /><input type="hidden" name=".cgifields" value="seatType"  /><inp
+Action.c(94):     ut type="hidden" name=".cgifields" value="seatPref"  /></div></form>\n
+Action.c(94):     </blockquote>\n
+Action.c(94):     \n
+Action.c(94):     </body>\n
+Action.c(94):     </html>\n
+Action.c(94): Found resource "http://localhost:1080/WebTours/images/button_next.gif" in HTML "http://localhost:1080/cgi-bin/reservations.pl?page=welcome"  	[MsgId: MMSG-26659]
+Action.c(94): t=5430ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl?page=welcome" (RelFrameId=1.2, Internal ID=18)
+Action.c(94):     0\r\n
+Action.c(94):     \r\n
+Action.c(94): t=5441ms: 297-byte response headers for "http://localhost:1080/WebTours/images/button_next.gif" (RelFrameId=, Internal ID=21)
+Action.c(94):     HTTP/1.1 200 OK\r\n
+Action.c(94):     Date: Fri, 22 May 2020 17:40:47 GMT\r\n
+Action.c(94):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(94):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
+Action.c(94):     ETag: "100000006f426-2f6-5a4595a25d09c"\r\n
+Action.c(94):     Accept-Ranges: bytes\r\n
+Action.c(94):     Content-Length: 758\r\n
+Action.c(94):     Keep-Alive: timeout=5, max=93\r\n
+Action.c(94):     Connection: Keep-Alive\r\n
+Action.c(94):     Content-Type: image/gif\r\n
+Action.c(94):     \r\n
+Action.c(94): t=5443ms: 758-byte response body for "http://localhost:1080/WebTours/images/button_next.gif" (RelFrameId=, Internal ID=21)
+Action.c(94): Registered web_reg_find successful for "Text=User has returned to the search page" (count=1)  	[MsgId: MMSG-26364]
+Action.c(94): web_url("Search Flights Button") was successful, 8516 body bytes, 1616 header bytes, 43 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(104): Notify: Transaction "transaction_click_flights" ended with a "Pass" status (Duration: 0,3136 Wasted Time: 0,0819).
+Action.c(106): lr_think_time: 2,00 seconds.
+Action.c(108): Notify: Transaction "transaction_find_flight" started.
+Action.c(110): web_add_auto_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(110): web_add_auto_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(113): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(113): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(117): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
+Action.c(117): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
+Action.c(127): web_submit_data("reservations.pl") started  	[MsgId: MMSG-26355]
+Action.c(127): Notify: Parameter Substitution: parameter "departCity" =  "Denver"
+Action.c(127): Notify: Parameter Substitution: parameter "departDate" =  "05/22/2020"
+Action.c(127): Notify: Parameter Substitution: parameter "arriveCity" =  "Zurich"
+Action.c(127): Notify: Parameter Substitution: parameter "returnDate" =  "06/21/2020"
+Action.c(127): Notify: Parameter Substitution: parameter "Pref" =  "Asile"
+Action.c(127): Notify: Parameter Substitution: parameter "Type" =  "First"
+Action.c(127): t=7627ms: 255-byte response headers for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=22)
+Action.c(127):     HTTP/1.1 200 OK\r\n
+Action.c(127):     Date: Fri, 22 May 2020 17:40:50 GMT\r\n
+Action.c(127):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(127):     Expires: Thu, 21 May 2020 17:40:50 GMT\r\n
+Action.c(127):     Keep-Alive: timeout=5, max=92\r\n
+Action.c(127):     Connection: Keep-Alive\r\n
+Action.c(127):     Transfer-Encoding: chunked\r\n
+Action.c(127):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(127):     \r\n
+Action.c(127): t=7644ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=22)
+Action.c(127):     985\r\n
+Action.c(127): t=7644ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=22)
+Action.c(127):     \r\n
+Action.c(127): t=7645ms: 2437-byte chunked response body for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=22)
+Action.c(127):     <!DOCTYPE html\n
+Action.c(127):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
+Action.c(127):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
+Action.c(127):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
+Action.c(127):     <head>\n
+Action.c(127):     <title>Flight Selections</title>\n
+Action.c(127):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
+Action.c(127):     </head>\n
+Action.c(127):     <body bgcolor="#E0E7F1">\n
+Action.c(127):     <style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; font-siz
+Action.c(127):     e : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family: taho
+Action.c(127):     ma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: black
+Action.c(127):     }</style><BR/><BR/><h1><font color="#003366">&nbsp;&nbsp;<b>Find Flight</font></b></h1><bl
+Action.c(127):     ockquote>\n
+Action.c(127):     <form method="post" action="reservations.pl" enctype="application/x-www-form-urlencoded">\n
+Action.c(127):     \n
+Action.c(127):     <center>\n
+Action.c(127):     <!-- From Denver (0) To Zurich (9) -->\n
+Action.c(127):     <table cellspacing="2" border="0" width="50%">\n
+Action.c(127):     <blockquote>Flight departing from <B>Denver</B> to <B>Zurich</B> on <B>05/22/2020</B><BR/>
+Action.c(127):     <BR/><tr bgcolor="#5E7884"><td align="center"><font color="white"><B>Flight</B></font>\n
+Action.c(127):           \t\t<td align="center"><font color="white"><B>Departure time</B>\n
+Action.c(127):           \t\t<td align="center"><font color="white"><B>Cost</B>\n
+Action.c(127):     <tr bgcolor="#EFF2F7"><td align="center"><input type="radio" name="outboundFlight" value="
+Action.c(127):     090;789;05/22/2020" checked="checked" >Blue Sky Air 090<td align="center">8am<td align="ce
+Action.c(127):     nter">$ 789</TD></TR><tr bgcolor="#EFF2F7"><td align="center"><input type="radio" name="ou
+Action.c(127):     tboundFlight" value="091;703;05/22/2020">Blue Sky Air 091<td align="center">1pm<td align="
+Action.c(127):     center">$ 703</TD></TR><tr bgcolor="#EFF2F7"><td align="center"><input type="radio" name="
+Action.c(127):     outboundFlight" value="092;746;05/22/2020">Blue Sky Air 092<td align="center">5pm<td align
+Action.c(127):     ="center">$ 746</TD></TR><tr bgcolor="#EFF2F7"><td align="center"><input type="radio" name
+Action.c(127):     ="outboundFlight" value="093;646;05/22/2020">Blue Sky Air 093<td align="center">11pm<td al
+Action.c(127):     ign="center">$ 646</TD></TR></table>\n
+Action.c(127):     \n
+Action.c(127):     <input type="hidden" name="numPassengers" value="1"  /><input type="hidden" name="advanceD
+Action.c(127):     iscount" value="0"  /><input type="hidden" name="seatType" value="First"  /><input type="h
+Action.c(127):     idden" name="seatPref" value="Asile"  />\n
+Action.c(127):     <P><center><table width=80% cellspacing=1><tr><td align=center>\n
+Action.c(127):     <input type="image" name="reserveFlights" src="/WebTours/images/button_next.gif" border="0
+Action.c(127):     " />\n
+Action.c(127):     <td>&nbsp;<td align=center></table></center></form></center>\n
+Action.c(127):     </blockquote>\n
+Action.c(127):     \n
+Action.c(127):     </body>\n
+Action.c(127):     </html>
+Action.c(127): Resource "http://localhost:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(127): t=7652ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=22)
+Action.c(127):     0\r\n
+Action.c(127):     \r\n
+Action.c(127): Notify: Saving Parameter "outboundFlight = 090;789;05/22/2020".
+Action.c(127): Registered web_reg_find successful for "Text=Flight departing from" (count=1)  	[MsgId: MMSG-26364]
+Action.c(127): web_submit_data("reservations.pl") was successful, 2437 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(151): Notify: Transaction "transaction_find_flight" ended with a "Pass" status (Duration: 0,1926 Wasted Time: 0,0627).
+Action.c(153): lr_think_time: 2,00 seconds.
+Action.c(155): Notify: Transaction "transaction_select_ticket" started.
+Action.c(157): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(157): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(161): web_submit_data("reservations.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(161): Notify: Parameter Substitution: parameter "outboundFlight" =  "090;789;05/22/2020"
+Action.c(161): Notify: Parameter Substitution: parameter "Type" =  "First"
+Action.c(161): Notify: Parameter Substitution: parameter "Pref" =  "Asile"
+Action.c(161): t=9830ms: 255-byte response headers for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=23)
+Action.c(161):     HTTP/1.1 200 OK\r\n
+Action.c(161):     Date: Fri, 22 May 2020 17:40:52 GMT\r\n
+Action.c(161):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(161):     Expires: Thu, 21 May 2020 17:40:52 GMT\r\n
+Action.c(161):     Keep-Alive: timeout=5, max=91\r\n
+Action.c(161):     Connection: Keep-Alive\r\n
+Action.c(161):     Transfer-Encoding: chunked\r\n
+Action.c(161):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(161):     \r\n
+Action.c(161): t=9849ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=23)
+Action.c(161):     a8b\r\n
+Action.c(161): t=9850ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=23)
+Action.c(161):     \r\n
+Action.c(161): t=9850ms: 2699-byte chunked response body for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=23)
+Action.c(161):     <!DOCTYPE html\n
+Action.c(161):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
+Action.c(161):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
+Action.c(161):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
+Action.c(161):     <head>\n
+Action.c(161):     <title>Flight Reservation</title>\n
+Action.c(161):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
+Action.c(161):     </head>\n
+Action.c(161):     <body bgcolor="#E0E7F1">\n
+Action.c(161):     <style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; font-siz
+Action.c(161):     e : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family: taho
+Action.c(161):     ma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: black
+Action.c(161):     }</style><BR/><BR/><h1><font color="#003366">&nbsp;&nbsp;<b>Payment Details</font></b></h1
+Action.c(161):     ><blockquote><form method="post" action="reservations.pl" enctype="application/x-www-form-
+Action.c(161):     urlencoded" onsubmit="return true ;">\n
+Action.c(161):     <table><tr><td align="right">First Name : <td><input type="text" name="firstName" value="J
+Action.c(161):     ojo" size="15" /><tr><td align="right">Last Name : <td><input type="text" name="lastName" 
+Action.c(161):     value="Bean&#10;" size="15" /><tr><td align="right">Street Address : <td colspan="3"><inpu
+Action.c(161):     t type="text" name="address1"  size="30" /><tr><td align="right">City/State/Zip : <td cols
+Action.c(161):     pan="3"><input type="text" name="address2"  size="30" /><tr><td align="right">Passenger Na
+Action.c(161):     mes : <td colspan="3"><input type="text" name="pass1" value="Jojo Bean&#10;" size="30" /><
+Action.c(161):     tr><td height="10"><tr><td height="10" align="center" colspan="4">Total for 1 ticket(s) is
+Action.c(161):      = $ 789<tr><td align="right">Credit Card : <td><input type="text" name="creditCard"  size
+Action.c(161):     ="20" maxlength="20" /><td align="right">Exp Date : <td><input type="text" name="expDate" 
+Action.c(161):     value="&#10;" size="5" maxlength="5" /><tr><TD><td colspan="3" align="left"><label><input 
+Action.c(161):     type="checkbox" name="saveCC" value="on" />Save this Credit Card Information</label><input
+Action.c(161):      type="hidden" name="oldCCOption" value=""  /></table><input type="hidden" name="numPassen
+Action.c(161):     gers" value="1"  /><input type="hidden" name="seatType" value="First"  /><input type="hidd
+Action.c(161):     en" name="seatPref" value="Asile"  /><input type="hidden" name="outboundFlight" value="090
+Action.c(161):     ;789;05/22/2020"  /><input type="hidden" name="advanceDiscount" value="0"  /><input type="
+Action.c(161):     hidden" name="returnFlight" value=""  /><input type="hidden" name="JSFormSubmit" value="of
+Action.c(161):     f"  /><center><table width=80% cellspacing=1><tr><td align=center>\n
+Action.c(161):     <input type="image" name="buyFlights" src="/WebTours/images/button_next.gif" border="0" />
+Action.c(161):     <div><input type="hidden" name=".cgifields" value="saveCC"  /></div></form>\n
+Action.c(161):     <td>&nbsp;<td align=center><form method="post" action="reservations.pl" enctype="applicati
+Action.c(161):     on/x-www-form-urlencoded" onsubmit="void(0);">\n
+Action.c(161):     </form></table></center></blockquote>\n
+Action.c(161):     </body>\n
+Action.c(161):     </html>
+Action.c(161): Resource "http://localhost:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(161): t=9855ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=23)
+Action.c(161):     0\r\n
+Action.c(161):     \r\n
+Action.c(161): Registered web_reg_find successful for "Text=Payment Details" (count=1)  	[MsgId: MMSG-26364]
+Action.c(161): web_submit_data("reservations.pl_2") was successful, 2699 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(179): Notify: Transaction "transaction_select_ticket" ended with a "Pass" status (Duration: 0,1946 Wasted Time: 0,0562).
+Action.c(181): lr_think_time: 2,00 seconds.
+Action.c(183): Notify: Transaction "transaction_payment_details" started.
+Action.c(185): web_remove_auto_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(185): Previous automatically added web header for "Origin" removed  	[MsgId: MMSG-26587]
+Action.c(185): web_remove/revert_auto_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(187): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(187): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(187): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(189): web_remove_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(189): Previous automatically added web header for "Upgrade-Insecure-Requests" removed  	[MsgId: MMSG-26587]
+Action.c(189): web_remove/revert_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(191): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(191): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(194): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(194): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(197): web_submit_data("reservations.pl_3") started  	[MsgId: MMSG-26355]
+Action.c(197): Notify: Parameter Substitution: parameter "firstName" =  "Jojo"
+Action.c(197): Notify: Next row for parameter lastName = 1 [table  = lastName].
+Action.c(197): Notify: Parameter Substitution: parameter "lastName" =  "Bean"
+Action.c(197): Notify: Parameter Substitution: parameter "passenger" =  "Jojo Bean"
+Action.c(197): Notify: Parameter Substitution: parameter "card" =  "1234567789"
+Action.c(197): Notify: Parameter Substitution: parameter "date" =  "12/20"
+Action.c(197): Notify: Parameter Substitution: parameter "Type" =  "First"
+Action.c(197): Notify: Parameter Substitution: parameter "Pref" =  "Asile"
+Action.c(197): Notify: Parameter Substitution: parameter "outboundFlight" =  "090;789;05/22/2020"
+Action.c(197): t=12028ms: 361-byte response headers for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=24)
+Action.c(197):     HTTP/1.1 200 OK\r\n
+Action.c(197):     Date: Fri, 22 May 2020 17:40:54 GMT\r\n
+Action.c(197):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(197):     Expires: Thu, 21 May 2020 17:40:54 GMT\r\n
+Action.c(197):     Set-Cookie: MTUserInfo=firstName&Jojo&username&jojo&address2&&hash&47&address1&&lastName&B
+Action.c(197):     ean%0A; path=/\r\n
+Action.c(197):     Keep-Alive: timeout=5, max=90\r\n
+Action.c(197):     Connection: Keep-Alive\r\n
+Action.c(197):     Transfer-Encoding: chunked\r\n
+Action.c(197):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(197):     \r\n
+Action.c(197): t=12046ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=24)
+Action.c(197):     9a7\r\n
+Action.c(197): t=12046ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=24)
+Action.c(197):     \r\n
+Action.c(197): t=12047ms: 2471-byte chunked response body for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=24)
+Action.c(197):     <!DOCTYPE html\n
+Action.c(197):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
+Action.c(197):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
+Action.c(197):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
+Action.c(197):     <head>\n
+Action.c(197):     <title>Reservation Made!</title>\n
+Action.c(197):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
+Action.c(197):     </head>\n
+Action.c(197):     <body bgcolor="#E0E7F1">\n
+Action.c(197):     <style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; font-siz
+Action.c(197):     e : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family: taho
+Action.c(197):     ma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: black
+Action.c(197):     }</style><BR/><BR/><h1><font color="#003366">&nbsp;&nbsp;<b>Invoice</font></b></h1><blockq
+Action.c(197):     uote>\n
+Action.c(197):     <CENTER>\n
+Action.c(197):     <small><B>Thank you for booking through Web Tours.</B></small>\n
+Action.c(197):     <BR/>\n
+Action.c(197):     <BR/>\n
+Action.c(197):     <!-- Customer Name header -->\n
+Action.c(197):     <Table width="85%" border="0" cellspacing="0" >\n
+Action.c(197):       <TR bgcolor="#5E7884">\n
+Action.c(197):          <TD colspan="2" align="center">\n
+Action.c(197):             <font color="white"><b>JojoBean's Flight Invoice</b></font>\n
+Action.c(197):          </TD>\n
+Action.c(197):          <TD width="160" align="right">\n
+Action.c(197):              <font color="white"><small>Fri May 22 20:40:54 2020\n
+Action.c(197):     </small>\n
+Action.c(197):          </TD>\n
+Action.c(197):       </TR>\n
+Action.c(197):     </Table>\n
+Action.c(197):     \n
+Action.c(197):     <Table width="85%" border="0" cellspacing="1" >\n
+Action.c(197):     <!-- Flight Item header -->\n
+Action.c(197):       <TR bgcolor="#EFF2F7">\n
+Action.c(197):          <TD colspan="2" align="left">\n
+Action.c(197):              Flights Reservation Requests:\n
+Action.c(197):         </TD>\n
+Action.c(197):         <TD align="center">Cost\n
+Action.c(197):         </TD>\n
+Action.c(197):       </TR>\n
+Action.c(197):     \n
+Action.c(197):     <!-- Flight reserved -->\n
+Action.c(197):     <TR bgcolor="#EFF2F7">\n
+Action.c(197):         <TD valign="top">1.</TD>\n
+Action.c(197):         <TD align="left">\n
+Action.c(197):            A First Class ticket\n
+Action.c(197):      from Denver to Zurich.</u></b>\n
+Action.c(197):     <br/>\n
+Action.c(197):     <center>\n
+Action.c(197):            <i>\n
+Action.c(197):               05/22/2020 :  8am : Flight 090 leaves Denver  for Zurich.<br>\n
+Action.c(197):            <br/>\n
+Action.c(197):         </TD>\n
+Action.c(197):         <TD valign="top">\n
+Action.c(197):              $789\n
+Action.c(197):         </TD>\n
+Action.c(197):       </TR>\n
+Action.c(197):     <!-- Total Cost -->\n
+Action.c(197):       <TR bgcolor="#EFF2F7">\n
+Action.c(197):         <TD>*\n
+Action.c(197):         </TD>\n
+Action.c(197):         <TD > Total Cost\n
+Action.c(197):         </TD>\n
+Action.c(197):         <TD>\n
+Action.c(197):            <b> $789 </b>\n
+Action.c(197):         </TD>\n
+Action.c(197):       </TR>\n
+Action.c(197):     \n
+Action.c(197):       <TR bgcolor="#EFF2F7">\n
+Action.c(197):         <TD>-\n
+Action.c(197):         </TD>\n
+Action.c(197):         <TD >\n
+Action.c(197):            Total Charged to Credit Card # 1234567789\n
+Action.c(197):         </TD>\n
+Action.c(197):         <TD>\n
+Action.c(197):            <b> $789 </b>\n
+Action.c(197):         </TD>\n
+Action.c(197):       </TR>\n
+Action.c(197):     \n
+Action.c(197):       <TR bgcolor="#EFF2F7">\n
+Action.c(197):         <TD>*\n
+Action.c(197):         </TD>\n
+Action.c(197):         <TD >\n
+Action.c(197):             Credit Account Balance\n
+Action.c(197):         </TD>\n
+Action.c(197):         <TD>\n
+Action.c(197):            <b> $0.00 </b>\n
+Action.c(197):         </TD>\n
+Action.c(197):       </TR></Table>\n
+Action.c(197):     <BR/>\n
+Action.c(197):     <Table width="85%" border="0">\n
+Action.c(197):       <tr>\n
+Action.c(197):         <td align=right>\n
+Action.c(197):     <form method="post" action="" enctype="application/x-www-form-urlencoded">\n
+Action.c(197):     <input type="image" name="Book Another" src="/WebTours/images/bookanother.gif" border="0" 
+Action.c(197):     /></form>    </td>\n
+Action.c(197):       </tr>\n
+Action.c(197):     </Table>\n
+Action.c(197):     \n
+Action.c(197):     </Center>\n
+Action.c(197):     \n
+Action.c(197):     </body>\n
+Action.c(197):     </html>
+Action.c(197): Found resource "http://localhost:1080/WebTours/images/bookanother.gif" in HTML "http://localhost:1080/cgi-bin/reservations.pl"  	[MsgId: MMSG-26659]
+Action.c(197): t=12056ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/reservations.pl" (RelFrameId=1, Internal ID=24)
+Action.c(197):     0\r\n
+Action.c(197):     \r\n
+Action.c(197): t=12068ms: 298-byte response headers for "http://localhost:1080/WebTours/images/bookanother.gif" (RelFrameId=, Internal ID=25)
+Action.c(197):     HTTP/1.1 200 OK\r\n
+Action.c(197):     Date: Fri, 22 May 2020 17:40:54 GMT\r\n
+Action.c(197):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(197):     Last-Modified: Tue, 28 Apr 2020 12:55:55 GMT\r\n
+Action.c(197):     ETag: "100000006f425-326-5a4595a256f04"\r\n
+Action.c(197):     Accept-Ranges: bytes\r\n
+Action.c(197):     Content-Length: 806\r\n
+Action.c(197):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(197):     Connection: Keep-Alive\r\n
+Action.c(197):     Content-Type: image/gif\r\n
+Action.c(197):     \r\n
+Action.c(197): t=12069ms: 806-byte response body for "http://localhost:1080/WebTours/images/bookanother.gif" (RelFrameId=, Internal ID=25)
+Action.c(197): Registered web_reg_find successful for "Text=Reservation Made!" (count=1)  	[MsgId: MMSG-26364]
+Action.c(197): web_submit_data("reservations.pl_3") was successful, 3277 body bytes, 659 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(226): Notify: Transaction "transaction_payment_details" ended with a "Pass" status (Duration: 0,2156 Wasted Time: 0,0694).
+Action.c(228): lr_think_time: 2,00 seconds.
+Action.c(230): Notify: Transaction "transaction_logout" started.
+Action.c(232): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(232): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(235): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(235): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(238): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(238): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(241): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(241): t=14226ms: 327-byte response headers for "http://localhost:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=26)
+Action.c(241):     HTTP/1.1 200 OK\r\n
+Action.c(241):     Date: Fri, 22 May 2020 17:40:56 GMT\r\n
+Action.c(241):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(241):     Set-Cookie: MSO=SID&1590169256; path=/\r\n
+Action.c(241):     Set-Cookie: MTUserInfo=; path=/; expires=Thu, 21-May-2020 17:40:56 GMT\r\n
+Action.c(241):     Keep-Alive: timeout=5, max=89\r\n
+Action.c(241):     Connection: Keep-Alive\r\n
+Action.c(241):     Transfer-Encoding: chunked\r\n
+Action.c(241):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(241):     \r\n
+Action.c(241): t=14242ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=26)
+Action.c(241):     2ae\r\n
+Action.c(241): t=14242ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=26)
+Action.c(241):     \r\n
+Action.c(241): t=14242ms: 686-byte chunked response body for "http://localhost:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=26)
+Action.c(241):     <!-- \n
+Action.c(241):      A Session ID has been created and loaded into a cookie called MSO.\n
+Action.c(241):      Also, the server options have been loaded into the cookie called\n
+Action.c(241):      MSO as well.  The server options can be set via the Admin page.\n
+Action.c(241):      --->\n
+Action.c(241):     \n
+Action.c(241):     <html>\n
+Action.c(241):     <title>Web Tours</title>\n
+Action.c(241):        <!-- Frame Set -->\n
+Action.c(241):        <frameset cols="160,*" border="1" frameborder="1">\n
+Action.c(241):           <!-- Navigation Frame -->\n
+Action.c(241):           <frame src="nav.pl?in=home" name="navbar" marginheight="2" marginwidth="2" \n
+Action.c(241):                 noresize="noresize" scrolling="auto"/>\n
+Action.c(241):           <!-- Home Frame -->\n
+Action.c(241):           <frame src="/WebTours/home.html" name="info" marginheight="2" marginwidth="2" \n
+Action.c(241):                 noresize="noresize" scrolling="auto"/>\n
+Action.c(241):        </frameset>\n
+Action.c(241):     </html>\n
+Action.c(241):     \n
+Action.c(241):     </body>\n
+Action.c(241):     </html>
+Action.c(241): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(241): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(241): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(241): t=14245ms: 1361-byte response body retrieved from cache for "http://localhost:1080/WebTours/home.html" (RelFrameId=1.2, Internal ID=28)
+Action.c(241):     <HTML>\n
+Action.c(241):     <HEAD>\n
+Action.c(241):     \t<title>Web Tours</title>\n
+Action.c(241):     </HEAD>\n
+Action.c(241):     <style>\n
+Action.c(241):     \tblockquote {font-family: tahoma; font-size : 10pt}\n
+Action.c(241):     \tH1 {font-family: tahoma; font-size : 22pt; color: #003366}\n
+Action.c(241):     \tsmall {font-family: tahoma; font-size : 8pt}\n
+Action.c(241):     \tH3{font-family: tahoma; font-size : 10pt; color: black}\n
+Action.c(241):     \tA {FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Tahoma; TEXT-DECORATIO
+Action.c(241):     N: none}\n
+Action.c(241):     \tA:hover{ FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #993333; FONT-FAMILY: Tahoma;TEXT-DE
+Action.c(241):     CORATION: underline}\n
+Action.c(241):     \tTD {font-family: tahoma; font-size : 10pt; color: black}\n
+Action.c(241):     </style>\n
+Action.c(241):     <body bgcolor="#e0e7f1">\n
+Action.c(241):     <BR/>\n
+Action.c(241):     <BR/>\n
+Action.c(241):     <BR/>\n
+Action.c(241):     <br/>\n
+Action.c(241):     <table border="0">\n
+Action.c(241):     <tr><td></td></tr>\n
+Action.c(241):     <TR><TD></TD></TR>\n
+Action.c(241):     <TR><TD>\n
+Action.c(241):     <blockquote>\n
+Action.c(241):     <H1><b>Web Tours</b></H1>\n
+Action.c(241):     Welcome to the Web Tours site.\n
+Action.c(241):     <br/>\n
+Action.c(241):     To make reservations,please enter your account information to the left.\n
+Action.c(241):     <br/>\n
+Action.c(241):     If you haven't registered yet, <A href="/cgi-bin/login.pl?username=&amp;password=&amp;getI
+Action.c(241):     nfo=true" ><B>sign up now</B></A> to get access to all our resources.\n
+Action.c(241):     <br/>\n
+Action.c(241):     To configure the server options, use <A href="/cgi-bin/admin.pl" target="body" ><b>adminis
+Action.c(241):     tration</b></A> link.\n
+Action.c(241):     <br/><br/><br/><br/><br/><br/>\n
+Action.c(241):     <br/><small>\n
+Action.c(241):     This product uses parts of the SMT Kernel, Copyright (c) 1991-99 <A href="http://www.imati
+Action.c(241):     x.com" target="new"><B><small>iMatix Corporation</small></B></A> \n
+Action.c(241):     </small>\n
+Action.c(241):     </blockquote></TD>\n
+Action.c(241):     <TD></TD></TR>\n
+Action.c(241):     </table>\n
+Action.c(241):     </body>\n
+Action.c(241):     </HTML>\n
+Action.c(241): t=14251ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=26)
+Action.c(241):     0\r\n
+Action.c(241):     \r\n
+Action.c(241): t=14313ms: 255-byte response headers for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=27)
+Action.c(241):     HTTP/1.1 200 OK\r\n
+Action.c(241):     Date: Fri, 22 May 2020 17:40:56 GMT\r\n
+Action.c(241):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(241):     Expires: Thu, 21 May 2020 17:40:56 GMT\r\n
+Action.c(241):     Keep-Alive: timeout=5, max=99\r\n
+Action.c(241):     Connection: Keep-Alive\r\n
+Action.c(241):     Transfer-Encoding: chunked\r\n
+Action.c(241):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(241):     \r\n
+Action.c(241): t=14315ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=27)
+Action.c(241):     5d0\r\n
+Action.c(241): t=14315ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=27)
+Action.c(241):     \r\n
+Action.c(241): t=14316ms: 1488-byte chunked response body for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=27)
+Action.c(241):     <!DOCTYPE html\n
+Action.c(241):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
+Action.c(241):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
+Action.c(241):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
+Action.c(241):     <head>\n
+Action.c(241):     <title>Web Tours Navigation Bar</title>\n
+Action.c(241):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
+Action.c(241):     </head>\n
+Action.c(241):     <body bgcolor="#E0E7F1">\n
+Action.c(241):     <style>\n
+Action.c(241):     blockquote {font-family: tahoma; font-size : 10pt}\n
+Action.c(241):     H1 {font-family: tahoma; font-size : 22pt; color: #993333}\n
+Action.c(241):     H3 {font-family: tahoma; font-size : 10pt; color: black}\n
+Action.c(241):     small {font-family: tahoma; font-size : 8pt}\n
+Action.c(241):     </style>\n
+Action.c(241):     <form method="post" action="/cgi-bin/login.pl" target="body">\n
+Action.c(241):     <input type="hidden" name="userSession" value="128810.794329688zzcfHAfpcDDDDDDDDQHftpcDVt"
+Action.c(241):     />\n
+Action.c(241):     <table border="0"><tr><td>&nbsp;</td>\n
+Action.c(241):     <td>&nbsp;</td></tr>\n
+Action.c(241):     <tr><td>&nbsp;</td>\n
+Action.c(241):     <td>&nbsp;</td></tr>\n
+Action.c(241):     <tr><td>&nbsp;</td>\n
+Action.c(241):     <td><small>&nbsp;Username</small></td></tr>\n
+Action.c(241):     <tr><td>&nbsp;</td>\n
+Action.c(241):     <td><input type="text" name="username" value="" size="14" maxlength="14"/></td></tr>\n
+Action.c(241):     <tr><td>&nbsp;</td>\n
+Action.c(241):     <td><small>&nbsp;Password</small></td>\n
+Action.c(241):     <tr><td>&nbsp;</td>\n
+Action.c(241):     <td><input type="password" name="password" value="" size="14" maxlength="14"/></td></tr>\n
+Action.c(241):     <tr><td>&nbsp;</td>\n
+Action.c(241):     <td>&nbsp;</td></tr>\n
+Action.c(241):     <tr><td>&nbsp;</td>\n
+Action.c(241):     <td><input type="image" name="login" value="Login" alt="Login" border="1" \n
+Action.c(241):     src="/WebTours/images/mer_login.gif"/></td></tr>\n
+Action.c(241):     <tr><td>&nbsp;</td><td>&nbsp;</td></tr>\n
+Action.c(241):     </table><input type="hidden" name="JSFormSubmit" value="off"/>\n
+Action.c(241):     </form>\n
+Action.c(241):     \n
+Action.c(241):     </body>\n
+Action.c(241):     </html>\n
+Action.c(241): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(241): t=14322ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=27)
+Action.c(241):     0\r\n
+Action.c(241):     \r\n
+Action.c(241): Registered web_reg_find successful for "Text=A Session ID has been created" (count=1)  	[MsgId: MMSG-26364]
+Action.c(241): web_url("SignOff Button") was successful, 2174 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(251): Notify: Transaction "transaction_logout" ended with a "Pass" status (Duration: 0,2436 Wasted Time: 0,0560).
+Action.c(253): Notify: Transaction "1_buy_ticket_transaction" ended with a "Pass" status (Duration: 14,0816 Think Time: 12,0026 Wasted Time: 0,6585).
 Ending action Action.
 Ending iteration 1.
 Ending Vuser...
 Starting action vuser_end.
-vuser_end.c(3): lr_think_time: 5,00 seconds.
-vuser_end.c(5): Notify: Transaction "transaction_logout" started.
-vuser_end.c(7): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
-vuser_end.c(7): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
-vuser_end.c(10): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
-vuser_end.c(10): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
-vuser_end.c(13): web_reg_find started  	[MsgId: MMSG-26355]
-vuser_end.c(13): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-vuser_end.c(16): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
-vuser_end.c(16): t=32592ms: 328-byte response headers for "http://localhost:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=26)
-vuser_end.c(16):     HTTP/1.1 200 OK\r\n
-vuser_end.c(16):     Date: Mon, 18 May 2020 09:59:05 GMT\r\n
-vuser_end.c(16):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_end.c(16):     Set-Cookie: MSO=SID&1589795945; path=/\r\n
-vuser_end.c(16):     Set-Cookie: MTUserInfo=; path=/; expires=Sun, 17-May-2020 09:59:05 GMT\r\n
-vuser_end.c(16):     Keep-Alive: timeout=5, max=100\r\n
-vuser_end.c(16):     Connection: Keep-Alive\r\n
-vuser_end.c(16):     Transfer-Encoding: chunked\r\n
-vuser_end.c(16):     Content-Type: text/html; charset=ISO-8859-1\r\n
-vuser_end.c(16):     \r\n
-vuser_end.c(16): t=32609ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=26)
-vuser_end.c(16):     2ae\r\n
-vuser_end.c(16): t=32609ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=26)
-vuser_end.c(16):     \r\n
-vuser_end.c(16): t=32610ms: 686-byte chunked response body for "http://localhost:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=26)
-vuser_end.c(16):     <!-- \n
-vuser_end.c(16):      A Session ID has been created and loaded into a cookie called MSO.\n
-vuser_end.c(16):      Also, the server options have been loaded into the cookie called\n
-vuser_end.c(16):      MSO as well.  The server options can be set via the Admin page.\n
-vuser_end.c(16):      --->\n
-vuser_end.c(16):     \n
-vuser_end.c(16):     <html>\n
-vuser_end.c(16):     <title>Web Tours</title>\n
-vuser_end.c(16):        <!-- Frame Set -->\n
-vuser_end.c(16):        <frameset cols="160,*" border="1" frameborder="1">\n
-vuser_end.c(16):           <!-- Navigation Frame -->\n
-vuser_end.c(16):           <frame src="nav.pl?in=home" name="navbar" marginheight="2" marginwidth="2" \n
-vuser_end.c(16):                 noresize="noresize" scrolling="auto"/>\n
-vuser_end.c(16):           <!-- Home Frame -->\n
-vuser_end.c(16):           <frame src="/WebTours/home.html" name="info" marginheight="2" marginwidth="2" \n
-vuser_end.c(16):                 noresize="noresize" scrolling="auto"/>\n
-vuser_end.c(16):        </frameset>\n
-vuser_end.c(16):     </html>\n
-vuser_end.c(16):     \n
-vuser_end.c(16):     </body>\n
-vuser_end.c(16):     </html>
-vuser_end.c(16): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
-vuser_end.c(16): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
-vuser_end.c(16): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
-vuser_end.c(16): t=32615ms: 1361-byte response body retrieved from cache for "http://localhost:1080/WebTours/home.html" (RelFrameId=1.2, Internal ID=28)
-vuser_end.c(16):     <HTML>\n
-vuser_end.c(16):     <HEAD>\n
-vuser_end.c(16):     \t<title>Web Tours</title>\n
-vuser_end.c(16):     </HEAD>\n
-vuser_end.c(16):     <style>\n
-vuser_end.c(16):     \tblockquote {font-family: tahoma; font-size : 10pt}\n
-vuser_end.c(16):     \tH1 {font-family: tahoma; font-size : 22pt; color: #003366}\n
-vuser_end.c(16):     \tsmall {font-family: tahoma; font-size : 8pt}\n
-vuser_end.c(16):     \tH3{font-family: tahoma; font-size : 10pt; color: black}\n
-vuser_end.c(16):     \tA {FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Tahoma; TEXT-DECORATIO
-vuser_end.c(16):     N: none}\n
-vuser_end.c(16):     \tA:hover{ FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #993333; FONT-FAMILY: Tahoma;TEXT-DE
-vuser_end.c(16):     CORATION: underline}\n
-vuser_end.c(16):     \tTD {font-family: tahoma; font-size : 10pt; color: black}\n
-vuser_end.c(16):     </style>\n
-vuser_end.c(16):     <body bgcolor="#e0e7f1">\n
-vuser_end.c(16):     <BR/>\n
-vuser_end.c(16):     <BR/>\n
-vuser_end.c(16):     <BR/>\n
-vuser_end.c(16):     <br/>\n
-vuser_end.c(16):     <table border="0">\n
-vuser_end.c(16):     <tr><td></td></tr>\n
-vuser_end.c(16):     <TR><TD></TD></TR>\n
-vuser_end.c(16):     <TR><TD>\n
-vuser_end.c(16):     <blockquote>\n
-vuser_end.c(16):     <H1><b>Web Tours</b></H1>\n
-vuser_end.c(16):     Welcome to the Web Tours site.\n
-vuser_end.c(16):     <br/>\n
-vuser_end.c(16):     To make reservations,please enter your account information to the left.\n
-vuser_end.c(16):     <br/>\n
-vuser_end.c(16):     If you haven't registered yet, <A href="/cgi-bin/login.pl?username=&amp;password=&amp;getI
-vuser_end.c(16):     nfo=true" ><B>sign up now</B></A> to get access to all our resources.\n
-vuser_end.c(16):     <br/>\n
-vuser_end.c(16):     To configure the server options, use <A href="/cgi-bin/admin.pl" target="body" ><b>adminis
-vuser_end.c(16):     tration</b></A> link.\n
-vuser_end.c(16):     <br/><br/><br/><br/><br/><br/>\n
-vuser_end.c(16):     <br/><small>\n
-vuser_end.c(16):     This product uses parts of the SMT Kernel, Copyright (c) 1991-99 <A href="http://www.imati
-vuser_end.c(16):     x.com" target="new"><B><small>iMatix Corporation</small></B></A> \n
-vuser_end.c(16):     </small>\n
-vuser_end.c(16):     </blockquote></TD>\n
-vuser_end.c(16):     <TD></TD></TR>\n
-vuser_end.c(16):     </table>\n
-vuser_end.c(16):     </body>\n
-vuser_end.c(16):     </HTML>\n
-vuser_end.c(16): t=32621ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=26)
-vuser_end.c(16):     0\r\n
-vuser_end.c(16):     \r\n
-vuser_end.c(16): t=32677ms: 256-byte response headers for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=27)
-vuser_end.c(16):     HTTP/1.1 200 OK\r\n
-vuser_end.c(16):     Date: Mon, 18 May 2020 09:59:05 GMT\r\n
-vuser_end.c(16):     Server: Apache/2.2.21 (Win32)\r\n
-vuser_end.c(16):     Expires: Sun, 17 May 2020 09:59:05 GMT\r\n
-vuser_end.c(16):     Keep-Alive: timeout=5, max=100\r\n
-vuser_end.c(16):     Connection: Keep-Alive\r\n
-vuser_end.c(16):     Transfer-Encoding: chunked\r\n
-vuser_end.c(16):     Content-Type: text/html; charset=ISO-8859-1\r\n
-vuser_end.c(16):     \r\n
-vuser_end.c(16): t=32678ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=27)
-vuser_end.c(16):     5d2\r\n
-vuser_end.c(16): t=32679ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=27)
-vuser_end.c(16):     \r\n
-vuser_end.c(16): t=32679ms: 1490-byte chunked response body for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=27)
-vuser_end.c(16):     <!DOCTYPE html\n
-vuser_end.c(16):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
-vuser_end.c(16):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
-vuser_end.c(16):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
-vuser_end.c(16):     <head>\n
-vuser_end.c(16):     <title>Web Tours Navigation Bar</title>\n
-vuser_end.c(16):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
-vuser_end.c(16):     </head>\n
-vuser_end.c(16):     <body bgcolor="#E0E7F1">\n
-vuser_end.c(16):     <style>\n
-vuser_end.c(16):     blockquote {font-family: tahoma; font-size : 10pt}\n
-vuser_end.c(16):     H1 {font-family: tahoma; font-size : 22pt; color: #993333}\n
-vuser_end.c(16):     H3 {font-family: tahoma; font-size : 10pt; color: black}\n
-vuser_end.c(16):     small {font-family: tahoma; font-size : 8pt}\n
-vuser_end.c(16):     </style>\n
-vuser_end.c(16):     <form method="post" action="/cgi-bin/login.pl" target="body">\n
-vuser_end.c(16):     <input type="hidden" name="userSession" value="128780.554475496zzctVtQpHHAiDDDDDQHttpiQizc
-vuser_end.c(16):     f"/>\n
-vuser_end.c(16):     <table border="0"><tr><td>&nbsp;</td>\n
-vuser_end.c(16):     <td>&nbsp;</td></tr>\n
-vuser_end.c(16):     <tr><td>&nbsp;</td>\n
-vuser_end.c(16):     <td>&nbsp;</td></tr>\n
-vuser_end.c(16):     <tr><td>&nbsp;</td>\n
-vuser_end.c(16):     <td><small>&nbsp;Username</small></td></tr>\n
-vuser_end.c(16):     <tr><td>&nbsp;</td>\n
-vuser_end.c(16):     <td><input type="text" name="username" value="" size="14" maxlength="14"/></td></tr>\n
-vuser_end.c(16):     <tr><td>&nbsp;</td>\n
-vuser_end.c(16):     <td><small>&nbsp;Password</small></td>\n
-vuser_end.c(16):     <tr><td>&nbsp;</td>\n
-vuser_end.c(16):     <td><input type="password" name="password" value="" size="14" maxlength="14"/></td></tr>\n
-vuser_end.c(16):     <tr><td>&nbsp;</td>\n
-vuser_end.c(16):     <td>&nbsp;</td></tr>\n
-vuser_end.c(16):     <tr><td>&nbsp;</td>\n
-vuser_end.c(16):     <td><input type="image" name="login" value="Login" alt="Login" border="1" \n
-vuser_end.c(16):     src="/WebTours/images/mer_login.gif"/></td></tr>\n
-vuser_end.c(16):     <tr><td>&nbsp;</td><td>&nbsp;</td></tr>\n
-vuser_end.c(16):     </table><input type="hidden" name="JSFormSubmit" value="off"/>\n
-vuser_end.c(16):     </form>\n
-vuser_end.c(16):     \n
-vuser_end.c(16):     </body>\n
-vuser_end.c(16):     </html>\n
-vuser_end.c(16): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-vuser_end.c(16): t=32684ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=27)
-vuser_end.c(16):     0\r\n
-vuser_end.c(16):     \r\n
-vuser_end.c(16): Registered web_reg_find successful for "Text=A Session ID has been created" (count=1)  	[MsgId: MMSG-26364]
-vuser_end.c(16): web_url("SignOff Button") was successful, 2176 body bytes, 584 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-vuser_end.c(26): Notify: Transaction "transaction_logout" ended with a "Pass" status (Duration: 0,2298 Wasted Time: 0,0550).
-vuser_end.c(28): Notify: Transaction "1_buy_ticket_transaction" ended with a "Pass" status (Duration: 32,0770 Think Time: 30,0031 Wasted Time: 0,6774).
 Ending action vuser_end.
 Vuser Terminated.

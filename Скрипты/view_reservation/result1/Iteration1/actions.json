@@ -6,42 +6,49 @@
                 "stepId": "STEP1",
                 "stepName": "Url: WebTours",
                 "infFile": "t1.inf",
-                "time": 1589811832490
+                "time": 1590079709514
             },
             {
                 "stepId": "STEP2",
                 "stepName": "Submit Data: login.pl",
                 "infFile": "t2.inf",
-                "time": 1589811837926
+                "time": 1590079710163
             },
             {
                 "stepId": "STEP3",
                 "stepName": "Url: Itinerary Button",
                 "infFile": "t3.inf",
-                "time": 1589811844041
+                "time": 1590079712301
             }
         ],
         "transactions": [
             {
                 "transactionName": "transaction_open_link",
-                "rawStartTime": 1589811831990,
-                "rawEndTime": 1589811832492,
+                "rawStartTime": 1590079708857,
+                "rawEndTime": 1590079709516,
                 "thinkTime": 0.0,
-                "wastedTime": 0.27506232261657717
+                "wastedTime": 0.3190498352050781
             },
             {
                 "transactionName": "transaction_login",
-                "rawStartTime": 1589811837496,
-                "rawEndTime": 1589811837928,
+                "rawStartTime": 1590079709520,
+                "rawEndTime": 1590079710166,
                 "thinkTime": 0.0,
-                "wastedTime": 0.1309192180633545
+                "wastedTime": 0.1707315444946289
             },
             {
                 "transactionName": "transaction_click_itinerary",
-                "rawStartTime": 1589811842935,
-                "rawEndTime": 1589811844043,
+                "rawStartTime": 1590079710170,
+                "rawEndTime": 1590079712303,
                 "thinkTime": 0.0,
-                "wastedTime": 0.03345656394958496
+                "wastedTime": 0.0766611099243164
+            },
+            {
+                "transactionName": "5_view_reservation_transaction",
+                "rawStartTime": 1590079708826,
+                "rawEndTime": 1590079712306,
+                "thinkTime": 0.0,
+                "wastedTime": 0.5664424896240234
             }
         ]
     }

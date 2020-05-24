@@ -1,0 +1,55 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP16",
+                "stepName": "Url: WebTours",
+                "infFile": "t1.inf",
+                "time": 1590079724567
+            },
+            {
+                "stepId": "STEP17",
+                "stepName": "Submit Data: login.pl",
+                "infFile": "t2.inf",
+                "time": 1590079725171
+            },
+            {
+                "stepId": "STEP18",
+                "stepName": "Url: Itinerary Button",
+                "infFile": "t3.inf",
+                "time": 1590079726665
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "transaction_open_link",
+                "rawStartTime": 1590079724083,
+                "rawEndTime": 1590079724569,
+                "thinkTime": 0.0,
+                "wastedTime": 0.16707134246826173
+            },
+            {
+                "transactionName": "transaction_login",
+                "rawStartTime": 1590079724574,
+                "rawEndTime": 1590079725173,
+                "thinkTime": 0.0,
+                "wastedTime": 0.16858291625976563
+            },
+            {
+                "transactionName": "transaction_click_itinerary",
+                "rawStartTime": 1590079725177,
+                "rawEndTime": 1590079726668,
+                "thinkTime": 0.0,
+                "wastedTime": 0.05938267707824707
+            },
+            {
+                "transactionName": "5_view_reservation_transaction",
+                "rawStartTime": 1590079724058,
+                "rawEndTime": 1590079726670,
+                "thinkTime": 0.0,
+                "wastedTime": 0.3950369358062744
+            }
+        ]
+    }
+]

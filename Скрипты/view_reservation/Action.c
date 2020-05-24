@@ -100,6 +100,6 @@ Action()
 		LAST);
 
 	lr_end_transaction("transaction_click_itinerary",LR_AUTO);
-	
+	lr_end_transaction("5_view_reservation_transaction", LR_AUTO);
 	return 0;
 }

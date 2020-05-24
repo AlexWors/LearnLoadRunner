@@ -39,7 +39,7 @@ Action()
 	
 	lr_end_transaction("transaction_open_link", LR_AUTO);
 
-	lr_think_time(5);
+	lr_think_time(2);
 
 	lr_start_transaction("transaction_login");
 
@@ -78,7 +78,7 @@ Action()
 
 	lr_end_transaction("transaction_login",LR_AUTO);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 
 	lr_start_transaction("transaction_click_flights");
 
@@ -103,7 +103,7 @@ Action()
 
 	lr_end_transaction("transaction_click_flights",LR_AUTO);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 
 	lr_start_transaction("transaction_find_flight");
 
@@ -150,7 +150,7 @@ Action()
 
 	lr_end_transaction("transaction_find_flight",LR_AUTO);
 
-	lr_think_time(5);
+	lr_think_time(2);
 
 	lr_start_transaction("transaction_select_ticket");
 
@@ -178,7 +178,7 @@ Action()
 
 	lr_end_transaction("transaction_select_ticket",LR_AUTO);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 	
 	lr_start_transaction("transaction_payment_details");
 
@@ -225,7 +225,7 @@ Action()
 
 	lr_end_transaction("transaction_payment_details",LR_AUTO);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 
 	lr_start_transaction("transaction_logout");
 

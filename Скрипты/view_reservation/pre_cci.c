@@ -2701,6 +2701,8 @@ Action()
 		"LAST");
 
 	lr_end_transaction("transaction_click_itinerary",2);
+	lr_end_transaction("5_view_reservation_transaction", 2);
+	
 	
 	return 0;
 }
@@ -2730,8 +2732,7 @@ vuser_end()
 
 	lr_end_transaction("transaction_logout",2);
 	
-	lr_end_transaction("5_view_reservation_transaction", 2);
-
+	
 	return 0;
 }
 # 6 "c:\\users\\bushi\\learnloadrunner\\\361\352\360\350\357\362\373\\view_reservation\\\\combined_view_reservation.c" 2
