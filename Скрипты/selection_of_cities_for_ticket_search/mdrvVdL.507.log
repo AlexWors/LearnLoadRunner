@@ -1,0 +1,54 @@
+Action.c(168):     <head>\n
+Action.c(168):     <title>Web Tours Navigation Bar</title>\n
+Action.c(168):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
+Action.c(168):     </head>\n
+Action.c(168):     <body bgcolor="#E0E7F1">\n
+Action.c(168):     <style>\n
+Action.c(168):     blockquote {font-family: tahoma; font-size : 10pt}\n
+Action.c(168):     H1 {font-family: tahoma; font-size : 22pt; color: #993333}\n
+Action.c(168):     H3 {font-family: tahoma; font-size : 10pt; color: black}\n
+Action.c(168):     small {font-family: tahoma; font-size : 8pt}\n
+Action.c(168):     </style>\n
+Action.c(168):     <form method="post" action="/cgi-bin/login.pl" target="body">\n
+Action.c(168):     <input type="hidden" name="userSession" value="128830.787930336zzczHDDpzftVzzzHDQHzAptAVQc
+Action.c(168):     f"/>\n
+Action.c(168):     <table border="0"><tr><td>&nbsp;</td>\n
+Action.c(168):     <td>&nbsp;</td></tr>\n
+Action.c(168):     <tr><td>&nbsp;</td>\n
+Action.c(168):     <td>&nbsp;</td></tr>\n
+Action.c(168):     <tr><td>&nbsp;</td>\n
+Action.c(168):     <td><small>&nbsp;Username</small></td></tr>\n
+Action.c(168):     <tr><td>&nbsp;</td>\n
+Action.c(168):     <td><input type="text" name="username" value="" size="14" maxlength="14"/></td></tr>\n
+Action.c(168):     <tr><td>&nbsp;</td>\n
+Action.c(168):     <td><small>&nbsp;Password</small></td>\n
+Action.c(168):     <tr><td>&nbsp;</td>\n
+Action.c(168):     <td><input type="password" name="password" value="" size="14" maxlength="14"/></td></tr>\n
+Action.c(168):     <tr><td>&nbsp;</td>\n
+Action.c(168):     <td>&nbsp;</td></tr>\n
+Action.c(168):     <tr><td>&nbsp;</td>\n
+Action.c(168):     <td><input type="image" name="login" value="Login" alt="Login" border="1" \n
+Action.c(168):     src="/WebTours/images/mer_login.gif"/></td></tr>\n
+Action.c(168):     <tr><td>&nbsp;</td><td>&nbsp;</td></tr>\n
+Action.c(168):     </table><input type="hidden" name="JSFormSubmit" value="off"/>\n
+Action.c(168):     </form>\n
+Action.c(168):     \n
+Action.c(168):     </body>\n
+Action.c(168):     </html>\n
+Action.c(168): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(168): t=4221073ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=724)
+Action.c(168):     0\r\n
+Action.c(168):     \r\n
+Action.c(168): Registered web_reg_find successful for "Text=A Session ID has been created" (count=1)  	[MsgId: MMSG-26364]
+Action.c(168): web_url("SignOff Button") was successful, 2176 body bytes, 583 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(178): Notify: Transaction "transaction_logout" ended with a "Pass" status (Duration: 0,1316 Wasted Time: 0,0000).	[MsgId: MMSG-16871]
+Action.c(180): Notify: Transaction "3_selection_of_cities_for_ticket_search" ended with a "Pass" status (Duration: 20,7104 Think Time: 20,0042 Wasted Time: 0,0006).	[MsgId: MMSG-16870]
+Ending action Action.	[MsgId: MMSG-15918]
+Ending iteration 29.	[MsgId: MMSG-15965]
+Waiting 129,2810 seconds for iteration pacing.	[MsgId: MMSG-15996]
+Action was aborted.	[MsgId: MMSG-10694]
+Ending Vuser...	[MsgId: MMSG-15966]
+Starting action vuser_end.	[MsgId: MMSG-15919]
+Ending action vuser_end.	[MsgId: MMSG-15918]
+Vuser Terminated.	[MsgId: MMSG-15963]
+Vuser 0 (thread 167488), ended OK."	[MsgId: MMSG-10695]

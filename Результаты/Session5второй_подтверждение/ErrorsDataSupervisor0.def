@@ -1,0 +1,44 @@
+﻿[ErrorsDataSupervisor_BasicInfo]
+NumFilters=2
+
+[AdditionalFilter0]
+DimensionType=Discrete
+InternalDimName=Event Name
+Dimension=Transaction Name
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=11
+UseEscapeSequence=1
+DimCount=11
+Dim_0=transaction_click_flights
+Dim_1=transaction_click_itinerary
+Dim_2=transaction_delete_reservation
+Dim_3=transaction_find_flight
+Dim_4=transaction_login
+Dim_5=transaction_logout
+Dim_6=transaction_open_link
+Dim_7=transaction_payment_details
+Dim_8=transaction_select_ticket
+Dim_9=vuser_end_Transaction
+Dim_10=vuser_init_Transaction
+LikeMode=0
+
+[AdditionalFilter1]
+DimensionType=Continuous
+InternalDimName=End Time
+Dimension=Scenario Elapsed Time
+EqualFlag=1
+DimensionTableName=Event_meter
+NumValues=1
+DimCount=2
+Dim_0=255.000000
+Dim_1=4095.000000
+
+[DimensionFunctions]
+DimeFuncCount=1
+DimeFuncType0=FuncFragment
+FunctionName_UI0=Think Time
+DimensionName_UI0=Transaction Response Time,Aminimum,Amaximum
+FunctionFragmentValues_UI0=-Include Think Time
+DimensionFragmentValues_UI0=!([Value]-[Think Time])!,!([Aminimum]-[Think Time])!,!([Amaximum]-[Think Time])!
+
