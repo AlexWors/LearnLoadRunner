@@ -10,7 +10,7 @@ DefaultDisplayType=Line
 UserGranularity=1
 RoundBarValues=0
 GraphDataCol1=
-TableName=T921897720T
+TableName=T1281757587T
 BasicTableName=
 AbsoluteTime=0
 DisableFilter=0
@@ -25,7 +25,7 @@ IdsToStrs=1
 StdMonitor=0
 HiddenFunctions=
 NumBasicFilters=1
-NumAdditionalFilters=1
+NumAdditionalFilters=2
 NumRawDataFilters=0
 HiddenDimensions=
 BasicGroupBy=Transaction Name
@@ -67,7 +67,22 @@ LikeMode=0
 
 [AdditionalFilter0]
 DimensionType=Discrete
-InternalDimName=
+InternalDimName=Event Name
+Dimension=Transaction Name
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=4
+UseEscapeSequence=1
+DimCount=4
+Dim_0=transaction_click_flights
+Dim_1=transaction_click_itinerary
+Dim_2=transaction_login
+Dim_3=transaction_open_link
+LikeMode=0
+
+[AdditionalFilter1]
+DimensionType=Discrete
+InternalDimName=Transaction End Status
 Dimension=Transaction End Status
 EqualFlag=1
 DimensionTableName=TransactionEndStatus
